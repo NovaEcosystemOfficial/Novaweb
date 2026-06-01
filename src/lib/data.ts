@@ -62,6 +62,14 @@ export const releases = {
     /** GitHub release page (release notes). */
     notes: "https://github.com/beautysouls/NovaDocs/releases/tag/v1.0.7",
   },
+  novamobile: {
+    /** Direct download of the Android APK. Update with each new release. */
+    apk: "https://github.com/NovaEcosystemOfficial/NovaMobile/releases/download/v0.1-alpha/app-release.apk",
+    /** APK filename, used as the suggested download name. */
+    fileName: "app-release.apk",
+    /** GitHub issues tracker for bug reports and feedback. */
+    issues: "https://github.com/NovaEcosystemOfficial/NovaMobile/issues",
+  },
 };
 
 /** Non-translatable contact endpoints and official social links. */

@@ -218,6 +218,18 @@ export function Downloads() {
                         <Clock className="h-4 w-4" />
                         {item.buttonLabel}
                       </Button>
+                    ) : item.id === "novamobile" ? (
+                      <Button
+                        href={releases.novamobile.apk}
+                        download={releases.novamobile.fileName}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="md"
+                        className="w-full"
+                      >
+                        <Download className="h-4 w-4" />
+                        {item.buttonLabel}
+                      </Button>
                     ) : (
                       <Button href="#" size="md" className="w-full">
                         <Download className="h-4 w-4" />

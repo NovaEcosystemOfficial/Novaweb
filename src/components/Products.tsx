@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Download, ArrowUpRight, Check } from "lucide-react";
-import { iconById, productAccent, images } from "@/lib/data";
+import { iconById, productAccent, images, releases } from "@/lib/data";
 import { useLanguage } from "@/context/LanguageProvider";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Button } from "./ui/Button";
@@ -99,12 +99,31 @@ export function Products() {
                   </ul>
 
                   <div className="mt-7 flex flex-wrap gap-3">
-                    <Button href="#downloads" size="sm">
-                      <Download className="h-4 w-4" />
-                      {t.products.download}
-                    </Button>
+                    {product.id === "novamobile" ? (
+                      <Button
+                        href={releases.novamobile.apk}
+                        download={releases.novamobile.fileName}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="sm"
+                      >
+                        <Download className="h-4 w-4" />
+                        {t.products.download}
+                      </Button>
+                    ) : (
+                      <Button href="#downloads" size="sm">
+                        <Download className="h-4 w-4" />
+                        {t.products.download}
+                      </Button>
+                    )}
                     <Button
-                      href={product.id === "novadocs" ? "#novadocs" : "#downloads"}
+                      href={
+                        product.id === "novadocs"
+                          ? "#novadocs"
+                          : product.id === "novamobile"
+                            ? "/nova-mobile-alpha"
+                            : "#downloads"
+                      }
                       size="sm"
                       variant="secondary"
                     >
