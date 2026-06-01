@@ -11,6 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: `${baseUrl}/nova-mobile-alpha`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
     ...["products", "downloads", "roadmap", "changelog", "contact"].map(
       (section) => ({
         url: `${baseUrl}/#${section}`,
