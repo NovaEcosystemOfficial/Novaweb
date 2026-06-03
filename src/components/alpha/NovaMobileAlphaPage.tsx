@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -17,6 +17,8 @@ import {
   Zap,
 } from "lucide-react";
 import { novaMobile, alphaCopy, type AlphaCopy } from "@/lib/alpha";
+import { releases } from "@/lib/data";
+import { handleProductDownload } from "@/lib/download";
 import { LanguageProvider, useLanguage } from "@/context/LanguageProvider";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
@@ -41,6 +43,15 @@ const discordLinkProps = {
   target: "_blank" as const,
   rel: "noopener noreferrer",
 };
+
+function onNovaMobileDownload(event: MouseEvent<HTMLElement>) {
+  void handleProductDownload(event, {
+    product: "NovaMobile",
+    version: releases.novamobile.version,
+    url: novaMobile.apkUrl,
+    fileName: novaMobile.apkFileName,
+  });
+}
 
 function Header() {
   const c = useCopy();
@@ -87,7 +98,12 @@ function Header() {
               {c.meta.back}
             </Link>
             <LanguageSwitcher />
-            <Button {...apkLinkProps} size="sm" variant="primary">
+            <Button
+              {...apkLinkProps}
+              size="sm"
+              variant="primary"
+              onClick={onNovaMobileDownload}
+            >
               <Download className="h-4 w-4" />
               {c.meta.downloadApk}
             </Button>
@@ -150,7 +166,7 @@ function Hero() {
               transition={{ duration: 0.7, delay: 0.19, ease: "easeOut" }}
               className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
             >
-              <Button {...apkLinkProps} size="lg">
+              <Button {...apkLinkProps} size="lg" onClick={onNovaMobileDownload}>
                 <Download className="h-5 w-5" />
                 {c.hero.downloadApk}
               </Button>
@@ -279,7 +295,12 @@ function ReleaseInfo() {
         <div className="mx-auto mt-8 max-w-4xl space-y-5">
           <Reveal>
             <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-              <Button {...apkLinkProps} size="lg" className="w-full sm:w-auto">
+              <Button
+                {...apkLinkProps}
+                size="lg"
+                className="w-full sm:w-auto"
+                onClick={onNovaMobileDownload}
+              >
                 <Download className="h-5 w-5" />
                 {c.hero.downloadApk}
               </Button>
@@ -531,7 +552,11 @@ function Footer() {
           >
             {c.footer.discord}
           </a>
-          <a {...apkLinkProps} className="transition-colors hover:text-white">
+          <a
+            {...apkLinkProps}
+            className="transition-colors hover:text-white"
+            onClick={onNovaMobileDownload}
+          >
             {c.footer.download}
           </a>
         </div>

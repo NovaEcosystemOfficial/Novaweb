@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { iconById, releases } from "@/lib/data";
+import { handleProductDownload } from "@/lib/download";
 import { useLanguage } from "@/context/LanguageProvider";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Button } from "./ui/Button";
@@ -138,6 +139,14 @@ export function Downloads() {
                     rel="noopener noreferrer"
                     size="lg"
                     className="w-full"
+                    onClick={(event) =>
+                      void handleProductDownload(event, {
+                        product: "NovaDocs",
+                        version: releases.novadocs.version,
+                        url: releases.novadocs.download,
+                        fileName: releases.novadocs.fileName,
+                      })
+                    }
                   >
                     <Download className="h-4.5 w-4.5" />
                     {featured.primaryButton}
@@ -226,6 +235,14 @@ export function Downloads() {
                         rel="noopener noreferrer"
                         size="md"
                         className="w-full"
+                        onClick={(event) =>
+                          void handleProductDownload(event, {
+                            product: "NovaMobile",
+                            version: releases.novamobile.version,
+                            url: releases.novamobile.apk,
+                            fileName: releases.novamobile.fileName,
+                          })
+                        }
                       >
                         <Download className="h-4 w-4" />
                         {item.buttonLabel}

@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { images, releases } from "@/lib/data";
+import { handleProductDownload } from "@/lib/download";
 import { useLanguage } from "@/context/LanguageProvider";
 import { Button } from "./ui/Button";
 import { Reveal } from "./ui/Reveal";
@@ -100,6 +101,14 @@ export function NovaDocsShowcase() {
               target="_blank"
               rel="noopener noreferrer"
               size="lg"
+              onClick={(event) =>
+                void handleProductDownload(event, {
+                  product: "NovaDocs",
+                  version: releases.novadocs.version,
+                  url: releases.novadocs.download,
+                  fileName: releases.novadocs.fileName,
+                })
+              }
             >
               <Download className="h-4.5 w-4.5" />
               {s.primaryButton}

@@ -54,6 +54,7 @@ export const productAccent: Record<string, string> = {
 /** Non-translatable external release URLs. */
 export const releases = {
   novadocs: {
+    version: "v1.0.8",
     /** Direct download of the Windows installer (.exe). */
     download:
       "https://github.com/beautysouls/NovaDocs/releases/download/v1.0.8/NovaDocs-Setup-1.0.8.exe",
@@ -63,6 +64,7 @@ export const releases = {
     notes: "https://github.com/beautysouls/NovaDocs/releases/tag/v1.0.8",
   },
   novamobile: {
+    version: "v0.1 Alpha",
     /** Direct download of the Android APK. Update with each new release. */
     apk: "https://github.com/NovaEcosystemOfficial/NovaMobile/releases/download/v0.1-alpha/app-release.apk",
     /** APK filename, used as the suggested download name. */

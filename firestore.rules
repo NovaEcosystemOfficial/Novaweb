@@ -1,0 +1,15 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /downloads/{downloadId} {
+      allow read: if false;
+      allow create: if request.resource.data.keys().hasOnly(['product', 'version', 'createdAt'])
+        && request.resource.data.product in ['NovaDocs', 'NovaMobile']
+        && request.resource.data.version is string
+        && request.resource.data.version.size() > 0
+        && request.resource.data.createdAt == request.time;
+      allow update, delete: if false;
+    }
+  }
+}

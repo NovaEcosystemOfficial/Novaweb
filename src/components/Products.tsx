@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Download, ArrowUpRight, Check } from "lucide-react";
 import { iconById, productAccent, images, releases } from "@/lib/data";
+import { handleProductDownload } from "@/lib/download";
 import { useLanguage } from "@/context/LanguageProvider";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Button } from "./ui/Button";
@@ -106,6 +107,14 @@ export function Products() {
                         target="_blank"
                         rel="noopener noreferrer"
                         size="sm"
+                        onClick={(event) =>
+                          void handleProductDownload(event, {
+                            product: "NovaMobile",
+                            version: releases.novamobile.version,
+                            url: releases.novamobile.apk,
+                            fileName: releases.novamobile.fileName,
+                          })
+                        }
                       >
                         <Download className="h-4 w-4" />
                         {t.products.download}
