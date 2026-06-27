@@ -68,7 +68,7 @@ export function Footer() {
       <div className="container-nova py-14">
         {/* Brand */}
         <div className="max-w-md">
-          <Link href="#home" className="flex items-center gap-2.5">
+          <Link href="/" className="flex items-center gap-2.5">
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-nova-gradient shadow-glow">
               <Sparkles className="h-5 w-5 text-white" />
             </span>
@@ -99,7 +99,7 @@ export function Footer() {
         </div>
 
         {/* Link columns */}
-        <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
           {t.footer.columns.map((column) => (
             <div key={column.title}>
               <h4 className="text-sm font-semibold uppercase tracking-wider text-white">

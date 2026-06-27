@@ -697,7 +697,7 @@ const it: Dictionary = {
       {
         title: "Link rapidi",
         links: [
-          { label: "Home", href: "#home" },
+          { label: "Home", href: "/#home" },
           { label: "Prodotti", href: "#products" },
           { label: "Roadmap", href: "#roadmap" },
           { label: "Contatti", href: "#contact" },
@@ -736,6 +736,13 @@ const it: Dictionary = {
         title: "Contatti",
         links: [
           { label: contactLinks.email, href: `mailto:${contactLinks.email}` },
+        ],
+      },
+      {
+        title: "Legale",
+        links: [
+          { label: "Privacy Policy", href: "/privacy-policy" },
+          { label: "Termini di Servizio", href: "/terms-of-service" },
         ],
       },
     ],
@@ -1236,7 +1243,7 @@ const en: Dictionary = {
       {
         title: "Quick Links",
         links: [
-          { label: "Home", href: "#home" },
+          { label: "Home", href: "/#home" },
           { label: "Products", href: "#products" },
           { label: "Roadmap", href: "#roadmap" },
           { label: "Contact", href: "#contact" },
@@ -1275,6 +1282,13 @@ const en: Dictionary = {
         title: "Contact",
         links: [
           { label: contactLinks.email, href: `mailto:${contactLinks.email}` },
+        ],
+      },
+      {
+        title: "Legal",
+        links: [
+          { label: "Privacy Policy", href: "/privacy-policy" },
+          { label: "Terms of Service", href: "/terms-of-service" },
         ],
       },
     ],

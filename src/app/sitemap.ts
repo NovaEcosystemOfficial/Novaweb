@@ -17,6 +17,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/terms-of-service`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
     ...["products", "downloads", "roadmap", "changelog", "contact"].map(
       (section) => ({
         url: `${baseUrl}/#${section}`,
