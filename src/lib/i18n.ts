@@ -743,6 +743,7 @@ const it: Dictionary = {
         links: [
           { label: "Privacy Policy", href: "/privacy-policy" },
           { label: "Termini di Servizio", href: "/terms-of-service" },
+          { label: "Eliminazione dati", href: "/delete-data" },
         ],
       },
     ],
@@ -1289,6 +1290,7 @@ const en: Dictionary = {
         links: [
           { label: "Privacy Policy", href: "/privacy-policy" },
           { label: "Terms of Service", href: "/terms-of-service" },
+          { label: "Data Deletion", href: "/delete-data" },
         ],
       },
     ],

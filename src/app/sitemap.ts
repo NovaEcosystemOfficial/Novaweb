@@ -29,6 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/delete-data`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
     ...["products", "downloads", "roadmap", "changelog", "contact"].map(
       (section) => ({
         url: `${baseUrl}/#${section}`,
