@@ -33,6 +33,18 @@ type RoadmapItem = {
   objectives?: string[];
 };
 
+type RoadmapMilestone = {
+  id: string;
+  title: string;
+  description: string;
+};
+
+type RoadmapPhase = {
+  statusKey: "completed" | "inProgress" | "planned";
+  statusLabel: string;
+  milestones: RoadmapMilestone[];
+};
+
 type RoadmapGroup = {
   statusKey: StatusKey;
   statusLabel: string;
@@ -147,8 +159,7 @@ export type Dictionary = {
     eyebrow: string;
     title: string;
     description: string;
-    objectivesLabel: string;
-    groups: RoadmapGroup[];
+    phases: RoadmapPhase[];
   };
   downloads: {
     eyebrow: string;
@@ -176,7 +187,8 @@ export type Dictionary = {
     eyebrow: string;
     title: string;
     description: string;
-    buttons: IconLink[];
+    comingSoonLabel: string;
+    socials: SocialLink[];
   };
   support: {
     eyebrow: string;
@@ -203,22 +215,23 @@ export type Dictionary = {
 const it: Dictionary = {
   nav: {
     links: [
-      { label: "Home", href: "#home" },
-      { label: "Prodotti", href: "#products" },
-      { label: "Download", href: "#downloads" },
-      { label: "Roadmap", href: "#roadmap" },
-      { label: "Contatti", href: "#contact" },
+      { label: "Home", href: "/#home" },
+      { label: "Ecosistema", href: "/#ecosystem" },
+      { label: "Labs", href: "/labs" },
+      { label: "Download", href: "/downloads" },
+      { label: "Roadmap", href: "/#roadmap" },
+      { label: "Contatti", href: "/#contact" },
     ],
     download: "Scarica",
   },
   hero: {
-    badge: "Un moderno ecosistema software",
+    badge: "Portale ufficiale Nova Ecosystem",
     tagline: "Costruisci. Crea. Evolvi.",
     description:
-      "Nova è un moderno ecosistema software dedicato alla produttività, alle applicazioni mobili e agli strumenti digitali del futuro.",
-    downloadApps: "Scarica le app",
-    exploreProducts: "Esplora i prodotti",
-    ecosystem: "Parte del crescente ecosistema NOVA",
+      "Nova Ecosystem è una software house moderna che costruisce prodotti per produttività, mobile, cloud e intelligenza artificiale. Un ecosistema in continua evoluzione.",
+    downloadApps: "Centro download",
+    exploreProducts: "Esplora l'ecosistema",
+    ecosystem: "NovaDocs · NovaPromo · NovaCloud · NovaMobile · Labs",
   },
   products: {
     eyebrow: "Prodotti",
@@ -405,58 +418,79 @@ const it: Dictionary = {
     eyebrow: "Roadmap",
     title: "La direzione di Nova",
     description:
-      "Uno sguardo trasparente su ciò che è stato rilasciato, ciò che stiamo costruendo e ciò che arriverà.",
-    objectivesLabel: "Obiettivi",
-    groups: [
+      "Una timeline trasparente su ciò che abbiamo completato, ciò che stiamo costruendo e ciò che arriva dopo.",
+    phases: [
       {
         statusKey: "completed",
         statusLabel: "Completato",
-        items: [
-          { id: "website", name: "Sito Nova" },
-          { id: "novadocs", name: "NovaDocs" },
+        milestones: [
+          {
+            id: "website",
+            title: "Portale Nova Ecosystem",
+            description: "Sito ufficiale dell'ecosistema Nova con identità visiva unificata.",
+          },
+          {
+            id: "novadocs",
+            title: "NovaDocs v1.0.8",
+            description: "Editor documenti desktop stabile con NovaCloud, NovaDrop e AI Resume Builder.",
+          },
+          {
+            id: "legal",
+            title: "Privacy & Legal",
+            description: "Pagine legali, privacy policy e conformità Meta per NovaPromo.",
+          },
         ],
       },
       {
         statusKey: "inProgress",
-        statusLabel: "In corso",
-        items: [{ id: "novamobile", name: "NovaMobile" }],
-      },
-      {
-        statusKey: "developing",
         statusLabel: "In sviluppo",
-        items: [
+        milestones: [
+          {
+            id: "novapromo",
+            title: "NovaPromo Beta",
+            description: "Piattaforma promozioni e social commerce in fase di test.",
+          },
+          {
+            id: "novamobile",
+            title: "NovaMobile Beta",
+            description: "App companion Android con build Alpha pubblica.",
+          },
           {
             id: "novatk",
-            name: "NovaTK",
-            objectives: [
-              "Completamento Workout Session",
-              "Cronologia allenamenti",
-              "Integrazione HealthKit avanzata",
-              "Widget attività",
-              "Dashboard progressi",
-              "Esportazione dati",
-            ],
+            title: "NovaTK Alpha",
+            description: "Fitness tracker iOS con HealthKit e widget.",
           },
           {
             id: "novabeauty",
-            name: "NovaBeauty",
-            objectives: [
-              "Gestione clienti",
-              "Appuntamenti",
-              "Storico trattamenti",
-              "Dashboard attività",
-            ],
+            title: "NovaBeauty Alpha",
+            description: "Gestionale beauty per centri estetici e saloni.",
+          },
+          {
+            id: "novacloud",
+            title: "NovaCloud",
+            description: "Piattaforma cloud per sync e servizi connessi.",
           },
         ],
       },
       {
         statusKey: "planned",
-        statusLabel: "Pianificato",
-        items: [
-          { id: "cloud", name: "Nova Cloud" },
-          { id: "account", name: "Nova Account" },
-          { id: "ai", name: "Funzionalità AI" },
-          { id: "future", name: "Applicazioni future" },
+        statusLabel: "Prossimo",
+        milestones: [
+          {
+            id: "echo-0",
+            title: "Echo-0",
+            description: "Esperimento audio e interazione immersiva dal laboratorio Nova.",
+          },
+          {
+            id: "ryuk-ai",
+            title: "Ryuk AI",
+            description: "Motore AI sperimentale per assistenza e automazione.",
+          },
+          {
+            id: "nova-account",
+            title: "Nova Account",
+            description: "Account unificato per tutti i prodotti dell'ecosistema.",
+          },
         ],
       },
     ],
@@ -634,18 +668,41 @@ const it: Dictionary = {
   },
   community: {
     eyebrow: "Community",
-    title: "Unisciti alla community di Nova Ecosystem",
+    title: "Unisciti alla community Nova",
     description:
-      "Segui lo sviluppo di NovaDocs, NovaMobile, NovaBeauty, NovaTK e NovaCloud. Entra nella community, condividi idee, segnala bug e aiutaci a plasmare il futuro di Nova Ecosystem.",
-    buttons: [
-      { id: "discord", label: "Entra in Discord", href: contactLinks.discord },
+      "Segui lo sviluppo di NovaDocs, NovaPromo, NovaMobile, NovaTK, NovaBeauty e NovaCloud. Condividi idee, segnala bug e aiutaci a plasmare il futuro dell'ecosistema.",
+    comingSoonLabel: "In arrivo",
+    socials: [
       {
         id: "instagram",
-        label: "Segui su Instagram",
+        label: "Instagram",
+        handle: "@novaecosystem",
         href: contactLinks.instagram,
       },
-      { id: "tiktok", label: "Segui su TikTok", href: contactLinks.tiktok },
-      { id: "github", label: "Vai su GitHub", href: contactLinks.github },
+      {
+        id: "tiktok",
+        label: "TikTok",
+        handle: "@novaecosystem.app",
+        href: contactLinks.tiktok,
+      },
+      {
+        id: "discord",
+        label: "Discord",
+        handle: "Community Nova",
+        href: contactLinks.discord,
+      },
+      {
+        id: "github",
+        label: "GitHub",
+        handle: "NovaEcosystemOfficial",
+        href: contactLinks.github,
+      },
+      {
+        id: "facebook",
+        label: "Facebook",
+        handle: "Nova Ecosystem",
+        href: contactLinks.facebook,
+      },
     ],
   },
   support: {
@@ -692,25 +749,28 @@ const it: Dictionary = {
     brand: "Nova Ecosystem",
     slogan: "Build. Create. Evolve.",
     description:
-      "Un moderno ecosistema di produttività pensato per desktop, mobile e cloud.",
+      "Il portale ufficiale di una software house moderna — prodotti, Labs, roadmap e community in un unico ecosistema.",
     columns: [
       {
         title: "Link rapidi",
         links: [
           { label: "Home", href: "/#home" },
-          { label: "Prodotti", href: "#products" },
-          { label: "Roadmap", href: "#roadmap" },
-          { label: "Contatti", href: "#contact" },
+          { label: "Ecosistema", href: "/#ecosystem" },
+          { label: "Labs", href: "/labs" },
+          { label: "Download", href: "/downloads" },
+          { label: "Roadmap", href: "/#roadmap" },
+          { label: "Contatti", href: "/#contact" },
         ],
       },
       {
-        title: "Progetti",
+        title: "Prodotti",
         links: [
-          { label: "NovaDocs", href: "#novadocs" },
-          { label: "NovaMobile", href: "#ecosystem" },
-          { label: "NovaTK", href: "#products" },
-          { label: "NovaBeauty", href: "#products" },
-          { label: "NovaCloud", href: "#novacloud" },
+          { label: "NovaDocs", href: "/products/novadocs" },
+          { label: "NovaPromo", href: "/products/novapromo" },
+          { label: "NovaMobile", href: "/products/novamobile" },
+          { label: "NovaCloud", href: "/products/novacloud" },
+          { label: "NovaTK", href: "/products/novatk" },
+          { label: "NovaBeauty", href: "/products/novabeauty" },
         ],
       },
       {
@@ -720,6 +780,7 @@ const it: Dictionary = {
           { label: "Instagram", href: contactLinks.instagram, external: true },
           { label: "TikTok", href: contactLinks.tiktok, external: true },
           { label: "GitHub", href: contactLinks.github, external: true },
+          { label: "Facebook", href: contactLinks.facebook, external: true },
         ],
       },
       {
@@ -755,22 +816,23 @@ const it: Dictionary = {
 const en: Dictionary = {
   nav: {
     links: [
-      { label: "Home", href: "#home" },
-      { label: "Products", href: "#products" },
-      { label: "Downloads", href: "#downloads" },
-      { label: "Roadmap", href: "#roadmap" },
-      { label: "Contact", href: "#contact" },
+      { label: "Home", href: "/#home" },
+      { label: "Ecosystem", href: "/#ecosystem" },
+      { label: "Labs", href: "/labs" },
+      { label: "Downloads", href: "/downloads" },
+      { label: "Roadmap", href: "/#roadmap" },
+      { label: "Contact", href: "/#contact" },
     ],
     download: "Download",
   },
   hero: {
-    badge: "A modern software ecosystem",
+    badge: "Official Nova Ecosystem Portal",
     tagline: "Build. Create. Evolve.",
     description:
-      "Nova is a modern software ecosystem focused on productivity, mobile applications, and future digital tools.",
-    downloadApps: "Download Apps",
-    exploreProducts: "Explore Products",
-    ecosystem: "Part of the growing NOVA ecosystem",
+      "Nova Ecosystem is a modern software house building products for productivity, mobile, cloud and artificial intelligence. An ecosystem in continuous evolution.",
+    downloadApps: "Download Center",
+    exploreProducts: "Explore ecosystem",
+    ecosystem: "NovaDocs · NovaPromo · NovaCloud · NovaMobile · Labs",
   },
   products: {
     eyebrow: "Products",
@@ -957,58 +1019,79 @@ const en: Dictionary = {
     eyebrow: "Roadmap",
     title: "Where Nova is headed",
     description:
-      "A transparent look at what's shipped, what we're building, and what's coming next.",
-    objectivesLabel: "Goals",
-    groups: [
+      "A transparent timeline of what we've completed, what we're building and what's next.",
+    phases: [
       {
         statusKey: "completed",
         statusLabel: "Completed",
-        items: [
-          { id: "website", name: "Nova Website" },
-          { id: "novadocs", name: "NovaDocs" },
+        milestones: [
+          {
+            id: "website",
+            title: "Nova Ecosystem Portal",
+            description: "Official ecosystem website with unified visual identity.",
+          },
+          {
+            id: "novadocs",
+            title: "NovaDocs v1.0.8",
+            description: "Stable desktop editor with NovaCloud, NovaDrop and AI Resume Builder.",
+          },
+          {
+            id: "legal",
+            title: "Privacy & Legal",
+            description: "Legal pages, privacy policy and Meta compliance for NovaPromo.",
+          },
         ],
       },
       {
         statusKey: "inProgress",
-        statusLabel: "In Progress",
-        items: [{ id: "novamobile", name: "NovaMobile" }],
-      },
-      {
-        statusKey: "developing",
         statusLabel: "In Development",
-        items: [
+        milestones: [
+          {
+            id: "novapromo",
+            title: "NovaPromo Beta",
+            description: "Promotions and social commerce platform in testing.",
+          },
+          {
+            id: "novamobile",
+            title: "NovaMobile Beta",
+            description: "Android companion app with public Alpha build.",
+          },
           {
             id: "novatk",
-            name: "NovaTK",
-            objectives: [
-              "Workout Session completion",
-              "Workout history",
-              "Advanced HealthKit integration",
-              "Activity widgets",
-              "Progress dashboard",
-              "Data export",
-            ],
+            title: "NovaTK Alpha",
+            description: "iOS fitness tracker with HealthKit and widgets.",
           },
           {
             id: "novabeauty",
-            name: "NovaBeauty",
-            objectives: [
-              "Client management",
-              "Appointments",
-              "Treatment history",
-              "Activity dashboard",
-            ],
+            title: "NovaBeauty Alpha",
+            description: "Beauty management app for salons and wellness centers.",
+          },
+          {
+            id: "novacloud",
+            title: "NovaCloud",
+            description: "Cloud platform for sync and connected services.",
           },
         ],
       },
       {
         statusKey: "planned",
-        statusLabel: "Planned",
-        items: [
-          { id: "cloud", name: "Nova Cloud" },
-          { id: "account", name: "Nova Account" },
-          { id: "ai", name: "AI Features" },
-          { id: "future", name: "Future Applications" },
+        statusLabel: "Next",
+        milestones: [
+          {
+            id: "echo-0",
+            title: "Echo-0",
+            description: "Audio and immersive interaction experiment from Nova Labs.",
+          },
+          {
+            id: "ryuk-ai",
+            title: "Ryuk AI",
+            description: "Experimental AI engine for assistance and automation.",
+          },
+          {
+            id: "nova-account",
+            title: "Nova Account",
+            description: "Unified account across all ecosystem products.",
+          },
         ],
       },
     ],
@@ -1182,18 +1265,41 @@ const en: Dictionary = {
   },
   community: {
     eyebrow: "Community",
-    title: "Join the Nova Ecosystem Community",
+    title: "Join the Nova community",
     description:
-      "Follow the development of NovaDocs, NovaMobile, NovaBeauty, NovaTK and NovaCloud. Join the community, share ideas, report bugs and help shape the future of Nova Ecosystem.",
-    buttons: [
-      { id: "discord", label: "Join Discord", href: contactLinks.discord },
+      "Follow the development of NovaDocs, NovaPromo, NovaMobile, NovaTK, NovaBeauty and NovaCloud. Share ideas, report bugs and help shape the future of the ecosystem.",
+    comingSoonLabel: "Coming soon",
+    socials: [
       {
         id: "instagram",
-        label: "Follow on Instagram",
+        label: "Instagram",
+        handle: "@novaecosystem",
         href: contactLinks.instagram,
       },
-      { id: "tiktok", label: "Follow on TikTok", href: contactLinks.tiktok },
-      { id: "github", label: "View GitHub", href: contactLinks.github },
+      {
+        id: "tiktok",
+        label: "TikTok",
+        handle: "@novaecosystem.app",
+        href: contactLinks.tiktok,
+      },
+      {
+        id: "discord",
+        label: "Discord",
+        handle: "Nova Community",
+        href: contactLinks.discord,
+      },
+      {
+        id: "github",
+        label: "GitHub",
+        handle: "NovaEcosystemOfficial",
+        href: contactLinks.github,
+      },
+      {
+        id: "facebook",
+        label: "Facebook",
+        handle: "Nova Ecosystem",
+        href: contactLinks.facebook,
+      },
     ],
   },
   support: {
@@ -1239,25 +1345,28 @@ const en: Dictionary = {
     brand: "Nova Ecosystem",
     slogan: "Build. Create. Evolve.",
     description:
-      "A modern productivity ecosystem designed for desktop, mobile and cloud.",
+      "The official portal of a modern software house — products, Labs, roadmap and community in one ecosystem.",
     columns: [
       {
         title: "Quick Links",
         links: [
           { label: "Home", href: "/#home" },
-          { label: "Products", href: "#products" },
-          { label: "Roadmap", href: "#roadmap" },
-          { label: "Contact", href: "#contact" },
+          { label: "Ecosystem", href: "/#ecosystem" },
+          { label: "Labs", href: "/labs" },
+          { label: "Downloads", href: "/downloads" },
+          { label: "Roadmap", href: "/#roadmap" },
+          { label: "Contact", href: "/#contact" },
         ],
       },
       {
-        title: "Projects",
+        title: "Products",
         links: [
-          { label: "NovaDocs", href: "#novadocs" },
-          { label: "NovaMobile", href: "#ecosystem" },
-          { label: "NovaTK", href: "#products" },
-          { label: "NovaBeauty", href: "#products" },
-          { label: "NovaCloud", href: "#novacloud" },
+          { label: "NovaDocs", href: "/products/novadocs" },
+          { label: "NovaPromo", href: "/products/novapromo" },
+          { label: "NovaMobile", href: "/products/novamobile" },
+          { label: "NovaCloud", href: "/products/novacloud" },
+          { label: "NovaTK", href: "/products/novatk" },
+          { label: "NovaBeauty", href: "/products/novabeauty" },
         ],
       },
       {
@@ -1267,6 +1376,7 @@ const en: Dictionary = {
           { label: "Instagram", href: contactLinks.instagram, external: true },
           { label: "TikTok", href: contactLinks.tiktok, external: true },
           { label: "GitHub", href: contactLinks.github, external: true },
+          { label: "Facebook", href: contactLinks.facebook, external: true },
         ],
       },
       {

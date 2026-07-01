@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { PRODUCT_SLUGS } from "@/lib/ecosystem";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://nova.example.com";
@@ -12,10 +13,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/labs`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/downloads`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    ...PRODUCT_SLUGS.map((slug) => ({
+      url: `${baseUrl}/products/${slug}`,
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })),
+    {
       url: `${baseUrl}/nova-mobile-alpha`,
       lastModified,
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/privacy-policy`,
@@ -35,13 +54,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
-    ...["products", "downloads", "roadmap", "changelog", "contact"].map(
-      (section) => ({
-        url: `${baseUrl}/#${section}`,
-        lastModified,
-        changeFrequency: "monthly" as const,
-        priority: 0.7,
-      })
-    ),
   ];
 }

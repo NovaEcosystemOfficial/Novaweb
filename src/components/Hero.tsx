@@ -37,8 +37,8 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-nova-radial" />
         <div className="absolute inset-0 bg-grid mask-fade-b opacity-40" />
-        <div className="absolute left-1/2 top-0 h-[480px] w-[480px] -translate-x-1/2 rounded-full bg-nova-indigo/20 blur-[120px]" />
-        <div className="absolute right-1/4 top-40 h-72 w-72 rounded-full bg-nova-purple/20 blur-[120px]" />
+        <div className="absolute left-1/2 top-0 h-[480px] w-[480px] -translate-x-1/2 rounded-full bg-nova-purple/25 blur-[120px]" />
+        <div className="absolute right-1/4 top-40 h-72 w-72 rounded-full bg-nova-orange/10 blur-[120px] animate-pulse-glow" />
       </div>
 
       <div className="container-nova">
@@ -81,11 +81,11 @@ export function Hero() {
             variants={item}
             className="mt-9 flex flex-col items-center gap-3 sm:flex-row"
           >
-            <Button href="#downloads" size="lg">
+            <Button href="/downloads" size="lg">
               <Download className="h-4.5 w-4.5" />
               {t.hero.downloadApps}
             </Button>
-            <Button href="#products" size="lg" variant="secondary">
+            <Button href="#ecosystem" size="lg" variant="secondary">
               {t.hero.exploreProducts}
               <ArrowRight className="h-4.5 w-4.5 transition-transform group-hover:translate-x-1" />
             </Button>

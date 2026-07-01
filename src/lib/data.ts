@@ -13,6 +13,9 @@ import {
   ClipboardList,
   Dumbbell,
   Flower2,
+  Megaphone,
+  Radio,
+  Bot,
 } from "lucide-react";
 
 export const BRAND = "NOVA";
@@ -31,14 +34,19 @@ export type StatusKey =
   | "completed"
   | "inProgress"
   | "developing"
+  | "experimental"
   | "planned";
 
 /** Icons are language-agnostic and looked up by stable id. */
 export const iconById: Record<string, LucideIcon> = {
   novadocs: FileText,
+  novapromo: Megaphone,
+  "echo-0": Radio,
+  "ryuk-ai": Bot,
   novamobile: Smartphone,
   novatk: Dumbbell,
   novabeauty: Flower2,
+  novacloud: Cloud,
   website: Boxes,
   cloud: Cloud,
   account: UserCircle,
@@ -53,10 +61,14 @@ export const iconById: Record<string, LucideIcon> = {
 
 /** Product accent gradients, language-agnostic. */
 export const productAccent: Record<string, string> = {
-  novadocs: "from-blue-500 to-indigo-500",
-  novamobile: "from-violet-500 to-purple-500",
+  novadocs: "from-violet-600 to-purple-500",
+  novapromo: "from-orange-500 to-amber-400",
+  "echo-0": "from-indigo-500 to-violet-500",
+  "ryuk-ai": "from-purple-600 to-pink-500",
+  novamobile: "from-violet-500 to-purple-600",
   novatk: "from-rose-500 to-orange-500",
-  novabeauty: "from-pink-500 to-purple-500",
+  novabeauty: "from-pink-500 to-fuchsia-500",
+  novacloud: "from-blue-500 to-indigo-500",
 };
 
 /** Non-translatable external release URLs. */
@@ -98,10 +110,11 @@ export function getProductRepo(id: string): string | undefined {
 
 /** Non-translatable contact endpoints and official social links. */
 export const contactLinks = {
-  email: "novaecosystem.app@libero.it",
+  email: "fabiodigitalstudio.dev@gmail.com",
   github: "https://github.com/NovaEcosystemOfficial",
   instagram: "https://www.instagram.com/novaecosystem",
   tiktok: "https://www.tiktok.com/@novaecosystem.app",
+  facebook: "https://www.facebook.com/novaecosystem",
   discord: "https://discord.gg/pGegFWK2",
   paypal: "https://paypal.me/novaecosystem",
 };

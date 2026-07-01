@@ -14,16 +14,16 @@ const siteUrl = "https://nova.example.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Nova Ecosystem | NovaDocs, NovaMobile, NovaBeauty, NovaTK & NovaCloud",
+    default: "Nova Ecosystem | Official Software Portal",
     template: "%s · Nova Ecosystem",
   },
   description:
-    "Nova Ecosystem is building the next generation productivity ecosystem including NovaDocs, NovaMobile, NovaBeauty, NovaTK and NovaCloud.",
+    "Nova Ecosystem is the official portal of a modern software house — NovaDocs, NovaPromo, NovaCloud, NovaMobile, NovaTK, NovaBeauty and Nova Labs.",
   keywords: [
     "Nova Ecosystem",
     "NovaDocs",
     "NovaMobile",
-    "NovaBeauty",
+    "NovaPromo",
     "NovaTK",
     "NovaCloud",
     "Document Editor",
@@ -41,16 +41,16 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     locale: "en_US",
-    title: "Nova Ecosystem | NovaDocs, NovaMobile, NovaBeauty, NovaTK & NovaCloud",
+    title: "Nova Ecosystem | Official Software Portal",
     description:
-      "Nova Ecosystem is building the next generation productivity ecosystem including NovaDocs, NovaMobile, NovaBeauty, NovaTK and NovaCloud.",
+      "Nova Ecosystem is the official portal of a modern software house — NovaDocs, NovaPromo, NovaCloud, NovaMobile, NovaTK, NovaBeauty and Nova Labs.",
     siteName: "Nova Ecosystem",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nova Ecosystem | NovaDocs, NovaMobile, NovaBeauty, NovaTK & NovaCloud",
+    title: "Nova Ecosystem | Official Software Portal",
     description:
-      "Nova Ecosystem is building the next generation productivity ecosystem including NovaDocs, NovaMobile, NovaBeauty, NovaTK and NovaCloud.",
+      "Nova Ecosystem is the official portal of a modern software house — NovaDocs, NovaPromo, NovaCloud, NovaMobile, NovaTK, NovaBeauty and Nova Labs.",
   },
   robots: {
     index: true,

@@ -1,17 +1,13 @@
 import { LanguageProvider } from "@/context/LanguageProvider";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { Products } from "@/components/Products";
-import { NovaDocsShowcase } from "@/components/NovaDocsShowcase";
-import { NovaCloud } from "@/components/NovaCloud";
+import { NovaEcosystem } from "@/components/NovaEcosystem";
 import { Features } from "@/components/Features";
 import { Roadmap } from "@/components/Roadmap";
-import { Downloads } from "@/components/Downloads";
 import { Changelog } from "@/components/Changelog";
-import { Contact } from "@/components/Contact";
 import { Community } from "@/components/Community";
 import { Support } from "@/components/Support";
-import { Ecosystem } from "@/components/Ecosystem";
+import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { contactLinks } from "@/lib/data";
 
@@ -21,16 +17,18 @@ const jsonLd = {
   name: "Nova Ecosystem",
   slogan: "Build. Create. Evolve.",
   description:
-    "Nova Ecosystem is building the next generation productivity ecosystem including NovaDocs, NovaMobile, NovaBeauty, NovaTK and NovaCloud.",
+    "Nova Ecosystem is a modern software house building NovaDocs, NovaPromo, NovaCloud, NovaMobile, NovaTK, NovaBeauty and experimental products from Nova Labs.",
   url: "https://nova.example.com",
   sameAs: [
     contactLinks.github,
     contactLinks.instagram,
     contactLinks.tiktok,
+    contactLinks.facebook,
     contactLinks.discord,
   ],
   makesOffer: [
     { "@type": "Offer", name: "NovaDocs" },
+    { "@type": "Offer", name: "NovaPromo" },
     { "@type": "Offer", name: "NovaMobile" },
     { "@type": "Offer", name: "NovaBeauty" },
     { "@type": "Offer", name: "NovaTK" },
@@ -48,14 +46,10 @@ export default function Home() {
       <Navbar />
       <main className="relative">
         <Hero />
-        <Products />
-        <NovaDocsShowcase />
-        <NovaCloud />
+        <NovaEcosystem />
         <Features />
         <Roadmap />
-        <Downloads />
         <Changelog />
-        <Ecosystem />
         <Community />
         <Support />
         <Contact />

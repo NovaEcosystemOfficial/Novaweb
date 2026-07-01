@@ -39,7 +39,7 @@ export function Navbar() {
       >
         <nav className="container-nova flex h-16 items-center justify-between sm:h-20">
           {/* Logo */}
-          <Link href="#home" className="group flex items-center gap-2.5">
+          <Link href="/" className="group flex items-center gap-2.5">
             <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-nova-gradient shadow-glow">
               <Sparkles className="h-5 w-5 text-white" />
             </span>
@@ -65,7 +65,7 @@ export function Navbar() {
           {/* Desktop CTA + language */}
           <div className="hidden items-center gap-3 md:flex">
             <LanguageSwitcher />
-            <Button href="#downloads" size="sm" variant="primary">
+            <Button href="/downloads" size="sm" variant="primary">
               <Download className="h-4 w-4" />
               {t.nav.download}
             </Button>
@@ -110,7 +110,7 @@ export function Navbar() {
               </li>
               <li className="px-1 pt-2">
                 <Button
-                  href="#downloads"
+                  href="/downloads"
                   className="w-full"
                   onClick={() => setOpen(false)}
                 >

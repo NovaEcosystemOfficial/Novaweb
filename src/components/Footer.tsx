@@ -9,6 +9,7 @@ import {
   TikTokIcon,
   DiscordIcon,
   GitHubIcon,
+  FacebookIcon,
 } from "./ui/BrandIcons";
 
 const socialIcons = [
@@ -16,6 +17,7 @@ const socialIcons = [
   { icon: InstagramIcon, href: contactLinks.instagram, label: "Instagram" },
   { icon: TikTokIcon, href: contactLinks.tiktok, label: "TikTok" },
   { icon: GitHubIcon, href: contactLinks.github, label: "GitHub" },
+  { icon: FacebookIcon, href: contactLinks.facebook, label: "Facebook" },
 ];
 
 function FooterLinkItem({

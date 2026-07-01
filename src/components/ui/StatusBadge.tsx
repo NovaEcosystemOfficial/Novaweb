@@ -9,6 +9,7 @@ const styles: Record<StatusKey, string> = {
   inProgress: "bg-blue-500/15 text-blue-300 ring-blue-500/30",
   developing: "bg-pink-500/15 text-pink-300 ring-purple-500/30",
   comingSoon: "bg-violet-500/15 text-violet-300 ring-violet-500/30",
+  experimental: "bg-fuchsia-500/15 text-fuchsia-300 ring-fuchsia-500/30",
   planned: "bg-violet-500/15 text-violet-300 ring-violet-500/30",
 };
 
