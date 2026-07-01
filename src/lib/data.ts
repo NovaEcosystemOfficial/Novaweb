@@ -114,7 +114,7 @@ export const contactLinks = {
   github: "https://github.com/NovaEcosystemOfficial",
   instagram: "https://www.instagram.com/novaecosystem",
   tiktok: "https://www.tiktok.com/@novaecosystem.app",
-  facebook: "https://www.facebook.com/novaecosystem",
+  facebook: "https://www.facebook.com/share/1BWnAeo47H/?mibextid=wwXIfr",
   discord: "https://discord.gg/pGegFWK2",
   paypal: "https://paypal.me/novaecosystem",
 };
