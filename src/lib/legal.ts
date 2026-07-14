@@ -46,6 +46,18 @@ const it: LegalPageCopy = {
         ],
       },
       {
+        title: "NovaDocs",
+        paragraphs: [
+          "NovaDocs è un'applicazione desktop sviluppata da Nova Ecosystem.",
+        ],
+        bullets: [
+          "I documenti creati e modificati in NovaDocs vengono salvati localmente sul dispositivo dell'utente, salvo diversa scelta dell'utente.",
+          "Quando vengono utilizzate funzionalità cloud (NovaCloud), i dati necessari alla sincronizzazione vengono elaborati tramite Firebase e gli altri servizi indicati nella presente informativa.",
+          "Le funzionalità di intelligenza artificiale in modalità offline elaborano i contenuti direttamente sul dispositivo dell'utente e non inviano i documenti a server esterni.",
+          "Le funzionalità online opzionali possono inviare esclusivamente i dati necessari all'elaborazione della richiesta.",
+        ],
+      },
+      {
         title: "Autenticazione",
         paragraphs: [
           "Alcuni servizi Nova possono utilizzare Firebase Authentication per gestire l'accesso sicuro agli account. Quando utilizzi queste funzionalità, le credenziali e i dati di autenticazione sono trattati secondo le pratiche di sicurezza di Firebase e le presenti condizioni.",
@@ -67,6 +79,21 @@ const it: LegalPageCopy = {
         title: "Conservazione ed eliminazione",
         paragraphs: [
           "Conserviamo i dati personali solo per il tempo necessario alle finalità descritte in questa informativa. Puoi richiedere la cancellazione dei tuoi dati contattandoci all'indirizzo indicato di seguito.",
+        ],
+      },
+      {
+        title: "Applicabilità",
+        paragraphs: [
+          "La presente Informativa sulla Privacy si applica a tutti i prodotti e servizi sviluppati da Nova Ecosystem, inclusi:",
+        ],
+        bullets: [
+          "NovaDocs",
+          "NovaCloud",
+          "NovaMobile",
+          "NovaWeb",
+          "NovaPromo",
+          "NovaSky",
+          "tutti gli altri servizi e applicazioni distribuiti da Nova Ecosystem.",
         ],
       },
     ],
@@ -142,6 +169,18 @@ const en: LegalPageCopy = {
         ],
       },
       {
+        title: "NovaDocs",
+        paragraphs: [
+          "NovaDocs is a desktop application developed by Nova Ecosystem.",
+        ],
+        bullets: [
+          "Documents created and edited in NovaDocs are saved locally on the user's device, unless the user chooses otherwise.",
+          "When cloud features (NovaCloud) are used, data required for synchronization is processed through Firebase and the other services described in this policy.",
+          "Offline artificial intelligence features process content directly on the user's device and do not send documents to external servers.",
+          "Optional online features may send only the data necessary to process the request.",
+        ],
+      },
+      {
         title: "Authentication",
         paragraphs: [
           "Some Nova services may use Firebase Authentication to manage secure account access. When you use these features, credentials and authentication data are handled according to Firebase security practices and this policy.",
@@ -163,6 +202,21 @@ const en: LegalPageCopy = {
         title: "Retention and deletion",
         paragraphs: [
           "We retain personal data only for as long as necessary for the purposes described in this policy. You may request deletion of your data by contacting us at the address below.",
+        ],
+      },
+      {
+        title: "Applicability",
+        paragraphs: [
+          "This Privacy Policy applies to all products and services developed by Nova Ecosystem, including:",
+        ],
+        bullets: [
+          "NovaDocs",
+          "NovaCloud",
+          "NovaMobile",
+          "NovaWeb",
+          "NovaPromo",
+          "NovaSky",
+          "all other services and applications distributed by Nova Ecosystem.",
         ],
       },
     ],
