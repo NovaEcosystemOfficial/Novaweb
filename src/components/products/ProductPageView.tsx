@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { Check, ArrowUpRight } from "lucide-react";
+import { Check, ArrowUpRight, Download, BadgeCheck } from "lucide-react";
 import type { ProductSlug } from "@/lib/ecosystem";
 import { productMeta } from "@/lib/ecosystem";
 import { getEcosystemCopy, getProductCopy } from "@/lib/ecosystem-i18n";
 import { images, releases, getProductRepo, contactLinks } from "@/lib/data";
+import { handleProductDownload } from "@/lib/download";
 import { useLanguage } from "@/context/LanguageProvider";
 import { PageShell } from "@/components/layout/PageShell";
 import { StatusBadge } from "@/components/ui/StatusBadge";
@@ -37,7 +38,7 @@ function ProductScreenshot({ slug, alt }: { slug: ProductSlug; alt: string }) {
 }
 
 function resolveCtaHref(slug: ProductSlug): string {
-  if (slug === "novadocs") return releases.novadocs.download;
+  if (slug === "novadocs") return releases.novadocs.microsoftStore;
   if (slug === "novamobile") return "/nova-mobile-alpha";
   const repo = getProductRepo(slug);
   if (repo) return repo;
@@ -51,6 +52,7 @@ function ProductPageContent({ slug }: { slug: ProductSlug }) {
   const meta = productMeta[slug];
   const copy = getProductCopy(lang, slug);
   const labels = getEcosystemCopy(lang).productPage;
+  const dlLabels = getEcosystemCopy(lang).downloads;
   const Icon = meta.icon;
   const ctaHref = resolveCtaHref(slug);
   const external =
@@ -168,6 +170,9 @@ function ProductPageContent({ slug }: { slug: ProductSlug }) {
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}
               >
+                {slug === "novadocs" ? (
+                  <BadgeCheck className="h-4 w-4" />
+                ) : null}
                 {copy.ctaButton}
                 <ArrowUpRight className="h-4 w-4" />
               </Button>
@@ -175,6 +180,50 @@ function ProductPageContent({ slug }: { slug: ProductSlug }) {
                 {labels.exploreEcosystem}
               </Button>
             </div>
+            {slug === "novadocs" && (
+              <>
+                <p className="mt-4 text-sm text-slate-500">
+                  {dlLabels.storeNote}
+                </p>
+                <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+                    {dlLabels.alternativesHeading}
+                  </p>
+                  <div className="mt-3 flex flex-col gap-2 sm:flex-row">
+                    <Button
+                      href={releases.novadocs.microsoftStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      size="sm"
+                      variant="secondary"
+                    >
+                      <BadgeCheck className="h-3.5 w-3.5 text-nova-orange" />
+                      {dlLabels.storeRecommended}
+                    </Button>
+                    <Button
+                      href={releases.novadocs.download}
+                      download={releases.novadocs.fileName}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      size="sm"
+                      variant="ghost"
+                      className="border border-white/10"
+                      onClick={(event) =>
+                        void handleProductDownload(event, {
+                          product: "NovaDocs",
+                          version: releases.novadocs.version,
+                          url: releases.novadocs.download,
+                          fileName: releases.novadocs.fileName,
+                        })
+                      }
+                    >
+                      <Download className="h-3.5 w-3.5" />
+                      {dlLabels.exeInstaller}
+                    </Button>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </section>
       </Reveal>

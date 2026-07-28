@@ -55,7 +55,7 @@ export function Downloads() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6 }}
-            className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-xl transition-all duration-500 hover:border-white/20"
+            className="group relative overflow-hidden rounded-[2rem] border border-nova-orange/25 bg-white/[0.03] shadow-glow-orange backdrop-blur-xl transition-all duration-500 hover:border-nova-orange/40"
           >
             {/* Decorative glows */}
             <div className="pointer-events-none absolute inset-0 -z-10">
@@ -71,7 +71,7 @@ export function Downloads() {
                     <FeaturedIcon className="h-7 w-7 text-white" />
                   </span>
                   <div>
-                    <div className="flex items-center gap-3">
+                    <div className="flex flex-wrap items-center gap-3">
                       <h4 className="text-2xl font-bold text-white sm:text-3xl">
                         {featured.name}
                       </h4>
@@ -79,6 +79,10 @@ export function Downloads() {
                         status={featured.statusKey}
                         label={featured.statusLabel}
                       />
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-nova-orange/30 bg-nova-orange/10 px-3 py-1 text-xs font-semibold text-nova-amber">
+                        <BadgeCheck className="h-3.5 w-3.5" />
+                        Microsoft Store
+                      </span>
                     </div>
                     <p className="mt-1 text-sm font-medium text-slate-500">
                       {featured.versionLabel} {featured.version}
@@ -133,24 +137,58 @@ export function Downloads() {
                   </div>
 
                   <Button
-                    href={releases.novadocs.download}
-                    download={releases.novadocs.fileName}
+                    href={releases.novadocs.microsoftStore}
                     target="_blank"
                     rel="noopener noreferrer"
                     size="lg"
                     className="w-full"
-                    onClick={(event) =>
-                      void handleProductDownload(event, {
-                        product: "NovaDocs",
-                        version: releases.novadocs.version,
-                        url: releases.novadocs.download,
-                        fileName: releases.novadocs.fileName,
-                      })
-                    }
                   >
-                    <Download className="h-4.5 w-4.5" />
+                    <BadgeCheck className="h-4.5 w-4.5" />
                     {featured.primaryButton}
                   </Button>
+
+                  <p className="text-center text-xs leading-relaxed text-slate-500">
+                    {featured.note}
+                  </p>
+
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+                      {featured.alternativesHeading}
+                    </p>
+                    <div className="mt-3 flex flex-col gap-2">
+                      <Button
+                        href={releases.novadocs.microsoftStore}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="sm"
+                        variant="secondary"
+                        className="w-full"
+                      >
+                        <BadgeCheck className="h-3.5 w-3.5 text-nova-orange" />
+                        {featured.storeRecommended}
+                      </Button>
+                      <Button
+                        href={releases.novadocs.download}
+                        download={releases.novadocs.fileName}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="sm"
+                        variant="ghost"
+                        className="w-full border border-white/10"
+                        onClick={(event) =>
+                          void handleProductDownload(event, {
+                            product: "NovaDocs",
+                            version: releases.novadocs.version,
+                            url: releases.novadocs.download,
+                            fileName: releases.novadocs.fileName,
+                          })
+                        }
+                      >
+                        <Download className="h-3.5 w-3.5" />
+                        {featured.exeInstaller}
+                      </Button>
+                    </div>
+                  </div>
 
                   <Button
                     href={releases.novadocs.notes}
@@ -164,10 +202,6 @@ export function Downloads() {
                     {featured.secondaryButton}
                     <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </Button>
-
-                  <p className="text-center text-xs leading-relaxed text-slate-500">
-                    {featured.note}
-                  </p>
                 </div>
               </div>
             </div>

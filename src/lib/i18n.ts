@@ -73,6 +73,9 @@ type FeaturedDownload = StatusItem & {
   primaryButton: string;
   secondaryButton: string;
   note: string;
+  alternativesHeading: string;
+  storeRecommended: string;
+  exeInstaller: string;
 };
 
 type ChangelogEntry = {
@@ -135,6 +138,9 @@ export type Dictionary = {
     primaryButton: string;
     secondaryButton: string;
     note: string;
+    alternativesHeading: string;
+    storeRecommended: string;
+    exeInstaller: string;
     imageAlt: string;
     imageLabel: string;
     capabilitiesHeading: string;
@@ -323,9 +329,12 @@ const it: Dictionary = {
       { id: "offline", label: "Offline First" },
       { id: "windows", label: "Windows Desktop" },
     ],
-    primaryButton: "Scarica per Windows",
+    primaryButton: "Scarica dal Microsoft Store",
     secondaryButton: "Note di rilascio",
-    note: "Scarica l'ultima versione stabile di NovaDocs per Windows.",
+    note: "Versione consigliata • Aggiornamenti automatici • Installazione sicura",
+    alternativesHeading: "Download alternativi",
+    storeRecommended: "Microsoft Store (Consigliato)",
+    exeInstaller: "Installer EXE",
     imageAlt: "Schermata dell'editor NovaDocs",
     imageLabel: "NovaDocs — Editor",
     capabilitiesHeading: "Tutto ciò che NovaDocs sa fare",
@@ -520,9 +529,12 @@ const it: Dictionary = {
         "Aggiornamenti continui",
         "Supporto desktop Windows",
       ],
-      primaryButton: "Scarica per Windows",
+      primaryButton: "Scarica dal Microsoft Store",
       secondaryButton: "Note di rilascio",
-      note: "Scarica l'ultima versione stabile di NovaDocs per Windows.",
+      note: "Versione consigliata • Aggiornamenti automatici • Installazione sicura",
+      alternativesHeading: "Download alternativi",
+      storeRecommended: "Microsoft Store (Consigliato)",
+      exeInstaller: "Installer EXE",
       statusKey: "available",
       statusLabel: "Disponibile",
     },
@@ -924,9 +936,12 @@ const en: Dictionary = {
       { id: "offline", label: "Offline First" },
       { id: "windows", label: "Windows Desktop" },
     ],
-    primaryButton: "Download for Windows",
+    primaryButton: "Download from Microsoft Store",
     secondaryButton: "Release notes",
-    note: "Download the latest stable version of NovaDocs for Windows.",
+    note: "Recommended version • Automatic updates • Secure installation",
+    alternativesHeading: "Alternative downloads",
+    storeRecommended: "Microsoft Store (Recommended)",
+    exeInstaller: "EXE Installer",
     imageAlt: "NovaDocs editor screenshot",
     imageLabel: "NovaDocs — Editor",
     capabilitiesHeading: "Everything NovaDocs can do",
@@ -1121,9 +1136,12 @@ const en: Dictionary = {
         "Continuous Updates",
         "Windows Desktop Support",
       ],
-      primaryButton: "Download for Windows",
+      primaryButton: "Download from Microsoft Store",
       secondaryButton: "Release notes",
-      note: "Download the latest stable version of NovaDocs for Windows.",
+      note: "Recommended version • Automatic updates • Secure installation",
+      alternativesHeading: "Alternative downloads",
+      storeRecommended: "Microsoft Store (Recommended)",
+      exeInstaller: "EXE Installer",
       statusKey: "available",
       statusLabel: "Available",
     },

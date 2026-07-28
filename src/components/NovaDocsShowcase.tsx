@@ -14,6 +14,7 @@ import {
   Moon,
   RefreshCw,
   ClipboardList,
+  BadgeCheck,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { images, releases } from "@/lib/data";
@@ -96,21 +97,12 @@ export function NovaDocsShowcase() {
         <Reveal className="mt-10 flex flex-col items-center gap-4" delay={0.1}>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button
-              href={releases.novadocs.download}
-              download={releases.novadocs.fileName}
+              href={releases.novadocs.microsoftStore}
               target="_blank"
               rel="noopener noreferrer"
               size="lg"
-              onClick={(event) =>
-                void handleProductDownload(event, {
-                  product: "NovaDocs",
-                  version: releases.novadocs.version,
-                  url: releases.novadocs.download,
-                  fileName: releases.novadocs.fileName,
-                })
-              }
             >
-              <Download className="h-4.5 w-4.5" />
+              <BadgeCheck className="h-4.5 w-4.5" />
               {s.primaryButton}
             </Button>
             <Button
@@ -126,6 +118,45 @@ export function NovaDocsShowcase() {
             </Button>
           </div>
           <p className="text-sm text-slate-500">{s.note}</p>
+
+          <div className="mt-2 w-full max-w-md rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+            <p className="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+              {s.alternativesHeading}
+            </p>
+            <div className="mt-3 flex flex-col gap-2 sm:flex-row">
+              <Button
+                href={releases.novadocs.microsoftStore}
+                target="_blank"
+                rel="noopener noreferrer"
+                size="sm"
+                variant="secondary"
+                className="flex-1"
+              >
+                <BadgeCheck className="h-3.5 w-3.5 text-nova-orange" />
+                {s.storeRecommended}
+              </Button>
+              <Button
+                href={releases.novadocs.download}
+                download={releases.novadocs.fileName}
+                target="_blank"
+                rel="noopener noreferrer"
+                size="sm"
+                variant="ghost"
+                className="flex-1 border border-white/10"
+                onClick={(event) =>
+                  void handleProductDownload(event, {
+                    product: "NovaDocs",
+                    version: releases.novadocs.version,
+                    url: releases.novadocs.download,
+                    fileName: releases.novadocs.fileName,
+                  })
+                }
+              >
+                <Download className="h-3.5 w-3.5" />
+                {s.exeInstaller}
+              </Button>
+            </div>
+          </div>
         </Reveal>
 
         {/* Capabilities */}

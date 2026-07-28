@@ -75,7 +75,10 @@ export const productAccent: Record<string, string> = {
 export const releases = {
   novadocs: {
     version: "v1.0.8",
-    /** Direct download of the Windows installer (.exe). */
+    /** Official Microsoft Store listing (recommended install method). */
+    microsoftStore:
+      "https://apps.microsoft.com/detail/9P1G6TZGVSJM?hl=it-it&gl=IT&ocid=pdpshare",
+    /** Direct download of the Windows installer (.exe) — alternative only. */
     download:
       "https://github.com/beautysouls/NovaDocs/releases/download/v1.0.8/NovaDocs-Setup-1.0.8.exe",
     /** Installer filename, used as the suggested download name. */

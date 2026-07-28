@@ -44,6 +44,11 @@ export type DownloadsPageCopy = {
   download: string;
   releaseNotes: string;
   comingSoon: string;
+  storeButton: string;
+  storeNote: string;
+  alternativesHeading: string;
+  storeRecommended: string;
+  exeInstaller: string;
 };
 
 export type ProductPageLabels = {
@@ -95,6 +100,12 @@ const it: EcosystemI18n = {
     download: "Download",
     releaseNotes: "Release Notes",
     comingSoon: "Prossimamente",
+    storeButton: "Scarica dal Microsoft Store",
+    storeNote:
+      "Versione consigliata • Aggiornamenti automatici • Installazione sicura",
+    alternativesHeading: "Download alternativi",
+    storeRecommended: "Microsoft Store (Consigliato)",
+    exeInstaller: "Installer EXE",
   },
   productPage: {
     features: "Funzionalità",
@@ -136,8 +147,9 @@ const it: EcosystemI18n = {
         },
       ],
       ctaTitle: "Inizia con NovaDocs",
-      ctaDescription: "Scarica l'ultima versione stabile e inizia a creare.",
-      ctaButton: "Scarica per Windows",
+      ctaDescription:
+        "Installa NovaDocs dal Microsoft Store: aggiornamenti automatici e installazione sicura.",
+      ctaButton: "Scarica dal Microsoft Store",
       screenshotAlt: "Schermata NovaDocs",
     },
     novapromo: {
@@ -362,6 +374,12 @@ const en: EcosystemI18n = {
     download: "Download",
     releaseNotes: "Release Notes",
     comingSoon: "Coming Soon",
+    storeButton: "Download from Microsoft Store",
+    storeNote:
+      "Recommended version • Automatic updates • Secure installation",
+    alternativesHeading: "Alternative downloads",
+    storeRecommended: "Microsoft Store (Recommended)",
+    exeInstaller: "EXE Installer",
   },
   productPage: {
     features: "Features",
@@ -403,8 +421,9 @@ const en: EcosystemI18n = {
         },
       ],
       ctaTitle: "Get started with NovaDocs",
-      ctaDescription: "Download the latest stable version and start creating.",
-      ctaButton: "Download for Windows",
+      ctaDescription:
+        "Install NovaDocs from the Microsoft Store: automatic updates and secure installation.",
+      ctaButton: "Download from Microsoft Store",
       screenshotAlt: "NovaDocs screenshot",
     },
     novapromo: {
