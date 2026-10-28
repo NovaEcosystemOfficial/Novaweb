@@ -1,24 +1,24 @@
 import { LanguageProvider } from "@/context/LanguageProvider";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { StudioAbout } from "@/components/StudioAbout";
+import { StudioServices } from "@/components/StudioServices";
 import { NovaEcosystem } from "@/components/NovaEcosystem";
-import { Features } from "@/components/Features";
-import { Roadmap } from "@/components/Roadmap";
-import { Changelog } from "@/components/Changelog";
-import { Community } from "@/components/Community";
-import { Support } from "@/components/Support";
+import { StudioProcess } from "@/components/StudioProcess";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { contactLinks } from "@/lib/data";
+import { SITE_URL } from "@/lib/site";
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Nova Ecosystem",
-  slogan: "Build. Create. Evolve.",
+  name: "GLITCH",
+  alternateName: "GLITCH Digital Studio",
+  slogan: "DIGITAL STUDIO · SOFTWARE · INNOVATION",
   description:
-    "Nova Ecosystem is a modern software house building NovaDocs, NovaPromo, NovaCloud, NovaMobile, NovaTK, NovaBeauty and experimental products from Nova Labs.",
-  url: "https://nova.example.com",
+    "GLITCH is a digital studio that designs and builds software, applications and digital solutions.",
+  url: SITE_URL,
   sameAs: [
     contactLinks.github,
     contactLinks.instagram,
@@ -46,12 +46,10 @@ export default function Home() {
       <Navbar />
       <main className="relative">
         <Hero />
+        <StudioAbout />
+        <StudioServices />
         <NovaEcosystem />
-        <Features />
-        <Roadmap />
-        <Changelog />
-        <Community />
-        <Support />
+        <StudioProcess />
         <Contact />
       </main>
       <Footer />

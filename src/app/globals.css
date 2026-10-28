@@ -8,7 +8,7 @@
 
 @layer base {
   * {
-    @apply border-white/5;
+    @apply border-white/10;
   }
 
   html {
@@ -17,13 +17,13 @@
   }
 
   body {
-    @apply bg-nova-bg text-slate-200 antialiased;
-    font-feature-settings: "ss01", "cv01";
+    @apply bg-nova-bg text-zinc-300 antialiased;
+    font-feature-settings: "ss01", "cv11";
     overflow-x: hidden;
   }
 
   ::selection {
-    @apply bg-nova-purple/40 text-white;
+    @apply bg-white/15 text-white;
   }
 
   ::-webkit-scrollbar {
@@ -31,18 +31,18 @@
     height: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #030014;
+    background: #0a0a0b;
   }
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #7c3aed, #f97316);
+    background: #2a2a30;
     border-radius: 9999px;
-    border: 2px solid #030014;
+    border: 2px solid #0a0a0b;
   }
 }
 
 @layer components {
   .container-nova {
-    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10;
   }
 
   .text-gradient {
@@ -50,32 +50,147 @@
   }
 
   .glass {
-    @apply border border-white/10 bg-white/[0.03] backdrop-blur-xl;
+    @apply border border-white/10 bg-white/[0.03];
   }
 
   .glass-strong {
-    @apply border border-white/10 bg-white/[0.06] backdrop-blur-2xl;
+    @apply border border-white/10 bg-white/[0.05];
   }
 
   .nova-card {
-    @apply relative overflow-hidden rounded-3xl border border-white/10 bg-nova-surface/80 backdrop-blur-xl transition-all duration-500;
+    @apply relative overflow-hidden rounded-2xl border border-white/10 bg-nova-surface transition-all duration-300;
   }
 
   .nova-card-hover {
-    @apply nova-card hover:-translate-y-2 hover:border-nova-purple/30 hover:shadow-card-hover;
+    @apply nova-card hover:-translate-y-1 hover:border-white/20 hover:shadow-card-hover;
+  }
+
+  .glitch-rule {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent;
+  }
+
+  /*
+   * GLITCH neon sign — hero wordmark only.
+   * Neon cyan/violet is baked into the approved PNG; animation only
+   * modulates opacity/brightness/saturation (no pixel redraw).
+   *
+   * Tune:
+   *   --glitch-neon-duration   cycle length (default 9.5s)
+   *   --glitch-neon-dim        how dark a flicker goes (0–1 opacity floor)
+   *   --glitch-neon-bright     peak brightness during re-strike
+   * Keyframe % = when flickers fire inside each cycle.
+   */
+  .glitch-neon-sign {
+    --glitch-neon-duration: 9.5s;
+    --glitch-neon-dim: 0.38;
+    --glitch-neon-bright: 1.18;
+    isolation: isolate;
+  }
+
+  .glitch-neon-sign__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: translateZ(0);
+    will-change: opacity, filter;
+    animation: glitch-neon-sign var(--glitch-neon-duration) linear infinite;
+  }
+
+  @keyframes glitch-neon-sign {
+    /* Ignition */
+    0% {
+      opacity: 0.16;
+      filter: brightness(0.32) saturate(0.6);
+    }
+    2.2% {
+      opacity: 1;
+      filter: brightness(var(--glitch-neon-bright)) saturate(1.18);
+    }
+    3.4% {
+      opacity: 0.42;
+      filter: brightness(0.5) saturate(0.75);
+    }
+    4.8% {
+      opacity: 1;
+      filter: brightness(1.06) saturate(1.05);
+    }
+
+    /* Stable illuminated */
+    4.8%,
+    36% {
+      opacity: 1;
+      filter: brightness(1.03) saturate(1.02);
+    }
+
+    /* Irregular flicker burst 1 */
+    37% {
+      opacity: var(--glitch-neon-dim);
+      filter: brightness(0.38) saturate(0.65);
+    }
+    38.2% {
+      opacity: 1;
+      filter: brightness(1.16) saturate(1.12);
+    }
+    39.5% {
+      opacity: 0.48;
+      filter: brightness(0.55) saturate(0.8);
+    }
+    41%,
+    68% {
+      opacity: 1;
+      filter: brightness(1.03) saturate(1.02);
+    }
+
+    /* Brief single dip */
+    69.3% {
+      opacity: 0.52;
+      filter: brightness(0.58) saturate(0.85);
+    }
+    70.6%,
+    88% {
+      opacity: 1;
+      filter: brightness(1.03) saturate(1.02);
+    }
+
+    /* Flicker burst 2 */
+    89% {
+      opacity: var(--glitch-neon-dim);
+      filter: brightness(0.36) saturate(0.62);
+    }
+    90.4% {
+      opacity: 0.95;
+      filter: brightness(1.12) saturate(1.1);
+    }
+    91.6% {
+      opacity: 0.4;
+      filter: brightness(0.48) saturate(0.72);
+    }
+    93.2%,
+    100% {
+      opacity: 1;
+      filter: brightness(1.03) saturate(1.02);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .glitch-neon-sign__img {
+      animation: none;
+      opacity: 1;
+      filter: brightness(1.03) saturate(1.02);
+    }
   }
 }
 
 @layer utilities {
   .bg-grid {
     background-image:
-      linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-    background-size: 56px 56px;
+      linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 72px 72px;
   }
 
   .mask-fade-b {
-    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
   }
 }

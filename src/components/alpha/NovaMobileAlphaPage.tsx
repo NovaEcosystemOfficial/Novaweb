@@ -25,6 +25,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { PhoneMockup } from "@/components/ui/PhoneMockup";
 import { DiscordIcon } from "@/components/ui/BrandIcons";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { GlitchLogo } from "@/components/ui/GlitchLogo";
 import { cn } from "@/lib/utils";
 
 function useCopy(): AlphaCopy {
@@ -80,13 +81,8 @@ function Header() {
         )}
       >
         <nav className="container-nova flex h-16 items-center justify-between sm:h-20">
-          <Link href="/" className="group flex items-center gap-2.5">
-            <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-nova-gradient shadow-glow">
-              <Sparkles className="h-5 w-5 text-white" />
-            </span>
-            <span className="text-lg font-bold tracking-tight text-white">
-              Nova Ecosystem
-            </span>
+          <Link href="/" aria-label="GLITCH home">
+            <GlitchLogo size="sm" />
           </Link>
 
           <div className="flex items-center gap-3">
@@ -534,13 +530,8 @@ function Footer() {
   return (
     <footer className="border-t border-white/10 py-10">
       <div className="container-nova flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
-        <Link href="/" className="group flex items-center gap-2.5">
-          <span className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-nova-gradient shadow-glow">
-            <Sparkles className="h-4 w-4 text-white" />
-          </span>
-          <span className="text-base font-bold tracking-tight text-white">
-            Nova Ecosystem
-          </span>
+        <Link href="/" aria-label="GLITCH home">
+          <GlitchLogo size="sm" />
         </Link>
         <div className="flex items-center gap-6 text-sm text-slate-400">
           <Link href="/" className="transition-colors hover:text-white">

@@ -8,21 +8,21 @@ export const metadata: Metadata = {
   keywords: [
     "Nova Mobile",
     "NovaMobile Alpha",
-    "Nova Ecosystem",
+    "GLITCH",
     "Android APK",
     "Nova Mobile download",
     "Nova Mobile beta",
   ],
   openGraph: {
     type: "website",
-    title: "Nova Mobile Alpha · Nova Ecosystem",
+    title: "Nova Mobile Alpha · GLITCH",
     description:
       "Download the Nova Mobile Alpha APK for Android and help shape the future of NovaMobile.",
-    siteName: "Nova Ecosystem",
+    siteName: "GLITCH",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nova Mobile Alpha · Nova Ecosystem",
+    title: "Nova Mobile Alpha · GLITCH",
     description:
       "Download the Nova Mobile Alpha APK for Android and help shape the future of NovaMobile.",
   },

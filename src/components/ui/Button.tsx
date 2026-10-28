@@ -7,19 +7,20 @@ type Size = "sm" | "md" | "lg";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-nova-gradient text-white shadow-glow hover:shadow-glow-lg hover:shadow-glow-orange hover:brightness-110",
-  secondary: "glass text-white hover:bg-white/[0.09] hover:border-white/20",
-  ghost: "text-slate-300 hover:text-white hover:bg-white/[0.05]",
+    "bg-white text-black hover:bg-zinc-200 focus-visible:ring-white/40",
+  secondary:
+    "border border-white/15 bg-transparent text-white hover:border-white/30 hover:bg-white/[0.04]",
+  ghost: "text-zinc-300 hover:text-white hover:bg-white/[0.04]",
 };
 
 const sizes: Record<Size, string> = {
   sm: "px-4 py-2 text-sm",
-  md: "px-6 py-3 text-sm",
-  lg: "px-7 py-3.5 text-base",
+  md: "px-5 py-2.5 text-sm",
+  lg: "px-6 py-3 text-base",
 };
 
 const base =
-  "group inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-nova-purple/60 focus-visible:ring-offset-2 focus-visible:ring-offset-nova-bg disabled:pointer-events-none disabled:opacity-50";
+  "group inline-flex items-center justify-center gap-2 rounded-md font-medium transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-nova-bg disabled:pointer-events-none disabled:opacity-50";
 
 type BaseProps = {
   variant?: Variant;

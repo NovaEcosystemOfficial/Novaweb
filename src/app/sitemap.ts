@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 import { PRODUCT_SLUGS } from "@/lib/ecosystem";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://nova.example.com";
+  const baseUrl = SITE_URL;
   const lastModified = new Date();
 
   return [

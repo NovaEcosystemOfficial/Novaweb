@@ -18,7 +18,7 @@ const it: DeleteDataCopy = {
   eyebrow: "Legale",
   title: "Richiesta eliminazione dati",
   intro:
-    "Se desideri eliminare i dati associati a NovaPromo o Nova Ecosystem, puoi inviare una richiesta a:",
+    "Se desideri eliminare i dati associati a NovaPromo o GLITCH, puoi inviare una richiesta a:",
   emailLabel: "Indirizzo e-mail",
   includeLabel: "Inserisci nell'e-mail:",
   requirements: [
@@ -35,7 +35,7 @@ const en: DeleteDataCopy = {
   eyebrow: "Legal",
   title: "Data Deletion Request",
   intro:
-    "If you want to delete data associated with NovaPromo or Nova Ecosystem, send a request to:",
+    "If you want to delete data associated with NovaPromo or GLITCH, send a request to:",
   emailLabel: "Email address",
   includeLabel: "Please include:",
   requirements: [

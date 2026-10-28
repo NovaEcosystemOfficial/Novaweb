@@ -2,7 +2,7 @@
   "name": "nova-web",
   "version": "1.0.0",
   "private": true,
-  "description": "NOVA — a modern software ecosystem focused on productivity, mobile applications, and future digital tools.",
+  "description": "GLITCH — digital studio website for software, applications and digital innovation.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

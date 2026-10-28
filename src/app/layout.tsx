@@ -1,26 +1,28 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-space",
   display: "swap",
 });
 
-const siteUrl = "https://nova.example.com";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Nova Ecosystem | Official Software Portal",
-    template: "%s · Nova Ecosystem",
+    default: "GLITCH | Digital Studio · Software · Innovation",
+    template: "%s · GLITCH",
   },
   description:
-    "Nova Ecosystem is the official portal of a modern software house — NovaDocs, NovaPromo, NovaCloud, NovaMobile, NovaTK, NovaBeauty and Nova Labs.",
+    "GLITCH is a digital studio that designs and builds software, applications and digital solutions — including NovaDocs, NovaMobile and Labs projects.",
   keywords: [
-    "Nova Ecosystem",
+    "GLITCH",
+    "Digital Studio",
+    "Software",
+    "Innovation",
     "NovaDocs",
     "NovaMobile",
     "NovaPromo",
@@ -28,29 +30,27 @@ export const metadata: Metadata = {
     "NovaCloud",
     "Document Editor",
     "Productivity Software",
-    "Cloud Workspace",
-    "Mobile Productivity",
-    "Flutter",
-    "Electron",
-    "AI Assistant",
+    "Mobile Applications",
   ],
-  authors: [{ name: "Nova Ecosystem" }],
-  creator: "Nova Ecosystem",
-  applicationName: "Nova Ecosystem",
+  authors: [{ name: "GLITCH" }],
+  creator: "GLITCH",
+  applicationName: "GLITCH",
   openGraph: {
     type: "website",
-    url: siteUrl,
+    url: SITE_URL,
     locale: "en_US",
-    title: "Nova Ecosystem | Official Software Portal",
+    title: "GLITCH | Digital Studio · Software · Innovation",
     description:
-      "Nova Ecosystem is the official portal of a modern software house — NovaDocs, NovaPromo, NovaCloud, NovaMobile, NovaTK, NovaBeauty and Nova Labs.",
-    siteName: "Nova Ecosystem",
+      "GLITCH is a digital studio that designs and builds software, applications and digital solutions.",
+    siteName: "GLITCH",
+    images: [{ url: "/images/logo.png", alt: "GLITCH" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nova Ecosystem | Official Software Portal",
+    title: "GLITCH | Digital Studio · Software · Innovation",
     description:
-      "Nova Ecosystem is the official portal of a modern software house — NovaDocs, NovaPromo, NovaCloud, NovaMobile, NovaTK, NovaBeauty and Nova Labs.",
+      "GLITCH is a digital studio that designs and builds software, applications and digital solutions.",
+    images: ["/images/logo.png"],
   },
   robots: {
     index: true,
@@ -65,10 +65,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#05060f",
+  themeColor: "#0a0a0b",
   width: "device-width",
   initialScale: 1,
 };
@@ -79,7 +83,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="it" className={`${inter.variable} dark`} suppressHydrationWarning>
+    <html
+      lang="it"
+      className={`${spaceGrotesk.variable} dark`}
+      suppressHydrationWarning
+    >
       <body className="min-h-screen bg-nova-bg font-sans">
         {children}
         <Analytics />

@@ -37,18 +37,18 @@ const it: LegalPageCopy = {
     title: "Informativa sulla Privacy",
     updated: "Ultimo aggiornamento: giugno 2026",
     intro:
-      "Nova Ecosystem rispetta la tua privacy. Questa informativa descrive quali dati trattiamo, come li utilizziamo e quali diritti hai in relazione ai servizi Nova.",
+      "GLITCH rispetta la tua privacy. Questa informativa descrive quali dati trattiamo, come li utilizziamo e quali diritti hai in relazione ai servizi GLITCH.",
     sections: [
       {
         title: "Informazioni che raccogliamo",
         paragraphs: [
-          "Raccogliamo solo le informazioni necessarie per fornire, mantenere e migliorare i nostri servizi. Ciò può includere dati di account, informazioni tecniche sul dispositivo e dati di utilizzo essenziali al funzionamento delle applicazioni Nova.",
+          "Raccogliamo solo le informazioni necessarie per fornire, mantenere e migliorare i nostri servizi. Ciò può includere dati di account, informazioni tecniche sul dispositivo e dati di utilizzo essenziali al funzionamento delle applicazioni dello studio.",
         ],
       },
       {
         title: "NovaDocs",
         paragraphs: [
-          "NovaDocs è un'applicazione desktop sviluppata da Nova Ecosystem.",
+          "NovaDocs è un'applicazione desktop sviluppata da GLITCH.",
         ],
         bullets: [
           "I documenti creati e modificati in NovaDocs vengono salvati localmente sul dispositivo dell'utente, salvo diversa scelta dell'utente.",
@@ -60,13 +60,13 @@ const it: LegalPageCopy = {
       {
         title: "Autenticazione",
         paragraphs: [
-          "Alcuni servizi Nova possono utilizzare Firebase Authentication per gestire l'accesso sicuro agli account. Quando utilizzi queste funzionalità, le credenziali e i dati di autenticazione sono trattati secondo le pratiche di sicurezza di Firebase e le presenti condizioni.",
+          "Alcuni servizi GLITCH possono utilizzare Firebase Authentication per gestire l'accesso sicuro agli account. Quando utilizzi queste funzionalità, le credenziali e i dati di autenticazione sono trattati secondo le pratiche di sicurezza di Firebase e le presenti condizioni.",
         ],
       },
       {
         title: "I tuoi contenuti",
         paragraphs: [
-          "I file e i contenuti che carichi o crei tramite i servizi Nova restano di tua proprietà. Nova Ecosystem non rivendica la titolarità sui tuoi documenti, file o altri materiali caricati dall'utente.",
+          "I file e i contenuti che carichi o crei tramite i servizi GLITCH restano di tua proprietà. GLITCH non rivendica la titolarità sui tuoi documenti, file o altri materiali caricati dall'utente.",
         ],
       },
       {
@@ -84,7 +84,7 @@ const it: LegalPageCopy = {
       {
         title: "Applicabilità",
         paragraphs: [
-          "La presente Informativa sulla Privacy si applica a tutti i prodotti e servizi sviluppati da Nova Ecosystem, inclusi:",
+          "La presente Informativa sulla Privacy si applica a tutti i prodotti e servizi sviluppati da GLITCH, inclusi:",
         ],
         bullets: [
           "NovaDocs",
@@ -93,7 +93,7 @@ const it: LegalPageCopy = {
           "NovaWeb",
           "NovaPromo",
           "NovaSky",
-          "tutti gli altri servizi e applicazioni distribuiti da Nova Ecosystem.",
+          "tutti gli altri servizi e applicazioni distribuiti da GLITCH.",
         ],
       },
     ],
@@ -111,30 +111,30 @@ const it: LegalPageCopy = {
     title: "Termini di Servizio",
     updated: "Ultimo aggiornamento: giugno 2026",
     intro:
-      "Utilizzando i siti web, le applicazioni e i servizi Nova Ecosystem, accetti i presenti Termini di Servizio. Ti invitiamo a leggerli attentamente prima di utilizzare i nostri prodotti.",
+      "Utilizzando i siti web, le applicazioni e i servizi GLITCH, accetti i presenti Termini di Servizio. Ti invitiamo a leggerli attentamente prima di utilizzare i nostri prodotti.",
     sections: [
       {
         title: "Responsabilità sui contenuti",
         paragraphs: [
-          "Sei responsabile dei contenuti che carichi, crei, sincronizzi o condividi tramite i servizi Nova. Devi possedere i diritti necessari su tali contenuti e garantire che il loro utilizzo non violi diritti di terzi o norme applicabili.",
+          "Sei responsabile dei contenuti che carichi, crei, sincronizzi o condividi tramite i servizi GLITCH. Devi possedere i diritti necessari su tali contenuti e garantire che il loro utilizzo non violi diritti di terzi o norme applicabili.",
         ],
       },
       {
         title: "Fornitura del servizio",
         paragraphs: [
-          "I servizi Nova sono forniti \"così come sono\" e \"come disponibili\", senza garanzie di disponibilità continua, assenza di errori o idoneità a uno scopo particolare, nei limiti consentiti dalla legge applicabile.",
+          "I servizi GLITCH sono forniti \"così come sono\" e \"come disponibili\", senza garanzie di disponibilità continua, assenza di errori o idoneità a uno scopo particolare, nei limiti consentiti dalla legge applicabile.",
         ],
       },
       {
         title: "Aggiornamenti e modifiche",
         paragraphs: [
-          "Nova Ecosystem può aggiornare, modificare o interrompere funzionalità e servizi nel tempo per migliorare l'esperienza, garantire la sicurezza o adempiere a requisiti legali e tecnici.",
+          "GLITCH può aggiornare, modificare o interrompere funzionalità e servizi nel tempo per migliorare l'esperienza, garantire la sicurezza o adempiere a requisiti legali e tecnici.",
         ],
       },
       {
         title: "Uso vietato",
         paragraphs: [
-          "È vietato utilizzare i servizi Nova in modo non autorizzato, illecito o dannoso. In particolare, non è consentito:",
+          "È vietato utilizzare i servizi GLITCH in modo non autorizzato, illecito o dannoso. In particolare, non è consentito:",
         ],
         bullets: [
           "Accedere ai sistemi senza autorizzazione o tentare di comprometterne la sicurezza",
@@ -145,7 +145,7 @@ const it: LegalPageCopy = {
     ],
     contactLabel: "Contatti",
     contactHelp:
-      "Per domande su questi termini o sui servizi Nova, contattaci:",
+      "Per domande su questi termini o sui servizi GLITCH, contattaci:",
     contactEmail,
     relatedLabel: "Consulta anche",
     relatedHref: "/privacy-policy",
@@ -160,7 +160,7 @@ const en: LegalPageCopy = {
     title: "Privacy Policy",
     updated: "Last updated: June 2026",
     intro:
-      "Nova Ecosystem respects your privacy. This policy explains what data we process, how we use it, and your rights in relation to Nova services.",
+      "GLITCH respects your privacy. This policy explains what data we process, how we use it, and your rights in relation to Nova services.",
     sections: [
       {
         title: "Information we collect",
@@ -171,7 +171,7 @@ const en: LegalPageCopy = {
       {
         title: "NovaDocs",
         paragraphs: [
-          "NovaDocs is a desktop application developed by Nova Ecosystem.",
+          "NovaDocs is a desktop application developed by GLITCH.",
         ],
         bullets: [
           "Documents created and edited in NovaDocs are saved locally on the user's device, unless the user chooses otherwise.",
@@ -189,7 +189,7 @@ const en: LegalPageCopy = {
       {
         title: "Your content",
         paragraphs: [
-          "Files and content you upload or create through Nova services remain owned by you. Nova Ecosystem does not claim ownership over your documents, files, or other user-uploaded materials.",
+          "Files and content you upload or create through Nova services remain owned by you. GLITCH does not claim ownership over your documents, files, or other user-uploaded materials.",
         ],
       },
       {
@@ -207,7 +207,7 @@ const en: LegalPageCopy = {
       {
         title: "Applicability",
         paragraphs: [
-          "This Privacy Policy applies to all products and services developed by Nova Ecosystem, including:",
+          "This Privacy Policy applies to all products and services developed by GLITCH, including:",
         ],
         bullets: [
           "NovaDocs",
@@ -216,7 +216,7 @@ const en: LegalPageCopy = {
           "NovaWeb",
           "NovaPromo",
           "NovaSky",
-          "all other services and applications distributed by Nova Ecosystem.",
+          "all other services and applications distributed by GLITCH.",
         ],
       },
     ],
@@ -234,7 +234,7 @@ const en: LegalPageCopy = {
     title: "Terms of Service",
     updated: "Last updated: June 2026",
     intro:
-      "By using Nova Ecosystem websites, applications, and services, you agree to these Terms of Service. Please read them carefully before using our products.",
+      "By using GLITCH websites, applications, and services, you agree to these Terms of Service. Please read them carefully before using our products.",
     sections: [
       {
         title: "Content responsibility",
@@ -251,7 +251,7 @@ const en: LegalPageCopy = {
       {
         title: "Updates and changes",
         paragraphs: [
-          "Nova Ecosystem may update, modify, or discontinue features and services over time to improve the experience, maintain security, or meet legal and technical requirements.",
+          "GLITCH may update, modify, or discontinue features and services over time to improve the experience, maintain security, or meet legal and technical requirements.",
         ],
       },
       {

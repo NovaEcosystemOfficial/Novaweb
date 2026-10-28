@@ -4,19 +4,19 @@ import { LegalDocumentPage } from "@/components/legal/LegalDocumentPage";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Nova Ecosystem Terms of Service — rules and responsibilities for using Nova websites and applications.",
+    "GLITCH Terms of Service — rules and responsibilities for using Nova websites and applications.",
   openGraph: {
     type: "website",
-    title: "Terms of Service · Nova Ecosystem",
+    title: "Terms of Service · GLITCH",
     description:
-      "Read the terms governing your use of Nova Ecosystem products and services.",
-    siteName: "Nova Ecosystem",
+      "Read the terms governing your use of GLITCH products and services.",
+    siteName: "GLITCH",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms of Service · Nova Ecosystem",
+    title: "Terms of Service · GLITCH",
     description:
-      "Read the terms governing your use of Nova Ecosystem products and services.",
+      "Read the terms governing your use of GLITCH products and services.",
   },
   alternates: {
     canonical: "/terms-of-service",

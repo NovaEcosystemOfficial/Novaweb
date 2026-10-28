@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowUpRight, Mail, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Mail } from "lucide-react";
 import {
   getLegalDocument,
   type LegalDocumentId,
@@ -12,6 +12,7 @@ import { LanguageProvider, useLanguage } from "@/context/LanguageProvider";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/ui/Reveal";
+import { GlitchLogo } from "@/components/ui/GlitchLogo";
 import { cn } from "@/lib/utils";
 
 function LegalHeader() {
@@ -43,13 +44,8 @@ function LegalHeader() {
         )}
       >
         <div className="container-nova flex h-16 items-center justify-between sm:h-20">
-          <Link href="/" className="group flex items-center gap-2.5">
-            <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-nova-gradient shadow-glow">
-              <Sparkles className="h-5 w-5 text-white" />
-            </span>
-            <span className="text-lg font-bold tracking-tight text-white">
-              NOVA
-            </span>
+          <Link href="/" aria-label="GLITCH home">
+            <GlitchLogo size="sm" />
           </Link>
 
           <div className="flex items-center gap-3">
@@ -128,7 +124,7 @@ function LegalContent({ document }: { document: LegalDocumentId }) {
                         key={bullet}
                         className="flex gap-3 text-sm leading-relaxed text-slate-300 sm:text-base"
                       >
-                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-nova-gradient" />
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-white/50" />
                         {bullet}
                       </li>
                     ))}
@@ -141,7 +137,7 @@ function LegalContent({ document }: { document: LegalDocumentId }) {
           <Reveal delay={0.2}>
             <section className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-white/[0.02] p-6 backdrop-blur-xl sm:p-8">
               <div className="flex items-start gap-4">
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-nova-gradient shadow-glow">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04]">
                   <Mail className="h-5 w-5 text-white" />
                 </span>
                 <div>

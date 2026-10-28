@@ -18,10 +18,16 @@ import {
   Bot,
 } from "lucide-react";
 
-export const BRAND = "NOVA";
+export const BRAND = "GLITCH";
+export const BRAND_LINE = "DIGITAL STUDIO · SOFTWARE · INNOVATION";
+export const BRAND_LOGO = "/images/logo.png";
+/** Approved neon wordmark used only in the homepage hero. */
+export const BRAND_NEON_LOGO = "/images/glitch-neon.png";
 
 /** Real product screenshots (place the PNG files in /public/images). */
 export const images = {
+  logo: "/images/logo.png",
+  neonLogo: "/images/glitch-neon.png",
   novadocsEditor: "/images/novadocs-editor.png",
   novacloudSettings: "/images/novacloud-settings.png",
 };

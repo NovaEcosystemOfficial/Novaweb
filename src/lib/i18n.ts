@@ -231,12 +231,12 @@ const it: Dictionary = {
     download: "Scarica",
   },
   hero: {
-    badge: "Portale ufficiale Nova Ecosystem",
+    badge: "Sito ufficiale GLITCH",
     tagline: "Costruisci. Crea. Evolvi.",
     description:
-      "Nova Ecosystem è una software house moderna che costruisce prodotti per produttività, mobile, cloud e intelligenza artificiale. Un ecosistema in continua evoluzione.",
+      "GLITCH è una software house moderna che costruisce prodotti per produttività, mobile, cloud e intelligenza artificiale. Un ecosistema in continua evoluzione.",
     downloadApps: "Centro download",
-    exploreProducts: "Esplora l'ecosistema",
+    exploreProducts: "Esplora i progetti",
     ecosystem: "NovaDocs · NovaPromo · NovaCloud · NovaMobile · Labs",
   },
   products: {
@@ -267,7 +267,7 @@ const it: Dictionary = {
       {
         id: "novamobile",
         name: "NovaMobile",
-        tagline: "L'ecosistema Nova in tasca.",
+        tagline: "I prodotti dello studio in tasca.",
         description:
           "Porta Nova ovunque. Un'esperienza mobile moderna e veloce, con l'integrazione cloud in arrivo.",
         features: [
@@ -349,11 +349,11 @@ const it: Dictionary = {
     ],
   },
   novacloud: {
-    eyebrow: "Ecosistema",
+    eyebrow: "Progetti",
     title: "NovaCloud",
-    subtitle: "Sincronizzazione intelligente per l'ecosistema Nova.",
+    subtitle: "Sincronizzazione intelligente per i prodotti dello studio.",
     description:
-      "NovaCloud permette di gestire dispositivi, sincronizzazione e servizi collegati all'ecosistema Nova in un'unica esperienza integrata.",
+      "NovaCloud permette di gestire dispositivi, sincronizzazione e servizi collegati ai prodotti dello studio in un'unica esperienza integrata.",
     imageAlt: "Schermata delle impostazioni di NovaCloud",
     imageLabel: "NovaCloud — Impostazioni",
     features: [
@@ -435,8 +435,8 @@ const it: Dictionary = {
         milestones: [
           {
             id: "website",
-            title: "Portale Nova Ecosystem",
-            description: "Sito ufficiale dell'ecosistema Nova con identità visiva unificata.",
+            title: "Portale GLITCH",
+            description: "Sito ufficiale GLITCH con identità visiva unificata.",
           },
           {
             id: "novadocs",
@@ -542,7 +542,7 @@ const it: Dictionary = {
       {
         id: "novamobile",
         name: "NovaMobile",
-        description: "L'ecosistema Nova in tasca.",
+        description: "I prodotti dello studio in tasca.",
         platform: "Android · .apk",
         statusKey: "beta",
         statusLabel: "Beta",
@@ -589,7 +589,7 @@ const it: Dictionary = {
     eyebrow: "Changelog",
     title: "Novità di Nova",
     description:
-      "Rilasciamo aggiornamenti di continuo. Ecco le ultime novità nell'ecosistema Nova.",
+      "Rilasciamo aggiornamenti di continuo. Ecco le ultime novità nei prodotti dello studio.",
     entries: [
       {
         id: "novadocs-108",
@@ -667,7 +667,7 @@ const it: Dictionary = {
       {
         id: "discord",
         label: "Discord",
-        handle: "Community Nova",
+        handle: "Community GLITCH",
         href: contactLinks.discord,
       },
       {
@@ -700,7 +700,7 @@ const it: Dictionary = {
       {
         id: "discord",
         label: "Discord",
-        handle: "Community Nova",
+        handle: "Community GLITCH",
         href: contactLinks.discord,
       },
       {
@@ -712,21 +712,21 @@ const it: Dictionary = {
       {
         id: "facebook",
         label: "Facebook",
-        handle: "Nova Ecosystem",
+        handle: "GLITCH",
         href: contactLinks.facebook,
       },
     ],
   },
   support: {
     eyebrow: "Supporto",
-    title: "Sostieni Nova Ecosystem",
+    title: "Sostieni GLITCH",
     description:
-      "Nova Ecosystem è un progetto indipendente costruito da zero. Se ti piacciono NovaDocs, NovaMobile, NovaBeauty, NovaTK e NovaCloud e vuoi sostenere lo sviluppo futuro, offrici un caffè.",
-    button: "Sostieni Nova Ecosystem",
+      "GLITCH è un progetto indipendente costruito da zero. Se ti piacciono NovaDocs, NovaMobile, NovaBeauty, NovaTK e NovaCloud e vuoi sostenere lo sviluppo futuro, offrici un caffè.",
+    button: "Sostieni GLITCH",
   },
   ecosystem: {
-    eyebrow: "Ecosistema",
-    title: "Nova Ecosystem",
+    eyebrow: "Progetti",
+    title: "GLITCH",
     description:
       "Un moderno ecosistema di produttività pensato per desktop, mobile e cloud.",
     cards: [
@@ -743,7 +743,7 @@ const it: Dictionary = {
         id: "novamobile",
         emoji: "📱",
         title: "NovaMobile",
-        description: "App companion mobile per l'ecosistema Nova.",
+        description: "App companion mobile per i prodotti dello studio.",
         statusKey: "inProgress",
         statusLabel: "In sviluppo",
       },
@@ -758,8 +758,8 @@ const it: Dictionary = {
     ],
   },
   footer: {
-    brand: "Nova Ecosystem",
-    slogan: "Build. Create. Evolve.",
+    brand: "GLITCH",
+    slogan: "DIGITAL STUDIO · SOFTWARE · INNOVATION",
     description:
       "Il portale ufficiale di una software house moderna — prodotti, Labs, roadmap e community in un unico ecosistema.",
     columns: [
@@ -799,7 +799,7 @@ const it: Dictionary = {
         title: "Supporto",
         links: [
           {
-            label: "Sostieni Nova Ecosystem",
+            label: "Sostieni GLITCH",
             href: contactLinks.paypal,
             external: true,
           },
@@ -838,12 +838,12 @@ const en: Dictionary = {
     download: "Download",
   },
   hero: {
-    badge: "Official Nova Ecosystem Portal",
-    tagline: "Build. Create. Evolve.",
+    badge: "Official GLITCH website",
+    tagline: "DIGITAL STUDIO · SOFTWARE · INNOVATION",
     description:
-      "Nova Ecosystem is a modern software house building products for productivity, mobile, cloud and artificial intelligence. An ecosystem in continuous evolution.",
+      "GLITCH is a modern software house building products for productivity, mobile, cloud and artificial intelligence. An ecosystem in continuous evolution.",
     downloadApps: "Download Center",
-    exploreProducts: "Explore ecosystem",
+    exploreProducts: "Explore projects",
     ecosystem: "NovaDocs · NovaPromo · NovaCloud · NovaMobile · Labs",
   },
   products: {
@@ -874,7 +874,7 @@ const en: Dictionary = {
       {
         id: "novamobile",
         name: "NovaMobile",
-        tagline: "The Nova ecosystem in your pocket.",
+        tagline: "The studio products in your pocket.",
         description:
           "Take Nova everywhere. A modern, fast mobile experience with future cloud integration on the way.",
         features: [
@@ -956,11 +956,11 @@ const en: Dictionary = {
     ],
   },
   novacloud: {
-    eyebrow: "Ecosystem",
+    eyebrow: "Projects",
     title: "NovaCloud",
-    subtitle: "Smart sync for the Nova ecosystem.",
+    subtitle: "Smart sync for the studio products.",
     description:
-      "NovaCloud lets you manage devices, synchronization and connected services across the Nova ecosystem in one integrated experience.",
+      "NovaCloud lets you manage devices, synchronization and connected services across the studio products in one integrated experience.",
     imageAlt: "NovaCloud settings screenshot",
     imageLabel: "NovaCloud — Settings",
     features: [
@@ -1042,7 +1042,7 @@ const en: Dictionary = {
         milestones: [
           {
             id: "website",
-            title: "Nova Ecosystem Portal",
+            title: "GLITCH Portal",
             description: "Official ecosystem website with unified visual identity.",
           },
           {
@@ -1149,7 +1149,7 @@ const en: Dictionary = {
       {
         id: "novamobile",
         name: "NovaMobile",
-        description: "The Nova ecosystem in your pocket.",
+        description: "The studio products in your pocket.",
         platform: "Android · .apk",
         statusKey: "beta",
         statusLabel: "Beta",
@@ -1196,7 +1196,7 @@ const en: Dictionary = {
     eyebrow: "Changelog",
     title: "What's new in Nova",
     description:
-      "We ship continuously. Here are the latest updates across the Nova ecosystem.",
+      "We ship continuously. Here are the latest updates across the studio products.",
     entries: [
       {
         id: "novadocs-108",
@@ -1315,21 +1315,21 @@ const en: Dictionary = {
       {
         id: "facebook",
         label: "Facebook",
-        handle: "Nova Ecosystem",
+        handle: "GLITCH",
         href: contactLinks.facebook,
       },
     ],
   },
   support: {
     eyebrow: "Support",
-    title: "Support Nova Ecosystem",
+    title: "Support GLITCH",
     description:
-      "Nova Ecosystem is an independent project built from scratch. If you enjoy NovaDocs, NovaMobile, NovaBeauty, NovaTK and NovaCloud and want to support future development, consider offering a coffee.",
-    button: "Support Nova Ecosystem",
+      "GLITCH is an independent project built from scratch. If you enjoy NovaDocs, NovaMobile, NovaBeauty, NovaTK and NovaCloud and want to support future development, consider offering a coffee.",
+    button: "Support GLITCH",
   },
   ecosystem: {
-    eyebrow: "Ecosystem",
-    title: "Nova Ecosystem",
+    eyebrow: "Projects",
+    title: "GLITCH",
     description:
       "A modern productivity ecosystem designed for desktop, mobile and cloud.",
     cards: [
@@ -1345,7 +1345,7 @@ const en: Dictionary = {
         id: "novamobile",
         emoji: "📱",
         title: "NovaMobile",
-        description: "Mobile companion app for the Nova ecosystem.",
+        description: "Mobile companion app for the studio products.",
         statusKey: "inProgress",
         statusLabel: "In Development",
       },
@@ -1360,8 +1360,8 @@ const en: Dictionary = {
     ],
   },
   footer: {
-    brand: "Nova Ecosystem",
-    slogan: "Build. Create. Evolve.",
+    brand: "GLITCH",
+    slogan: "DIGITAL STUDIO · SOFTWARE · INNOVATION",
     description:
       "The official portal of a modern software house — products, Labs, roadmap and community in one ecosystem.",
     columns: [
@@ -1401,7 +1401,7 @@ const en: Dictionary = {
         title: "Support",
         links: [
           {
-            label: "Support Nova Ecosystem",
+            label: "Support GLITCH",
             href: contactLinks.paypal,
             external: true,
           },

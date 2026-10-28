@@ -71,8 +71,8 @@ type EcosystemI18n = {
 
 const it: EcosystemI18n = {
   section: {
-    eyebrow: "Ecosistema",
-    title: "NOVA ECOSYSTEM",
+    eyebrow: "Progetti",
+    title: "GLITCH",
     description:
       "Una famiglia di software moderni per produttività, mobile, cloud e intelligenza artificiale. Ogni prodotto nasce con la stessa identità visiva e la stessa visione.",
     viewAll: "Esplora Labs",
@@ -86,13 +86,13 @@ const it: EcosystemI18n = {
     filterAll: "Tutti",
     comingSoonTitle: "Prossimi esperimenti",
     comingSoonDescription:
-      "Nuovi progetti Nova sono già in fase di ideazione. Segui la community per scoprirli per primi.",
+      "Nuovi progetti sono già in fase di ideazione. Segui la community per scoprirli per primi.",
   },
   downloads: {
     eyebrow: "Download Center",
-    title: "Scarica Nova",
+    title: "Download",
     description:
-      "Un unico punto di accesso per tutte le build disponibili dell'ecosistema Nova. Versioni, piattaforme e note di rilascio sempre aggiornate.",
+      "Un unico punto di accesso per tutte le build disponibili dei prodotti dello studio. Versioni, piattaforme e note di rilascio sempre aggiornate.",
     backHome: "Torna alla home",
     version: "Versione",
     platform: "Piattaforma",
@@ -114,7 +114,7 @@ const it: EcosystemI18n = {
     status: "Stato",
     faq: "Domande frequenti",
     backHome: "Torna alla home",
-    exploreEcosystem: "Esplora l'ecosistema",
+    exploreEcosystem: "Esplora i progetti",
   },
   products: {
     novadocs: {
@@ -193,7 +193,7 @@ const it: EcosystemI18n = {
         "Feedback audio reattivo",
         "Prototipo cross-platform",
       ],
-      roadmap: ["Miglioramento latenza", "Integrazione ecosistema Nova"],
+      roadmap: ["Miglioramento latenza", "Integrazione prodotti dello studio"],
       faq: [
         {
           q: "Cos'è Echo-0?",
@@ -209,12 +209,12 @@ const it: EcosystemI18n = {
       name: "Ryuk AI",
       tagline: "Intelligenza artificiale sperimentale.",
       description:
-        "Motore AI sperimentale per assistenza, automazione e strumenti intelligenti nell'ecosistema Nova.",
+        "Motore AI sperimentale per assistenza, automazione e strumenti intelligenti nei prodotti dello studio.",
       statusLabel: "Experimental",
       buttonLabel: "Scopri Ryuk AI",
       features: [
         "Assistente conversazionale",
-        "Integrazione prodotti Nova",
+        "Integrazione prodotti studio",
         "Pipeline AI modulare",
       ],
       roadmap: ["API pubblica", "Modelli specializzati", "Integrazione NovaDocs"],
@@ -225,7 +225,7 @@ const it: EcosystemI18n = {
         },
       ],
       ctaTitle: "Resta aggiornato",
-      ctaDescription: "Ryuk AI sarà integrato progressivamente nei prodotti Nova.",
+      ctaDescription: "Ryuk AI sarà integrato progressivamente nei prodotti dello studio.",
       ctaButton: "Visita Labs",
       screenshotAlt: "Anteprima Ryuk AI",
     },
@@ -233,7 +233,7 @@ const it: EcosystemI18n = {
       name: "NovaCloud",
       tagline: "Sincronizzazione intelligente.",
       description:
-        "Piattaforma cloud per sincronizzazione, dispositivi e servizi connessi all'ecosistema Nova.",
+        "Piattaforma cloud per sincronizzazione, dispositivi e servizi connessi ai prodotti dello studio.",
       statusLabel: "Development",
       buttonLabel: "Scopri NovaCloud",
       features: [
@@ -253,15 +253,15 @@ const it: EcosystemI18n = {
         },
       ],
       ctaTitle: "NovaCloud in arrivo",
-      ctaDescription: "La piattaforma cloud dell'ecosistema Nova sta prendendo forma.",
+      ctaDescription: "La piattaforma cloud dei prodotti dello studio sta prendendo forma.",
       ctaButton: "Scopri di più",
       screenshotAlt: "Schermata NovaCloud",
     },
     novamobile: {
       name: "NovaMobile",
-      tagline: "L'ecosistema Nova in tasca.",
+      tagline: "I prodotti dello studio in tasca.",
       description:
-        "App companion mobile per accedere all'ecosistema Nova ovunque, con integrazione cloud in evoluzione.",
+        "App companion mobile per accedere ai prodotti dello studio ovunque, con integrazione cloud in evoluzione.",
       statusLabel: "Beta",
       buttonLabel: "Scopri NovaMobile",
       features: [
@@ -345,8 +345,8 @@ const it: EcosystemI18n = {
 
 const en: EcosystemI18n = {
   section: {
-    eyebrow: "Ecosystem",
-    title: "NOVA ECOSYSTEM",
+    eyebrow: "Projects",
+    title: "GLITCH",
     description:
       "A family of modern software for productivity, mobile, cloud and artificial intelligence. Every product shares the same visual identity and vision.",
     viewAll: "Explore Labs",
@@ -360,13 +360,13 @@ const en: EcosystemI18n = {
     filterAll: "All",
     comingSoonTitle: "Upcoming experiments",
     comingSoonDescription:
-      "New Nova projects are already in ideation. Follow the community to discover them first.",
+      "New projects are already in ideation. Follow the community to discover them first.",
   },
   downloads: {
     eyebrow: "Download Center",
-    title: "Download Nova",
+    title: "Downloads",
     description:
-      "A single access point for all available Nova ecosystem builds. Versions, platforms and release notes always up to date.",
+      "A single access point for all available studio products builds. Versions, platforms and release notes always up to date.",
     backHome: "Back to home",
     version: "Version",
     platform: "Platform",
@@ -388,7 +388,7 @@ const en: EcosystemI18n = {
     status: "Status",
     faq: "FAQ",
     backHome: "Back to home",
-    exploreEcosystem: "Explore ecosystem",
+    exploreEcosystem: "Explore projects",
   },
   products: {
     novadocs: {
@@ -467,7 +467,7 @@ const en: EcosystemI18n = {
         "Reactive audio feedback",
         "Cross-platform prototype",
       ],
-      roadmap: ["Latency improvements", "Nova ecosystem integration"],
+      roadmap: ["Latency improvements", "studio products integration"],
       faq: [
         {
           q: "What is Echo-0?",
@@ -483,7 +483,7 @@ const en: EcosystemI18n = {
       name: "Ryuk AI",
       tagline: "Experimental artificial intelligence.",
       description:
-        "Experimental AI engine for assistance, automation and intelligent tools across the Nova ecosystem.",
+        "Experimental AI engine for assistance, automation and intelligent tools across the studio products.",
       statusLabel: "Experimental",
       buttonLabel: "Discover Ryuk AI",
       features: [
@@ -507,7 +507,7 @@ const en: EcosystemI18n = {
       name: "NovaCloud",
       tagline: "Smart synchronization.",
       description:
-        "Cloud platform for synchronization, devices and connected services across the Nova ecosystem.",
+        "Cloud platform for synchronization, devices and connected services across the studio products.",
       statusLabel: "Development",
       buttonLabel: "Discover NovaCloud",
       features: [
@@ -523,15 +523,15 @@ const en: EcosystemI18n = {
         },
       ],
       ctaTitle: "NovaCloud coming soon",
-      ctaDescription: "The Nova ecosystem cloud platform is taking shape.",
+      ctaDescription: "The studio products cloud platform is taking shape.",
       ctaButton: "Learn more",
       screenshotAlt: "NovaCloud screenshot",
     },
     novamobile: {
       name: "NovaMobile",
-      tagline: "The Nova ecosystem in your pocket.",
+      tagline: "The studio products in your pocket.",
       description:
-        "Mobile companion app to access the Nova ecosystem anywhere, with evolving cloud integration.",
+        "Mobile companion app to access the studio products anywhere, with evolving cloud integration.",
       statusLabel: "Beta",
       buttonLabel: "Discover NovaMobile",
       features: [

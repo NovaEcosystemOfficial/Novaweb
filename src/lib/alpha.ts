@@ -90,7 +90,7 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
       titleLead: "Nova Mobile",
       titleAccent: "Alpha",
       description:
-        "L'ecosistema Nova, ora su Android. Prova la primissima build di NovaMobile e aiutaci a definire cosa verrà dopo. Questa è una alpha iniziale: aspettati qualche imperfezione, aggiornamenti frequenti e tante nuove funzionalità in arrivo.",
+        "I prodotti dello studio, ora su Android. Prova la primissima build di NovaMobile e aiutaci a definire cosa verrà dopo. Questa è una alpha iniziale: aspettati qualche imperfezione, aggiornamenti frequenti e tante nuove funzionalità in arrivo.",
       downloadApk: "Scarica APK",
       joinDiscord: "Entra in Discord",
       versionChip: "v0.1 Alpha",
@@ -178,7 +178,7 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
       titleLead: "Nova Mobile",
       titleAccent: "Alpha",
       description:
-        "The Nova ecosystem, now on Android. Try the earliest build of NovaMobile and help shape what comes next. This is an early alpha — expect rough edges, frequent updates and lots of new features on the way.",
+        "The studio products, now on Android. Try the earliest build of NovaMobile and help shape what comes next. This is an early alpha — expect rough edges, frequent updates and lots of new features on the way.",
       downloadApk: "Download APK",
       joinDiscord: "Join Discord",
       versionChip: "v0.1 Alpha",

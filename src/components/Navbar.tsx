@@ -3,15 +3,17 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Sparkles, Download } from "lucide-react";
-import { BRAND } from "@/lib/data";
+import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/context/LanguageProvider";
+import { getStudioCopy } from "@/lib/studio-i18n";
 import { Button } from "./ui/Button";
+import { GlitchLogo } from "./ui/GlitchLogo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
-  const { t } = useLanguage();
+  const { lang } = useLanguage();
+  const copy = getStudioCopy(lang);
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -24,37 +26,30 @@ export function Navbar() {
 
   return (
     <motion.header
-      initial={{ y: -80, opacity: 0 }}
+      initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
       className="fixed inset-x-0 top-0 z-50"
     >
       <div
         className={cn(
-          "transition-all duration-300",
+          "transition-colors duration-300",
           scrolled
-            ? "border-b border-white/10 bg-nova-bg/70 backdrop-blur-xl"
-            : "border-b border-transparent bg-transparent"
+            ? "border-b border-white/10 bg-nova-bg/90 backdrop-blur-md"
+            : "border-b border-transparent bg-transparent",
         )}
       >
-        <nav className="container-nova flex h-16 items-center justify-between sm:h-20">
-          {/* Logo */}
-          <Link href="/" className="group flex items-center gap-2.5">
-            <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-nova-gradient shadow-glow">
-              <Sparkles className="h-5 w-5 text-white" />
-            </span>
-            <span className="text-lg font-bold tracking-tight text-white">
-              {BRAND}
-            </span>
+        <nav className="container-nova flex h-16 items-center justify-between sm:h-18">
+          <Link href="/" className="group" aria-label="GLITCH home">
+            <GlitchLogo size="sm" />
           </Link>
 
-          {/* Desktop links */}
           <ul className="hidden items-center gap-1 md:flex">
-            {t.nav.links.map((link) => (
+            {copy.nav.links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="relative rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-colors hover:text-white"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-zinc-400 transition-colors hover:text-white"
                 >
                   {link.label}
                 </Link>
@@ -62,19 +57,16 @@ export function Navbar() {
             ))}
           </ul>
 
-          {/* Desktop CTA + language */}
           <div className="hidden items-center gap-3 md:flex">
             <LanguageSwitcher />
-            <Button href="/downloads" size="sm" variant="primary">
-              <Download className="h-4 w-4" />
-              {t.nav.download}
+            <Button href="#projects" size="sm" variant="secondary">
+              {copy.nav.projects}
             </Button>
           </div>
 
-          {/* Mobile toggle */}
           <button
             onClick={() => setOpen((v) => !v)}
-            className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-white md:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-md border border-white/10 bg-white/[0.03] text-white md:hidden"
             aria-label="Toggle menu"
             aria-expanded={open}
           >
@@ -83,23 +75,22 @@ export function Navbar() {
         </nav>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25 }}
-            className="overflow-hidden border-b border-white/10 bg-nova-bg/95 backdrop-blur-xl md:hidden"
+            transition={{ duration: 0.2 }}
+            className="overflow-hidden border-b border-white/10 bg-nova-bg md:hidden"
           >
             <ul className="container-nova flex flex-col gap-1 py-4">
-              {t.nav.links.map((link) => (
+              {copy.nav.links.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-xl px-4 py-3 text-base font-medium text-slate-300 transition-colors hover:bg-white/[0.05] hover:text-white"
+                    className="block rounded-md px-4 py-3 text-base font-medium text-zinc-300 transition-colors hover:bg-white/[0.04] hover:text-white"
                   >
                     {link.label}
                   </Link>
@@ -110,12 +101,12 @@ export function Navbar() {
               </li>
               <li className="px-1 pt-2">
                 <Button
-                  href="/downloads"
+                  href="#projects"
                   className="w-full"
+                  variant="secondary"
                   onClick={() => setOpen(false)}
                 >
-                  <Download className="h-4 w-4" />
-                  {t.hero.downloadApps}
+                  {copy.nav.projects}
                 </Button>
               </li>
             </ul>

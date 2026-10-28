@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { Sparkles } from "lucide-react";
 import { contactLinks } from "@/lib/data";
 import { useLanguage } from "@/context/LanguageProvider";
+import { getStudioCopy } from "@/lib/studio-i18n";
+import { GlitchLogo } from "./ui/GlitchLogo";
 import {
   InstagramIcon,
   TikTokIcon,
@@ -30,7 +31,7 @@ function FooterLinkItem({
   external?: boolean;
 }) {
   const className =
-    "text-sm text-slate-400 transition-colors hover:text-white break-words";
+    "text-sm text-zinc-400 transition-colors hover:text-white break-words";
 
   if (external) {
     return (
@@ -61,30 +62,23 @@ function FooterLinkItem({
 }
 
 export function Footer() {
-  const { t } = useLanguage();
+  const { lang } = useLanguage();
+  const copy = getStudioCopy(lang).footer;
 
   return (
     <footer className="relative border-t border-white/10">
-      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-nova-purple/40 to-transparent" />
-
       <div className="container-nova py-14">
-        {/* Brand */}
         <div className="max-w-md">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-nova-gradient shadow-glow">
-              <Sparkles className="h-5 w-5 text-white" />
-            </span>
-            <span className="text-lg font-bold text-white">
-              {t.footer.brand}
-            </span>
+          <Link href="/" aria-label="GLITCH home">
+            <GlitchLogo size="md" />
           </Link>
-          <p className="mt-4 text-base font-semibold text-gradient">
-            {t.footer.slogan}
+          <p className="mt-4 text-xs font-medium uppercase tracking-[0.22em] text-zinc-500">
+            {copy.slogan}
           </p>
-          <p className="mt-3 text-sm leading-relaxed text-slate-400">
-            {t.footer.description}
+          <p className="mt-3 text-sm leading-relaxed text-zinc-400">
+            {copy.description}
           </p>
-          <div className="mt-6 flex gap-3">
+          <div className="mt-6 flex gap-2">
             {socialIcons.map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
@@ -92,7 +86,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-slate-400 transition-all hover:-translate-y-0.5 hover:border-white/20 hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-md border border-white/10 bg-white/[0.03] text-zinc-400 transition-colors hover:border-white/20 hover:text-white"
               >
                 <Icon className="h-4.5 w-4.5" />
               </a>
@@ -100,11 +94,10 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Link columns */}
-        <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
-          {t.footer.columns.map((column) => (
+        <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-4">
+          {copy.columns.map((column) => (
             <div key={column.title}>
-              <h4 className="text-sm font-semibold uppercase tracking-wider text-white">
+              <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
                 {column.title}
               </h4>
               <ul className="mt-4 space-y-3">
@@ -122,11 +115,11 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
-          <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} {t.footer.brand}. {t.footer.rights}
+        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center">
+          <p className="text-sm text-zinc-500">
+            © {new Date().getFullYear()} {copy.brand}. {copy.rights}
           </p>
-          <p className="text-sm text-slate-500">{t.footer.builtWith}</p>
+          <p className="text-sm text-zinc-600">{copy.builtWith}</p>
         </div>
       </div>
     </footer>

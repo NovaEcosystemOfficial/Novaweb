@@ -2,15 +2,15 @@ import type { StatusKey } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 const styles: Record<StatusKey, string> = {
-  available: "bg-emerald-500/15 text-emerald-300 ring-emerald-500/30",
-  completed: "bg-emerald-500/15 text-emerald-300 ring-emerald-500/30",
-  alpha: "bg-orange-500/15 text-orange-300 ring-orange-500/30",
-  beta: "bg-amber-500/15 text-amber-300 ring-amber-500/30",
-  inProgress: "bg-blue-500/15 text-blue-300 ring-blue-500/30",
-  developing: "bg-pink-500/15 text-pink-300 ring-purple-500/30",
-  comingSoon: "bg-violet-500/15 text-violet-300 ring-violet-500/30",
-  experimental: "bg-fuchsia-500/15 text-fuchsia-300 ring-fuchsia-500/30",
-  planned: "bg-violet-500/15 text-violet-300 ring-violet-500/30",
+  available: "bg-emerald-500/10 text-emerald-300 ring-emerald-500/25",
+  completed: "bg-emerald-500/10 text-emerald-300 ring-emerald-500/25",
+  alpha: "bg-zinc-500/15 text-zinc-300 ring-zinc-400/25",
+  beta: "bg-zinc-500/15 text-zinc-200 ring-zinc-400/30",
+  inProgress: "bg-zinc-500/15 text-zinc-300 ring-zinc-400/25",
+  developing: "bg-zinc-500/15 text-zinc-300 ring-zinc-400/25",
+  comingSoon: "bg-zinc-500/10 text-zinc-400 ring-zinc-500/20",
+  experimental: "bg-zinc-500/15 text-zinc-300 ring-zinc-400/25",
+  planned: "bg-zinc-500/10 text-zinc-400 ring-zinc-500/20",
 };
 
 export function StatusBadge({

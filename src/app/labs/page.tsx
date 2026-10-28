@@ -4,7 +4,7 @@ import { LabsPageView } from "@/components/labs/LabsPageView";
 export const metadata: Metadata = {
   title: "Nova Labs",
   description:
-    "Explore Nova Labs — Alpha, Beta and Experimental projects from the Nova Ecosystem software house.",
+    "Explore Nova Labs — Alpha, Beta and Experimental projects from the GLITCH software house.",
   alternates: { canonical: "/labs" },
 };
 

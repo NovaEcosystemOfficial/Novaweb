@@ -1,92 +1,70 @@
-# NOVA — Build. Create. Evolve.
+# GLITCH — Digital Studio · Software · Innovation
 
-A premium, production-ready marketing website for **NOVA**, a modern software
-ecosystem focused on productivity, mobile applications, and future digital
-tools.
+Official website for **GLITCH**, a digital studio that designs and builds
+software, applications and digital solutions.
 
-Built with a high-end SaaS aesthetic inspired by Linear, Notion and Apple —
-dark theme, glassmorphism, blue→purple gradients and smooth Framer Motion
-animations.
+Product names such as NovaDocs and NovaMobile remain the official names of
+individual software projects.
 
-## Tech Stack
+## Tech stack
 
 - **Next.js 15** (App Router)
 - **TypeScript** (strict)
 - **Tailwind CSS** 3
-- **Framer Motion** (animations)
-- **Lucide React** (icons)
-- Fully responsive (mobile-first) & SEO optimized
+- **Framer Motion**
+- **Firebase** (download analytics)
+- **Vercel Analytics**
+- Italian / English i18n
 
-## Getting Started
-
-Install dependencies (already done if you used the setup script):
+## Getting started
 
 ```bash
 npm install
-```
-
-Run the development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Other commands
+Open [http://localhost:3000](http://localhost:3000).
 
 ```bash
-npm run build   # Create an optimized production build
-npm run start   # Run the production server (after build)
-npm run lint    # Lint the project
+npm run build   # production build
+npm run start   # serve production build
+npm run lint    # lint
 ```
 
-## Project Structure
+## Production domain (required before release)
 
-```
-novaweb/
-├── public/                     # Static assets
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx          # Root layout, fonts & SEO metadata
-│   │   ├── page.tsx            # Home page (composes all sections)
-│   │   ├── globals.css         # Tailwind layers + design tokens
-│   │   ├── loading.tsx         # Route-level loading UI
-│   │   ├── error.tsx           # Error boundary UI
-│   │   ├── not-found.tsx       # 404 page
-│   │   ├── robots.ts           # robots.txt (generated)
-│   │   └── sitemap.ts          # sitemap.xml (generated)
-│   ├── components/
-│   │   ├── Navbar.tsx          # Sticky navbar (transparent → glass on scroll)
-│   │   ├── Hero.tsx            # Hero with laptop + phone mockups
-│   │   ├── Products.tsx        # NovaDocs & NovaMobile product cards
-│   │   ├── Features.tsx        # Fast / Modern / Reliable / Evolving
-│   │   ├── Roadmap.tsx         # Timeline: Completed / In Progress / Planned
-│   │   ├── Downloads.tsx       # Download center cards
-│   │   ├── Changelog.tsx       # Release notes
-│   │   ├── Contact.tsx         # Email, GitHub & social links
-│   │   ├── Footer.tsx          # Branding, quick links & socials
-│   │   └── ui/                 # Reusable building blocks
-│   │       ├── Button.tsx
-│   │       ├── GlassCard.tsx
-│   │       ├── Reveal.tsx
-│   │       ├── SectionHeading.tsx
-│   │       ├── StatusBadge.tsx
-│   │       ├── LaptopMockup.tsx
-│   │       └── PhoneMockup.tsx
-│   └── lib/
-│       ├── data.ts             # All site content (single source of truth)
-│       └── utils.ts            # cn() class-name helper
-├── tailwind.config.ts          # Theme, gradients, animations
-├── next.config.mjs
-└── tsconfig.json
+SEO metadata, sitemap, robots and JSON-LD read from `NEXT_PUBLIC_SITE_URL`
+via `src/lib/site.ts`.
+
+If the variable is unset, the site falls back to the placeholder
+`https://nova.example.com`. **Do not ship with the placeholder.**
+
+Set the confirmed GLITCH domain in the deployment environment:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-confirmed-domain.example
 ```
 
-## Customization
+Also configure Firebase keys from `.env.example` as needed.
 
-All content (products, features, roadmap, downloads, changelog, contact) lives
-in `src/lib/data.ts`. Edit that single file to update the site copy without
-touching components.
+## Brand assets
 
-Brand colors, gradients and animations are defined in `tailwind.config.ts`
-under the `nova` color palette and `backgroundImage` / `keyframes` keys.
+- Primary logo: `public/images/logo.png`
+- Replace with the master GLITCH artwork when a higher-resolution official
+  export is available.
+
+## Project structure (high level)
+
+```
+src/
+  app/                 # routes, metadata, sitemap, robots
+  components/          # studio homepage + product/legal shells
+  context/             # language provider
+  lib/                 # brand, studio copy, ecosystem/product data, legal
+public/images/         # logo and product screenshots
+```
+
+Homepage sections: Hero → About → Services → Projects → Process → Contact.
+
+Product downloads, Labs, legal pages and Firebase download tracking are
+preserved.

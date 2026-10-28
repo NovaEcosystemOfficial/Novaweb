@@ -2,7 +2,7 @@ import { getApp, getApps, initializeApp, type FirebaseApp } from "firebase/app";
 import { getFirestore, type Firestore } from "firebase/firestore";
 
 /**
- * Nova Ecosystem Firebase project (NovaCloud).
+ * GLITCH Firebase project (NovaCloud).
  * Same project used by NovaDocs NovaDrop / Firebase Storage.
  * Values can be overridden via NEXT_PUBLIC_FIREBASE_* env vars.
  */
