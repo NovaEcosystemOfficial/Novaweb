@@ -2,29 +2,29 @@ import type { Metadata } from "next";
 import { NovaMobileAlphaPage } from "@/components/alpha/NovaMobileAlphaPage";
 
 export const metadata: Metadata = {
-  title: "Nova Mobile Alpha",
+  title: "GTC Mobile Alpha",
   description:
-    "Download the Nova Mobile Alpha APK for Android, follow the step-by-step installation guide and help shape the future of NovaMobile.",
+    "Download the GTC Mobile Alpha APK for Android, follow the step-by-step installation guide and help shape the future of GTC Mobile.",
   keywords: [
-    "Nova Mobile",
-    "NovaMobile Alpha",
+    "GTC Mobile",
+    "GTC Mobile Alpha",
     "GLITCH",
     "Android APK",
-    "Nova Mobile download",
-    "Nova Mobile beta",
+    "GTC Mobile download",
+    "GTC Mobile beta",
   ],
   openGraph: {
     type: "website",
-    title: "Nova Mobile Alpha · GLITCH",
+    title: "GTC Mobile Alpha · GLITCH",
     description:
-      "Download the Nova Mobile Alpha APK for Android and help shape the future of NovaMobile.",
+      "Download the GTC Mobile Alpha APK for Android and help shape the future of GTC Mobile.",
     siteName: "GLITCH",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nova Mobile Alpha · GLITCH",
+    title: "GTC Mobile Alpha · GLITCH",
     description:
-      "Download the Nova Mobile Alpha APK for Android and help shape the future of NovaMobile.",
+      "Download the GTC Mobile Alpha APK for Android and help shape the future of GTC Mobile.",
   },
   alternates: {
     canonical: "/nova-mobile-alpha",

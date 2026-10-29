@@ -237,7 +237,7 @@ const it: Dictionary = {
       "GLITCH è una software house moderna che costruisce prodotti per produttività, mobile, cloud e intelligenza artificiale. Un ecosistema in continua evoluzione.",
     downloadApps: "Centro download",
     exploreProducts: "Esplora i progetti",
-    ecosystem: "NovaDocs · NovaPromo · NovaCloud · NovaMobile · Labs",
+    ecosystem: "GTC Docs · GTC Promo · GTC Cloud · GTC Mobile · Labs",
   },
   products: {
     eyebrow: "Prodotti",
@@ -251,7 +251,7 @@ const it: Dictionary = {
     items: [
       {
         id: "novadocs",
-        name: "NovaDocs",
+        name: "GTC Docs",
         tagline: "Editor di documenti desktop moderno.",
         description:
           "Un editor di documenti pulito, veloce e in costante miglioramento, pensato per la concentrazione e la fluidità sul desktop.",
@@ -266,7 +266,7 @@ const it: Dictionary = {
       },
       {
         id: "novamobile",
-        name: "NovaMobile",
+        name: "GTC Mobile",
         tagline: "I prodotti dello studio in tasca.",
         description:
           "Porta Nova ovunque. Un'esperienza mobile moderna e veloce, con l'integrazione cloud in arrivo.",
@@ -281,7 +281,7 @@ const it: Dictionary = {
       },
       {
         id: "novatk",
-        name: "NovaTK",
+        name: "GTC TK",
         tagline: "Fitness tracker personale per iPhone.",
         description:
           "Fitness tracker personale per iPhone sviluppato con SwiftUI e HealthKit. Pensato per allenamenti, progressi fisici e monitoraggio attività.",
@@ -302,7 +302,7 @@ const it: Dictionary = {
       },
       {
         id: "novabeauty",
-        name: "NovaBeauty",
+        name: "GTC Beauty",
         tagline: "Gestionale per centri estetici e beauty.",
         description:
           "Gestionale professionale per centri estetici, parrucchieri e attività beauty.",
@@ -320,12 +320,12 @@ const it: Dictionary = {
   },
   showcase: {
     eyebrow: "Prodotto in evidenza",
-    name: "NovaDocs",
+    name: "GTC Docs",
     description:
-      "NovaDocs è un editor documenti moderno con assistente IA locale, integrazione cloud e strumenti progettati per massimizzare la produttività.",
+      "GTC Docs è un editor documenti moderno con assistente IA locale, integrazione cloud e strumenti progettati per massimizzare la produttività.",
     badges: [
       { id: "ai", label: "Assistente IA Locale" },
-      { id: "cloud", label: "NovaCloud" },
+      { id: "cloud", label: "GTC Cloud" },
       { id: "offline", label: "Offline First" },
       { id: "windows", label: "Windows Desktop" },
     ],
@@ -335,13 +335,13 @@ const it: Dictionary = {
     alternativesHeading: "Download alternativi",
     storeRecommended: "Microsoft Store (Consigliato)",
     exeInstaller: "Installer EXE",
-    imageAlt: "Schermata dell'editor NovaDocs",
-    imageLabel: "NovaDocs — Editor",
-    capabilitiesHeading: "Tutto ciò che NovaDocs sa fare",
+    imageAlt: "Schermata dell'editor GTC Docs",
+    imageLabel: "GTC Docs — Editor",
+    capabilitiesHeading: "Tutto ciò che GTC Docs sa fare",
     capabilities: [
       { id: "editor", label: "Editor moderno" },
       { id: "ai", label: "Assistente IA integrato" },
-      { id: "cloud", label: "NovaCloud" },
+      { id: "cloud", label: "GTC Cloud" },
       { id: "import", label: "Import da telefono" },
       { id: "darktheme", label: "Tema scuro" },
       { id: "updates", label: "Aggiornamenti automatici" },
@@ -350,12 +350,12 @@ const it: Dictionary = {
   },
   novacloud: {
     eyebrow: "Progetti",
-    title: "NovaCloud",
+    title: "GTC Cloud",
     subtitle: "Sincronizzazione intelligente per i prodotti dello studio.",
     description:
-      "NovaCloud permette di gestire dispositivi, sincronizzazione e servizi collegati ai prodotti dello studio in un'unica esperienza integrata.",
-    imageAlt: "Schermata delle impostazioni di NovaCloud",
-    imageLabel: "NovaCloud — Impostazioni",
+      "GTC Cloud permette di gestire dispositivi, sincronizzazione e servizi collegati ai prodotti dello studio in un'unica esperienza integrata.",
+    imageAlt: "Schermata delle impostazioni di GTC Cloud",
+    imageLabel: "GTC Cloud — Impostazioni",
     features: [
       {
         id: "sync",
@@ -440,13 +440,13 @@ const it: Dictionary = {
           },
           {
             id: "novadocs",
-            title: "NovaDocs v1.0.8",
-            description: "Editor documenti desktop stabile con NovaCloud, NovaDrop e AI Resume Builder.",
+            title: "GTC Docs v1.0.8",
+            description: "Editor documenti desktop stabile con GTC Cloud, GTC Drop e AI Resume Builder.",
           },
           {
             id: "legal",
             title: "Privacy & Legal",
-            description: "Pagine legali, privacy policy e conformità Meta per NovaPromo.",
+            description: "Pagine legali, privacy policy e conformità Meta per GTC Promo.",
           },
         ],
       },
@@ -456,27 +456,27 @@ const it: Dictionary = {
         milestones: [
           {
             id: "novapromo",
-            title: "NovaPromo Beta",
+            title: "GTC Promo Beta",
             description: "Piattaforma promozioni e social commerce in fase di test.",
           },
           {
             id: "novamobile",
-            title: "NovaMobile Beta",
+            title: "GTC Mobile Beta",
             description: "App companion Android con build Alpha pubblica.",
           },
           {
             id: "novatk",
-            title: "NovaTK Alpha",
+            title: "GTC TK Alpha",
             description: "Fitness tracker iOS con HealthKit e widget.",
           },
           {
             id: "novabeauty",
-            title: "NovaBeauty Alpha",
+            title: "GTC Beauty Alpha",
             description: "Gestionale beauty per centri estetici e saloni.",
           },
           {
             id: "novacloud",
-            title: "NovaCloud",
+            title: "GTC Cloud",
             description: "Piattaforma cloud per sync e servizi connessi.",
           },
         ],
@@ -488,7 +488,7 @@ const it: Dictionary = {
           {
             id: "echo-0",
             title: "Echo-0",
-            description: "Esperimento audio e interazione immersiva dal laboratorio Nova.",
+            description: "Esperimento audio e interazione immersiva dal laboratorio GTC.",
           },
           {
             id: "ryuk-ai",
@@ -497,7 +497,7 @@ const it: Dictionary = {
           },
           {
             id: "nova-account",
-            title: "Nova Account",
+            title: "GTC Account",
             description: "Account unificato per tutti i prodotti dell'ecosistema.",
           },
         ],
@@ -513,7 +513,7 @@ const it: Dictionary = {
     moreHeading: "Altre applicazioni",
     featured: {
       id: "novadocs",
-      name: "NovaDocs",
+      name: "GTC Docs",
       description:
         "Moderno editor documenti desktop progettato per produttività, semplicità e prestazioni.",
       version: "v1.0.8",
@@ -541,7 +541,7 @@ const it: Dictionary = {
     items: [
       {
         id: "novamobile",
-        name: "NovaMobile",
+        name: "GTC Mobile",
         description: "I prodotti dello studio in tasca.",
         platform: "Android · .apk",
         statusKey: "beta",
@@ -550,7 +550,7 @@ const it: Dictionary = {
       },
       {
         id: "novatk",
-        name: "NovaTK",
+        name: "GTC TK",
         description:
           "Fitness tracker personale per iPhone con SwiftUI e HealthKit.",
         platform: "iOS",
@@ -563,7 +563,7 @@ const it: Dictionary = {
       },
       {
         id: "novabeauty",
-        name: "NovaBeauty",
+        name: "GTC Beauty",
         description:
           "Gestionale professionale per centri estetici, parrucchieri e attività beauty.",
         platform: "iOS",
@@ -593,22 +593,22 @@ const it: Dictionary = {
     entries: [
       {
         id: "novadocs-108",
-        product: "NovaDocs",
+        product: "GTC Docs",
         version: "v1.0.8",
         date: "Giugno 2026",
         changes: [
-          "NovaDrop completamente operativo",
+          "GTC Drop completamente operativo",
           "Trasferimento file tramite QR Code",
           "Correzione import da Firebase Storage",
           "Risolto errore CORS su download remoti",
-          "Migliorata sincronizzazione NovaCloud",
+          "Migliorata sincronizzazione GTC Cloud",
           "Migliorati log diagnostici",
           "Stabilità generale aumentata",
         ],
       },
       {
         id: "novadocs-107",
-        product: "NovaDocs",
+        product: "GTC Docs",
         version: "v1.0.7",
         date: "Giugno 2026",
         changes: [
@@ -616,14 +616,14 @@ const it: Dictionary = {
           "5 template professionali per curriculum",
           "Esportazione PDF",
           "Esportazione DOCX",
-          "Miglioramenti a NovaCloud",
-          "Miglioramenti a NovaDrop",
+          "Miglioramenti a GTC Cloud",
+          "Miglioramenti a GTC Drop",
           "Correzioni e ottimizzazioni generali",
         ],
       },
       {
         id: "novadocs",
-        product: "NovaDocs",
+        product: "GTC Docs",
         version: "v1.0.6",
         date: "Maggio 2026",
         changes: [
@@ -634,7 +634,7 @@ const it: Dictionary = {
       },
       {
         id: "novamobile",
-        product: "NovaMobile",
+        product: "GTC Mobile",
         version: "Beta",
         date: "Maggio 2026",
         changes: [
@@ -682,7 +682,7 @@ const it: Dictionary = {
     eyebrow: "Community",
     title: "Unisciti alla community Nova",
     description:
-      "Segui lo sviluppo di NovaDocs, NovaPromo, NovaMobile, NovaTK, NovaBeauty e NovaCloud. Condividi idee, segnala bug e aiutaci a plasmare il futuro dell'ecosistema.",
+      "Segui lo sviluppo di GTC Docs, GTC Promo, GTC Mobile, GTC TK, GTC Beauty e GTC Cloud. Condividi idee, segnala bug e aiutaci a plasmare il futuro dell'ecosistema.",
     comingSoonLabel: "In arrivo",
     socials: [
       {
@@ -721,7 +721,7 @@ const it: Dictionary = {
     eyebrow: "Supporto",
     title: "Sostieni GLITCH",
     description:
-      "GLITCH è un progetto indipendente costruito da zero. Se ti piacciono NovaDocs, NovaMobile, NovaBeauty, NovaTK e NovaCloud e vuoi sostenere lo sviluppo futuro, offrici un caffè.",
+      "GLITCH è un progetto indipendente costruito da zero. Se ti piacciono GTC Docs, GTC Mobile, GTC Beauty, GTC TK e GTC Cloud e vuoi sostenere lo sviluppo futuro, offrici un caffè.",
     button: "Sostieni GLITCH",
   },
   ecosystem: {
@@ -733,7 +733,7 @@ const it: Dictionary = {
       {
         id: "novadocs",
         emoji: "📄",
-        title: "NovaDocs",
+        title: "GTC Docs",
         description:
           "Editor di documenti moderno per produttività e organizzazione.",
         statusKey: "available",
@@ -742,7 +742,7 @@ const it: Dictionary = {
       {
         id: "novamobile",
         emoji: "📱",
-        title: "NovaMobile",
+        title: "GTC Mobile",
         description: "App companion mobile per i prodotti dello studio.",
         statusKey: "inProgress",
         statusLabel: "In sviluppo",
@@ -750,7 +750,7 @@ const it: Dictionary = {
       {
         id: "novacloud",
         emoji: "☁️",
-        title: "NovaCloud",
+        title: "GTC Cloud",
         description: "Piattaforma cloud per sincronizzazione e archiviazione.",
         statusKey: "comingSoon",
         statusLabel: "Prossimamente",
@@ -777,12 +777,13 @@ const it: Dictionary = {
       {
         title: "Prodotti",
         links: [
-          { label: "NovaDocs", href: "/products/novadocs" },
-          { label: "NovaPromo", href: "/products/novapromo" },
-          { label: "NovaMobile", href: "/products/novamobile" },
-          { label: "NovaCloud", href: "/products/novacloud" },
-          { label: "NovaTK", href: "/products/novatk" },
-          { label: "NovaBeauty", href: "/products/novabeauty" },
+          { label: "GTC Docs", href: "/products/novadocs" },
+          { label: "GTC Mobile", href: "/products/novamobile" },
+          { label: "GTC Smile", href: "/products/novasmile" },
+          { label: "GTC Promo", href: "/products/novapromo" },
+          { label: "GTC Cloud", href: "/products/novacloud" },
+          { label: "GTC TK", href: "/products/novatk" },
+          { label: "GTC Beauty", href: "/products/novabeauty" },
         ],
       },
       {
@@ -844,7 +845,7 @@ const en: Dictionary = {
       "GLITCH is a modern software house building products for productivity, mobile, cloud and artificial intelligence. An ecosystem in continuous evolution.",
     downloadApps: "Download Center",
     exploreProducts: "Explore projects",
-    ecosystem: "NovaDocs · NovaPromo · NovaCloud · NovaMobile · Labs",
+    ecosystem: "GTC Docs · GTC Promo · GTC Cloud · GTC Mobile · Labs",
   },
   products: {
     eyebrow: "Products",
@@ -858,7 +859,7 @@ const en: Dictionary = {
     items: [
       {
         id: "novadocs",
-        name: "NovaDocs",
+        name: "GTC Docs",
         tagline: "Modern desktop document editor.",
         description:
           "A clean, fast and continuously improving document editor built for focus and flow on the desktop.",
@@ -873,7 +874,7 @@ const en: Dictionary = {
       },
       {
         id: "novamobile",
-        name: "NovaMobile",
+        name: "GTC Mobile",
         tagline: "The studio products in your pocket.",
         description:
           "Take Nova everywhere. A modern, fast mobile experience with future cloud integration on the way.",
@@ -888,7 +889,7 @@ const en: Dictionary = {
       },
       {
         id: "novatk",
-        name: "NovaTK",
+        name: "GTC TK",
         tagline: "Personal fitness tracker for iPhone.",
         description:
           "Personal fitness tracker for iPhone built with SwiftUI and HealthKit. Designed for workouts, physical progress and activity monitoring.",
@@ -909,7 +910,7 @@ const en: Dictionary = {
       },
       {
         id: "novabeauty",
-        name: "NovaBeauty",
+        name: "GTC Beauty",
         tagline: "Management app for beauty salons.",
         description:
           "Professional management software for beauty centers, hair salons and wellness businesses.",
@@ -927,12 +928,12 @@ const en: Dictionary = {
   },
   showcase: {
     eyebrow: "Featured product",
-    name: "NovaDocs",
+    name: "GTC Docs",
     description:
-      "NovaDocs is a modern document editor with a local AI assistant, cloud integration and tools designed to maximize your productivity.",
+      "GTC Docs is a modern document editor with a local AI assistant, cloud integration and tools designed to maximize your productivity.",
     badges: [
       { id: "ai", label: "Local AI Assistant" },
-      { id: "cloud", label: "NovaCloud" },
+      { id: "cloud", label: "GTC Cloud" },
       { id: "offline", label: "Offline First" },
       { id: "windows", label: "Windows Desktop" },
     ],
@@ -942,13 +943,13 @@ const en: Dictionary = {
     alternativesHeading: "Alternative downloads",
     storeRecommended: "Microsoft Store (Recommended)",
     exeInstaller: "EXE Installer",
-    imageAlt: "NovaDocs editor screenshot",
-    imageLabel: "NovaDocs — Editor",
-    capabilitiesHeading: "Everything NovaDocs can do",
+    imageAlt: "GTC Docs editor screenshot",
+    imageLabel: "GTC Docs — Editor",
+    capabilitiesHeading: "Everything GTC Docs can do",
     capabilities: [
       { id: "editor", label: "Modern editor" },
       { id: "ai", label: "Built-in AI assistant" },
-      { id: "cloud", label: "NovaCloud" },
+      { id: "cloud", label: "GTC Cloud" },
       { id: "import", label: "Import from phone" },
       { id: "darktheme", label: "Dark theme" },
       { id: "updates", label: "Automatic updates" },
@@ -957,12 +958,12 @@ const en: Dictionary = {
   },
   novacloud: {
     eyebrow: "Projects",
-    title: "NovaCloud",
+    title: "GTC Cloud",
     subtitle: "Smart sync for the studio products.",
     description:
-      "NovaCloud lets you manage devices, synchronization and connected services across the studio products in one integrated experience.",
-    imageAlt: "NovaCloud settings screenshot",
-    imageLabel: "NovaCloud — Settings",
+      "GTC Cloud lets you manage devices, synchronization and connected services across the studio products in one integrated experience.",
+    imageAlt: "GTC Cloud settings screenshot",
+    imageLabel: "GTC Cloud — Settings",
     features: [
       {
         id: "sync",
@@ -1047,13 +1048,13 @@ const en: Dictionary = {
           },
           {
             id: "novadocs",
-            title: "NovaDocs v1.0.8",
-            description: "Stable desktop editor with NovaCloud, NovaDrop and AI Resume Builder.",
+            title: "GTC Docs v1.0.8",
+            description: "Stable desktop editor with GTC Cloud, GTC Drop and AI Resume Builder.",
           },
           {
             id: "legal",
             title: "Privacy & Legal",
-            description: "Legal pages, privacy policy and Meta compliance for NovaPromo.",
+            description: "Legal pages, privacy policy and Meta compliance for GTC Promo.",
           },
         ],
       },
@@ -1063,27 +1064,27 @@ const en: Dictionary = {
         milestones: [
           {
             id: "novapromo",
-            title: "NovaPromo Beta",
+            title: "GTC Promo Beta",
             description: "Promotions and social commerce platform in testing.",
           },
           {
             id: "novamobile",
-            title: "NovaMobile Beta",
+            title: "GTC Mobile Beta",
             description: "Android companion app with public Alpha build.",
           },
           {
             id: "novatk",
-            title: "NovaTK Alpha",
+            title: "GTC TK Alpha",
             description: "iOS fitness tracker with HealthKit and widgets.",
           },
           {
             id: "novabeauty",
-            title: "NovaBeauty Alpha",
+            title: "GTC Beauty Alpha",
             description: "Beauty management app for salons and wellness centers.",
           },
           {
             id: "novacloud",
-            title: "NovaCloud",
+            title: "GTC Cloud",
             description: "Cloud platform for sync and connected services.",
           },
         ],
@@ -1095,7 +1096,7 @@ const en: Dictionary = {
           {
             id: "echo-0",
             title: "Echo-0",
-            description: "Audio and immersive interaction experiment from Nova Labs.",
+            description: "Audio and immersive interaction experiment from GTC Labs.",
           },
           {
             id: "ryuk-ai",
@@ -1104,7 +1105,7 @@ const en: Dictionary = {
           },
           {
             id: "nova-account",
-            title: "Nova Account",
+            title: "GTC Account",
             description: "Unified account across all ecosystem products.",
           },
         ],
@@ -1120,7 +1121,7 @@ const en: Dictionary = {
     moreHeading: "More applications",
     featured: {
       id: "novadocs",
-      name: "NovaDocs",
+      name: "GTC Docs",
       description:
         "Modern desktop document editor designed for productivity, simplicity and performance.",
       version: "v1.0.8",
@@ -1148,7 +1149,7 @@ const en: Dictionary = {
     items: [
       {
         id: "novamobile",
-        name: "NovaMobile",
+        name: "GTC Mobile",
         description: "The studio products in your pocket.",
         platform: "Android · .apk",
         statusKey: "beta",
@@ -1157,7 +1158,7 @@ const en: Dictionary = {
       },
       {
         id: "novatk",
-        name: "NovaTK",
+        name: "GTC TK",
         description:
           "Personal fitness tracker for iPhone with SwiftUI and HealthKit.",
         platform: "iOS",
@@ -1170,7 +1171,7 @@ const en: Dictionary = {
       },
       {
         id: "novabeauty",
-        name: "NovaBeauty",
+        name: "GTC Beauty",
         description:
           "Professional management software for beauty centers, hair salons and wellness businesses.",
         platform: "iOS",
@@ -1200,22 +1201,22 @@ const en: Dictionary = {
     entries: [
       {
         id: "novadocs-108",
-        product: "NovaDocs",
+        product: "GTC Docs",
         version: "v1.0.8",
         date: "June 2026",
         changes: [
-          "NovaDrop fully operational",
+          "GTC Drop fully operational",
           "QR Code file transfer",
           "Fixed import from Firebase Storage",
           "Fixed CORS error on remote downloads",
-          "Improved NovaCloud synchronization",
+          "Improved GTC Cloud synchronization",
           "Improved diagnostic logs",
           "Increased overall stability",
         ],
       },
       {
         id: "novadocs-107",
-        product: "NovaDocs",
+        product: "GTC Docs",
         version: "v1.0.7",
         date: "June 2026",
         changes: [
@@ -1223,21 +1224,21 @@ const en: Dictionary = {
           "5 professional resume templates",
           "PDF export",
           "DOCX export",
-          "NovaCloud improvements",
-          "NovaDrop improvements",
+          "GTC Cloud improvements",
+          "GTC Drop improvements",
           "General fixes and optimizations",
         ],
       },
       {
         id: "novadocs",
-        product: "NovaDocs",
+        product: "GTC Docs",
         version: "v1.0.6",
         date: "May 2026",
         changes: ["Improved UI", "Fixed bugs", "Better performance"],
       },
       {
         id: "novamobile",
-        product: "NovaMobile",
+        product: "GTC Mobile",
         version: "Beta",
         date: "May 2026",
         changes: [
@@ -1285,7 +1286,7 @@ const en: Dictionary = {
     eyebrow: "Community",
     title: "Join the Nova community",
     description:
-      "Follow the development of NovaDocs, NovaPromo, NovaMobile, NovaTK, NovaBeauty and NovaCloud. Share ideas, report bugs and help shape the future of the ecosystem.",
+      "Follow the development of GTC Docs, GTC Promo, GTC Mobile, GTC TK, GTC Beauty and GTC Cloud. Share ideas, report bugs and help shape the future of the ecosystem.",
     comingSoonLabel: "Coming soon",
     socials: [
       {
@@ -1324,7 +1325,7 @@ const en: Dictionary = {
     eyebrow: "Support",
     title: "Support GLITCH",
     description:
-      "GLITCH is an independent project built from scratch. If you enjoy NovaDocs, NovaMobile, NovaBeauty, NovaTK and NovaCloud and want to support future development, consider offering a coffee.",
+      "GLITCH is an independent project built from scratch. If you enjoy GTC Docs, GTC Mobile, GTC Beauty, GTC TK and GTC Cloud and want to support future development, consider offering a coffee.",
     button: "Support GLITCH",
   },
   ecosystem: {
@@ -1336,7 +1337,7 @@ const en: Dictionary = {
       {
         id: "novadocs",
         emoji: "📄",
-        title: "NovaDocs",
+        title: "GTC Docs",
         description: "Modern document editor for productivity and organization.",
         statusKey: "available",
         statusLabel: "Active",
@@ -1344,7 +1345,7 @@ const en: Dictionary = {
       {
         id: "novamobile",
         emoji: "📱",
-        title: "NovaMobile",
+        title: "GTC Mobile",
         description: "Mobile companion app for the studio products.",
         statusKey: "inProgress",
         statusLabel: "In Development",
@@ -1352,7 +1353,7 @@ const en: Dictionary = {
       {
         id: "novacloud",
         emoji: "☁️",
-        title: "NovaCloud",
+        title: "GTC Cloud",
         description: "Cloud platform for synchronization and storage.",
         statusKey: "comingSoon",
         statusLabel: "Coming Soon",
@@ -1379,12 +1380,13 @@ const en: Dictionary = {
       {
         title: "Products",
         links: [
-          { label: "NovaDocs", href: "/products/novadocs" },
-          { label: "NovaPromo", href: "/products/novapromo" },
-          { label: "NovaMobile", href: "/products/novamobile" },
-          { label: "NovaCloud", href: "/products/novacloud" },
-          { label: "NovaTK", href: "/products/novatk" },
-          { label: "NovaBeauty", href: "/products/novabeauty" },
+          { label: "GTC Docs", href: "/products/novadocs" },
+          { label: "GTC Mobile", href: "/products/novamobile" },
+          { label: "GTC Smile", href: "/products/novasmile" },
+          { label: "GTC Promo", href: "/products/novapromo" },
+          { label: "GTC Cloud", href: "/products/novacloud" },
+          { label: "GTC TK", href: "/products/novatk" },
+          { label: "GTC Beauty", href: "/products/novabeauty" },
         ],
       },
       {

@@ -71,7 +71,7 @@ const it: StudioCopy = {
       "Uno studio indipendente dedicato a prodotto software, applicazioni e innovazione digitale.",
     paragraphs: [
       "Lavoriamo su applicazioni desktop, esperienze mobile e componenti cloud, mantenendo un linguaggio di prodotto coerente e un’esecuzione controllata.",
-      "I progetti pubblicati — tra cui NovaDocs, NovaMobile e le sperimentazioni in Labs — riflettono un approccio concreto: costruire, iterare e rilasciare software utilizzabile.",
+      "I prodotti della famiglia GTC — tra cui GTC Docs, GTC Mobile, GTC Smile e le sperimentazioni in Labs — riflettono un approccio concreto: costruire, iterare e rilasciare software utilizzabile.",
     ],
   },
   services: {
@@ -84,25 +84,25 @@ const it: StudioCopy = {
         id: "desktop",
         title: "Software desktop",
         description:
-          "Applicazioni Windows orientate alla produttività, come NovaDocs, con distribuzione store e installer.",
+          "Applicazioni Windows orientate alla produttività, come GTC Docs, con distribuzione store e installer.",
       },
       {
         id: "mobile",
         title: "Applicazioni mobile",
         description:
-          "Client Android e iOS in sviluppo attivo, inclusi NovaMobile, NovaTK e NovaBeauty.",
+          "Client Android, iOS e web in sviluppo attivo, inclusi GTC Mobile, GTC Smile, GTC TK e GTC Beauty.",
       },
       {
         id: "cloud",
         title: "Piattaforme cloud",
         description:
-          "Componenti cloud e sincronizzazione (NovaCloud) a supporto dei prodotti dello studio.",
+          "Componenti cloud e sincronizzazione (GTC Cloud) a supporto dei prodotti dello studio.",
       },
       {
         id: "labs",
         title: "Sperimentazione in Labs",
         description:
-          "Prototipi e prodotti early-stage — da NovaPromo a Echo-0 e Ryuk AI — per esplorare nuove direzioni.",
+          "Prototipi e prodotti early-stage — da GTC Promo a Echo-0 e Ryuk AI — per esplorare nuove direzioni.",
       },
     ],
   },
@@ -110,7 +110,7 @@ const it: StudioCopy = {
     eyebrow: "Progetti",
     title: "Software realizzato",
     description:
-      "Una selezione di prodotti e sperimentazioni sviluppati dallo studio. I nomi prodotto restano quelli ufficiali di ciascun software.",
+      "Catalogo pubblico della famiglia GTC: prodotti e sperimentazioni sviluppati da GLITCH.",
     viewLabs: "Apri Labs",
   },
   process: {
@@ -181,14 +181,15 @@ const it: StudioCopy = {
         ],
       },
       {
-        title: "Prodotti",
+        title: "Prodotti GTC",
         links: [
-          { label: "NovaDocs", href: "/products/novadocs" },
-          { label: "NovaPromo", href: "/products/novapromo" },
-          { label: "NovaMobile", href: "/products/novamobile" },
-          { label: "NovaCloud", href: "/products/novacloud" },
-          { label: "NovaTK", href: "/products/novatk" },
-          { label: "NovaBeauty", href: "/products/novabeauty" },
+          { label: "GTC Docs", href: "/products/novadocs" },
+          { label: "GTC Mobile", href: "/products/novamobile" },
+          { label: "GTC Smile", href: "/products/novasmile" },
+          { label: "GTC Promo", href: "/products/novapromo" },
+          { label: "GTC Beauty", href: "/products/novabeauty" },
+          { label: "GTC TK", href: "/products/novatk" },
+          { label: "GTC Cloud", href: "/products/novacloud" },
         ],
       },
       {
@@ -228,7 +229,7 @@ const en: StudioCopy = {
       "An independent studio focused on software products, applications and digital innovation.",
     paragraphs: [
       "We work on desktop applications, mobile experiences and cloud components, keeping a coherent product language and a controlled execution.",
-      "Published projects — including NovaDocs, NovaMobile and Labs experiments — reflect a practical approach: build, iterate and ship usable software.",
+      "GTC products — including GTC Docs, GTC Mobile, GTC Smile and Labs experiments — reflect a practical approach: build, iterate and ship usable software.",
     ],
   },
   services: {
@@ -241,25 +242,25 @@ const en: StudioCopy = {
         id: "desktop",
         title: "Desktop software",
         description:
-          "Windows productivity applications such as NovaDocs, with store and installer distribution.",
+          "Windows productivity applications such as GTC Docs, with store and installer distribution.",
       },
       {
         id: "mobile",
         title: "Mobile applications",
         description:
-          "Active Android and iOS clients, including NovaMobile, NovaTK and NovaBeauty.",
+          "Active Android, iOS and web clients, including GTC Mobile, GTC Smile, GTC TK and GTC Beauty.",
       },
       {
         id: "cloud",
         title: "Cloud platforms",
         description:
-          "Cloud and sync components (NovaCloud) supporting the studio’s products.",
+          "Cloud and sync components (GTC Cloud) supporting the studio’s products.",
       },
       {
         id: "labs",
         title: "Labs experimentation",
         description:
-          "Early-stage prototypes and products — from NovaPromo to Echo-0 and Ryuk AI — exploring new directions.",
+          "Early-stage prototypes and products — from GTC Promo to Echo-0 and Ryuk AI — exploring new directions.",
       },
     ],
   },
@@ -267,7 +268,7 @@ const en: StudioCopy = {
     eyebrow: "Projects",
     title: "Software we ship",
     description:
-      "A selection of products and experiments developed by the studio. Product names remain the official names of each software.",
+      "Public catalog of the GTC family: products and experiments developed by GLITCH.",
     viewLabs: "Open Labs",
   },
   process: {
@@ -338,14 +339,15 @@ const en: StudioCopy = {
         ],
       },
       {
-        title: "Products",
+        title: "GTC Products",
         links: [
-          { label: "NovaDocs", href: "/products/novadocs" },
-          { label: "NovaPromo", href: "/products/novapromo" },
-          { label: "NovaMobile", href: "/products/novamobile" },
-          { label: "NovaCloud", href: "/products/novacloud" },
-          { label: "NovaTK", href: "/products/novatk" },
-          { label: "NovaBeauty", href: "/products/novabeauty" },
+          { label: "GTC Docs", href: "/products/novadocs" },
+          { label: "GTC Mobile", href: "/products/novamobile" },
+          { label: "GTC Smile", href: "/products/novasmile" },
+          { label: "GTC Promo", href: "/products/novapromo" },
+          { label: "GTC Beauty", href: "/products/novabeauty" },
+          { label: "GTC TK", href: "/products/novatk" },
+          { label: "GTC Cloud", href: "/products/novacloud" },
         ],
       },
       {

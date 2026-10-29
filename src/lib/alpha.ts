@@ -2,7 +2,7 @@ import { contactLinks, releases } from "./data";
 import type { Lang } from "./i18n";
 
 /**
- * Single source of truth for the Nova Mobile Alpha page.
+ * Single source of truth for the GTC Mobile Alpha page.
  *
  * Language-agnostic config (URLs, version) lives in `novaMobile`.
  * All translatable copy lives in `alphaCopy`, keyed by language.
@@ -90,7 +90,7 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
       titleLead: "Nova Mobile",
       titleAccent: "Alpha",
       description:
-        "I prodotti dello studio, ora su Android. Prova la primissima build di NovaMobile e aiutaci a definire cosa verrà dopo. Questa è una alpha iniziale: aspettati qualche imperfezione, aggiornamenti frequenti e tante nuove funzionalità in arrivo.",
+        "I prodotti dello studio, ora su Android. Prova la primissima build di GTC Mobile e aiutaci a definire cosa verrà dopo. Questa è una alpha iniziale: aspettati qualche imperfezione, aggiornamenti frequenti e tante nuove funzionalità in arrivo.",
       downloadApk: "Scarica APK",
       joinDiscord: "Entra in Discord",
       versionChip: "v0.1 Alpha",
@@ -99,9 +99,9 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
     },
     release: {
       eyebrow: "Release",
-      title: "Nova Mobile Alpha è disponibile",
+      title: "GTC Mobile Alpha è disponibile",
       description:
-        "La prima build pubblica di NovaMobile è pronta da installare sul tuo dispositivo Android.",
+        "La prima build pubblica di GTC Mobile è pronta da installare sul tuo dispositivo Android.",
       versionLabel: "Versione",
       versionValue: "v0.1 Alpha",
       platformLabel: "Piattaforma",
@@ -116,7 +116,7 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
         "Scarica il file APK",
         "Apri il file scaricato",
         "Consenti l'installazione da origini sconosciute se richiesto",
-        "Installa NovaMobile",
+        "Installa GTC Mobile",
         "Apri l'app e invia feedback",
       ],
     },
@@ -135,7 +135,7 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
         "Accesso offline di base",
       ],
       coming: [
-        "Sincronizzazione NovaCloud",
+        "Sincronizzazione GTC Cloud",
         "Assistente IA locale",
         "Modifica documenti",
         "Continuità tra dispositivi",
@@ -144,14 +144,14 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
     },
     feedback: {
       title: "Aiutaci a migliorare Nova Mobile",
-      text: "Aiutaci a migliorare NovaMobile. Questa è una release Alpha iniziale e il tuo feedback è estremamente prezioso.",
+      text: "Aiutaci a migliorare GTC Mobile. Questa è una release Alpha iniziale e il tuo feedback è estremamente prezioso.",
       discord: "Community Discord",
       githubIssues: "GitHub Issues",
     },
     changelog: {
       eyebrow: "Note di rilascio",
       title: "Changelog",
-      description: "Segui ogni build di Nova Mobile Alpha man mano che esce.",
+      description: "Segui ogni build di GTC Mobile Alpha man mano che esce.",
       latest: "Ultima",
       releases: [
         {
@@ -178,7 +178,7 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
       titleLead: "Nova Mobile",
       titleAccent: "Alpha",
       description:
-        "The studio products, now on Android. Try the earliest build of NovaMobile and help shape what comes next. This is an early alpha — expect rough edges, frequent updates and lots of new features on the way.",
+        "The studio products, now on Android. Try the earliest build of GTC Mobile and help shape what comes next. This is an early alpha — expect rough edges, frequent updates and lots of new features on the way.",
       downloadApk: "Download APK",
       joinDiscord: "Join Discord",
       versionChip: "v0.1 Alpha",
@@ -187,9 +187,9 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
     },
     release: {
       eyebrow: "Release",
-      title: "Nova Mobile Alpha is now available",
+      title: "GTC Mobile Alpha is now available",
       description:
-        "The first public build of NovaMobile is ready to install on your Android device.",
+        "The first public build of GTC Mobile is ready to install on your Android device.",
       versionLabel: "Version",
       versionValue: "v0.1 Alpha",
       platformLabel: "Platform",
@@ -204,7 +204,7 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
         "Download the APK",
         "Open the downloaded file",
         "Allow installation from unknown sources if requested",
-        "Install NovaMobile",
+        "Install GTC Mobile",
         "Launch the app and send feedback",
       ],
     },
@@ -223,7 +223,7 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
         "Basic offline access",
       ],
       coming: [
-        "NovaCloud synchronization",
+        "GTC Cloud synchronization",
         "Local AI assistant",
         "Document editing",
         "Cross-device handoff",
@@ -232,14 +232,14 @@ export const alphaCopy: Record<Lang, AlphaCopy> = {
     },
     feedback: {
       title: "Help shape Nova Mobile",
-      text: "Help us improve NovaMobile. This is an early Alpha release and feedback is extremely valuable.",
+      text: "Help us improve GTC Mobile. This is an early Alpha release and feedback is extremely valuable.",
       discord: "Discord Community",
       githubIssues: "GitHub Issues",
     },
     changelog: {
       eyebrow: "Release notes",
       title: "Changelog",
-      description: "Track every Nova Mobile Alpha build as it ships.",
+      description: "Track every GTC Mobile Alpha build as it ships.",
       latest: "Latest",
       releases: [
         {

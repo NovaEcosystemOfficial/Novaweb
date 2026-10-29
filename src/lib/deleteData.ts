@@ -18,13 +18,13 @@ const it: DeleteDataCopy = {
   eyebrow: "Legale",
   title: "Richiesta eliminazione dati",
   intro:
-    "Se desideri eliminare i dati associati a NovaPromo o GLITCH, puoi inviare una richiesta a:",
+    "Se desideri eliminare i dati associati a GTC Promo o GLITCH, puoi inviare una richiesta a:",
   emailLabel: "Indirizzo e-mail",
   includeLabel: "Inserisci nell'e-mail:",
   requirements: [
     "nome account Instagram/Facebook",
     "motivo della richiesta",
-    "riferimento a NovaPromo",
+    "riferimento a GTC Promo",
   ],
   processingNote: "Elaboreremo la richiesta entro 30 giorni.",
   backHome: "Torna alla home",
@@ -35,13 +35,13 @@ const en: DeleteDataCopy = {
   eyebrow: "Legal",
   title: "Data Deletion Request",
   intro:
-    "If you want to delete data associated with NovaPromo or GLITCH, send a request to:",
+    "If you want to delete data associated with GTC Promo or GLITCH, send a request to:",
   emailLabel: "Email address",
   includeLabel: "Please include:",
   requirements: [
     "Instagram/Facebook account name",
     "reason for the request",
-    "reference to NovaPromo",
+    "reference to GTC Promo",
   ],
   processingNote: "We will process the request within 30 days.",
   backHome: "Back to home",

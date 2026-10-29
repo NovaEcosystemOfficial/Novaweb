@@ -3,7 +3,7 @@
 Official website for **GLITCH**, a digital studio that designs and builds
 software, applications and digital solutions.
 
-Product names such as NovaDocs and NovaMobile remain the official names of
+Product names such as GTC Docs and GTC Mobile remain the official names of
 individual software projects.
 
 ## Tech stack

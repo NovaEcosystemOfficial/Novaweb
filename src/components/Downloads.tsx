@@ -43,7 +43,7 @@ export function Downloads() {
           description={t.downloads.description}
         />
 
-        {/* Featured: NovaDocs */}
+        {/* Featured: GTC Docs */}
         <div className="mt-16">
           <h3 className="mb-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
             <span className="h-px w-8 bg-gradient-to-r from-transparent to-nova-purple/60" />

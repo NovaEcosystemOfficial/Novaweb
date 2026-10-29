@@ -16,6 +16,7 @@ import {
   Megaphone,
   Radio,
   Bot,
+  Smile,
 } from "lucide-react";
 
 export const BRAND = "GLITCH";
@@ -50,6 +51,7 @@ export const iconById: Record<string, LucideIcon> = {
   "echo-0": Radio,
   "ryuk-ai": Bot,
   novamobile: Smartphone,
+  novasmile: Smile,
   novatk: Dumbbell,
   novabeauty: Flower2,
   novacloud: Cloud,
@@ -72,6 +74,7 @@ export const productAccent: Record<string, string> = {
   "echo-0": "from-indigo-500 to-violet-500",
   "ryuk-ai": "from-purple-600 to-pink-500",
   novamobile: "from-violet-500 to-purple-600",
+  novasmile: "from-sky-500 to-cyan-400",
   novatk: "from-rose-500 to-orange-500",
   novabeauty: "from-pink-500 to-fuchsia-500",
   novacloud: "from-blue-500 to-indigo-500",

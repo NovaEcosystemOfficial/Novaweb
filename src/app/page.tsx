@@ -27,12 +27,14 @@ const jsonLd = {
     contactLinks.discord,
   ],
   makesOffer: [
-    { "@type": "Offer", name: "NovaDocs" },
-    { "@type": "Offer", name: "NovaPromo" },
-    { "@type": "Offer", name: "NovaMobile" },
-    { "@type": "Offer", name: "NovaBeauty" },
-    { "@type": "Offer", name: "NovaTK" },
-    { "@type": "Offer", name: "NovaCloud" },
+    { "@type": "Offer", name: "GTC Docs" },
+    { "@type": "Offer", name: "GTC Mobile" },
+    { "@type": "Offer", name: "GTC Smile" },
+    { "@type": "Offer", name: "GTC Promo" },
+    { "@type": "Offer", name: "GTC Beauty" },
+    { "@type": "Offer", name: "GTC TK" },
+    { "@type": "Offer", name: "GTC Cloud" },
+    { "@type": "Offer", name: "GTC Drop" },
   ],
 };
 

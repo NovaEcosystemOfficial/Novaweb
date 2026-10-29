@@ -42,7 +42,9 @@ function resolveCtaHref(slug: ProductSlug): string {
   if (slug === "novamobile") return "/nova-mobile-alpha";
   const repo = getProductRepo(slug);
   if (repo) return repo;
-  if (slug === "novapromo") return `mailto:${contactLinks.email}`;
+  if (slug === "novapromo" || slug === "novasmile") {
+    return `mailto:${contactLinks.email}`;
+  }
   if (slug === "echo-0" || slug === "ryuk-ai") return "/labs";
   return "/#contact";
 }

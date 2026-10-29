@@ -71,17 +71,17 @@ type EcosystemI18n = {
 
 const it: EcosystemI18n = {
   section: {
-    eyebrow: "Progetti",
-    title: "GLITCH",
+    eyebrow: "Catalogo GTC",
+    title: "Prodotti GTC",
     description:
-      "Una famiglia di software moderni per produttività, mobile, cloud e intelligenza artificiale. Ogni prodotto nasce con la stessa identità visiva e la stessa visione.",
+      "La famiglia GTC riunisce software per produttività, mobile, cloud e benessere digitale — progettati da GLITCH con un’identità coerente.",
     viewAll: "Esplora Labs",
   },
   labs: {
-    eyebrow: "Nova Labs",
+    eyebrow: "GTC Labs",
     title: "Esperimenti in corso",
     description:
-      "Nova Labs è il laboratorio dove testiamo idee, prototipi e prodotti del futuro. Alpha, Beta, Experimental e Coming Soon convivono in un unico spazio.",
+      "GTC Labs è il laboratorio dove testiamo idee, prototipi e prodotti del futuro. Alpha, Beta, Experimental e Coming Soon convivono in un unico spazio.",
     backHome: "Torna alla home",
     filterAll: "Tutti",
     comingSoonTitle: "Prossimi esperimenti",
@@ -118,47 +118,47 @@ const it: EcosystemI18n = {
   },
   products: {
     novadocs: {
-      name: "NovaDocs",
+      name: "GTC Docs",
       tagline: "Editor documenti desktop moderno.",
       description:
-        "Editor di documenti veloce e potente con assistente IA locale, NovaCloud e strumenti pensati per la produttività professionale.",
+        "Editor di documenti veloce e potente con assistente IA locale, GTC Cloud e strumenti pensati per la produttività professionale.",
       statusLabel: "Stable",
-      buttonLabel: "Scopri NovaDocs",
+      buttonLabel: "Scopri GTC Docs",
       features: [
         "Editor moderno con tema scuro",
         "Assistente IA locale integrato",
-        "NovaCloud e NovaDrop",
+        "GTC Cloud e GTC Drop",
         "AI Resume Builder",
         "Aggiornamenti automatici",
       ],
       roadmap: [
-        "Miglioramenti NovaCloud",
+        "Miglioramenti GTC Cloud",
         "Nuove integrazioni mobile",
         "Template avanzati",
       ],
       faq: [
         {
           q: "Su quali piattaforme è disponibile?",
-          a: "NovaDocs è attualmente disponibile per Windows desktop.",
+          a: "GTC Docs è attualmente disponibile per Windows desktop.",
         },
         {
           q: "I miei documenti sono al sicuro?",
           a: "I file restano di tua proprietà e puoi lavorare anche offline.",
         },
       ],
-      ctaTitle: "Inizia con NovaDocs",
+      ctaTitle: "Inizia con GTC Docs",
       ctaDescription:
-        "Installa NovaDocs dal Microsoft Store: aggiornamenti automatici e installazione sicura.",
+        "Installa GTC Docs dal Microsoft Store: aggiornamenti automatici e installazione sicura.",
       ctaButton: "Scarica dal Microsoft Store",
-      screenshotAlt: "Schermata NovaDocs",
+      screenshotAlt: "Schermata GTC Docs",
     },
     novapromo: {
-      name: "NovaPromo",
+      name: "GTC Promo",
       tagline: "Promozioni e social commerce.",
       description:
         "Piattaforma per gestire promozioni, contenuti social e campagne digitali per brand e creator.",
       statusLabel: "Beta",
-      buttonLabel: "Scopri NovaPromo",
+      buttonLabel: "Scopri GTC Promo",
       features: [
         "Gestione promozioni",
         "Integrazione social",
@@ -172,14 +172,14 @@ const it: EcosystemI18n = {
       ],
       faq: [
         {
-          q: "NovaPromo è già disponibile?",
+          q: "GTC Promo è già disponibile?",
           a: "La versione Beta è in fase di test con utenti selezionati.",
         },
       ],
       ctaTitle: "Unisciti alla Beta",
-      ctaDescription: "Contattaci per accedere alla beta di NovaPromo.",
+      ctaDescription: "Contattaci per accedere alla beta di GTC Promo.",
       ctaButton: "Contattaci",
-      screenshotAlt: "Anteprima NovaPromo",
+      screenshotAlt: "Anteprima GTC Promo",
     },
     "echo-0": {
       name: "Echo-0",
@@ -197,11 +197,11 @@ const it: EcosystemI18n = {
       faq: [
         {
           q: "Cos'è Echo-0?",
-          a: "Un esperimento Alpha del laboratorio Nova, non ancora un prodotto finito.",
+          a: "Un esperimento Alpha del laboratorio GTC, non ancora un prodotto finito.",
         },
       ],
       ctaTitle: "Segui lo sviluppo",
-      ctaDescription: "Echo-0 evolve rapidamente nel laboratorio Nova.",
+      ctaDescription: "Echo-0 evolve rapidamente nel laboratorio GTC.",
       ctaButton: "Visita Labs",
       screenshotAlt: "Anteprima Echo-0",
     },
@@ -217,7 +217,7 @@ const it: EcosystemI18n = {
         "Integrazione prodotti studio",
         "Pipeline AI modulare",
       ],
-      roadmap: ["API pubblica", "Modelli specializzati", "Integrazione NovaDocs"],
+      roadmap: ["API pubblica", "Modelli specializzati", "Integrazione GTC Docs"],
       faq: [
         {
           q: "Ryuk AI è production-ready?",
@@ -230,65 +230,99 @@ const it: EcosystemI18n = {
       screenshotAlt: "Anteprima Ryuk AI",
     },
     novacloud: {
-      name: "NovaCloud",
+      name: "GTC Cloud",
       tagline: "Sincronizzazione intelligente.",
       description:
         "Piattaforma cloud per sincronizzazione, dispositivi e servizi connessi ai prodotti dello studio.",
       statusLabel: "Development",
-      buttonLabel: "Scopri NovaCloud",
+      buttonLabel: "Scopri GTC Cloud",
       features: [
         "Sincronizzazione multi-dispositivo",
         "Gestione dispositivi",
         "Privacy e controllo dati",
       ],
       roadmap: [
-        "Sync avanzata NovaDocs",
+        "Sync avanzata GTC Docs",
         "Backup automatico",
         "Dashboard cloud",
       ],
       faq: [
         {
-          q: "NovaCloud è già attivo?",
-          a: "È in sviluppo attivo e già parzialmente integrato in NovaDocs.",
+          q: "GTC Cloud è già attivo?",
+          a: "È in sviluppo attivo e già parzialmente integrato in GTC Docs.",
         },
       ],
-      ctaTitle: "NovaCloud in arrivo",
+      ctaTitle: "GTC Cloud in arrivo",
       ctaDescription: "La piattaforma cloud dei prodotti dello studio sta prendendo forma.",
       ctaButton: "Scopri di più",
-      screenshotAlt: "Schermata NovaCloud",
+      screenshotAlt: "Schermata GTC Cloud",
     },
     novamobile: {
-      name: "NovaMobile",
+      name: "GTC Mobile",
       tagline: "I prodotti dello studio in tasca.",
       description:
         "App companion mobile per accedere ai prodotti dello studio ovunque, con integrazione cloud in evoluzione.",
       statusLabel: "Beta",
-      buttonLabel: "Scopri NovaMobile",
+      buttonLabel: "Scopri GTC Mobile",
       features: [
         "UI moderna",
         "Supporto Android",
         "Esperienza veloce",
         "Integrazione cloud futura",
       ],
-      roadmap: ["Sync NovaCloud", "Notifiche", "Widget"],
+      roadmap: ["Sync GTC Cloud", "Notifiche", "Widget"],
       faq: [
         {
           q: "Come partecipo alla beta?",
-          a: "Scarica l'APK dalla pagina download o visita Nova Mobile Alpha.",
+          a: "Scarica l'APK dalla pagina download o visita GTC Mobile Alpha.",
         },
       ],
-      ctaTitle: "Prova NovaMobile",
+      ctaTitle: "Prova GTC Mobile",
       ctaDescription: "Scarica la build Alpha per Android.",
       ctaButton: "Scarica APK",
-      screenshotAlt: "Anteprima NovaMobile",
+      screenshotAlt: "Anteprima GTC Mobile",
+    },
+    novasmile: {
+      name: "GTC Smile",
+      tagline: "Routine ortodontica e benessere digitale.",
+      description:
+        "Applicazione per supportare la routine ortodontica attraverso obiettivi, progressi, premi e funzionalità per la famiglia.",
+      statusLabel: "In sviluppo",
+      buttonLabel: "Scopri GTC Smile",
+      features: [
+        "Obiettivi e routine quotidiane",
+        "Progressi e premi",
+        "Funzionalità per la famiglia",
+        "Pannello genitori e esperienza mobile",
+      ],
+      roadmap: [
+        "Completamento integrazione famiglia",
+        "Esperienza Kids",
+        "Rilascio pubblico controllato",
+      ],
+      faq: [
+        {
+          q: "GTC Smile è già scaricabile?",
+          a: "No. Il prodotto è in sviluppo attivo; non è ancora disponibile una release pubblica.",
+        },
+        {
+          q: "Su quali piattaforme arriverà?",
+          a: "È progettato come esperienza web e mobile, con supporto alle attività familiari.",
+        },
+      ],
+      ctaTitle: "GTC Smile in sviluppo",
+      ctaDescription:
+        "Segui l’evoluzione del prodotto o contatta lo studio per informazioni.",
+      ctaButton: "Contatta lo studio",
+      screenshotAlt: "Anteprima GTC Smile",
     },
     novatk: {
-      name: "NovaTK",
+      name: "GTC TK",
       tagline: "Fitness tracker per iPhone.",
       description:
         "Tracker fitness personale con SwiftUI e HealthKit per allenamenti, progressi e monitoraggio attività.",
       statusLabel: "Alpha",
-      buttonLabel: "Scopri NovaTK",
+      buttonLabel: "Scopri GTC TK",
       features: [
         "Schede allenamento",
         "Monitoraggio peso",
@@ -302,22 +336,22 @@ const it: EcosystemI18n = {
       ],
       faq: [
         {
-          q: "NovaTK è su TestFlight?",
+          q: "GTC TK è su TestFlight?",
           a: "TestFlight arriverà presto. Il codice è disponibile su GitHub.",
         },
       ],
-      ctaTitle: "Segui NovaTK",
+      ctaTitle: "Segui GTC TK",
       ctaDescription: "Fitness tracking nativo per iPhone, in sviluppo attivo.",
       ctaButton: "Repository GitHub",
-      screenshotAlt: "Anteprima NovaTK",
+      screenshotAlt: "Anteprima GTC TK",
     },
     novabeauty: {
-      name: "NovaBeauty",
+      name: "GTC Beauty",
       tagline: "Gestionale per il settore beauty.",
       description:
         "Software professionale per centri estetici, parrucchieri e attività beauty.",
       statusLabel: "Alpha",
-      buttonLabel: "Scopri NovaBeauty",
+      buttonLabel: "Scopri GTC Beauty",
       features: [
         "Gestione clienti",
         "Appuntamenti",
@@ -331,31 +365,31 @@ const it: EcosystemI18n = {
       ],
       faq: [
         {
-          q: "Per chi è pensato NovaBeauty?",
+          q: "Per chi è pensato GTC Beauty?",
           a: "Per professionisti beauty e centri estetici che vogliono un gestionale moderno.",
         },
       ],
-      ctaTitle: "NovaBeauty Alpha",
+      ctaTitle: "GTC Beauty Alpha",
       ctaDescription: "Gestionale beauty in sviluppo per iOS.",
       ctaButton: "Repository GitHub",
-      screenshotAlt: "Anteprima NovaBeauty",
+      screenshotAlt: "Anteprima GTC Beauty",
     },
   },
 };
 
 const en: EcosystemI18n = {
   section: {
-    eyebrow: "Projects",
-    title: "GLITCH",
+    eyebrow: "GTC Catalog",
+    title: "GTC Products",
     description:
-      "A family of modern software for productivity, mobile, cloud and artificial intelligence. Every product shares the same visual identity and vision.",
+      "The GTC family brings together software for productivity, mobile, cloud and digital wellbeing — designed by GLITCH with a coherent identity.",
     viewAll: "Explore Labs",
   },
   labs: {
-    eyebrow: "Nova Labs",
+    eyebrow: "GTC Labs",
     title: "Experiments in progress",
     description:
-      "Nova Labs is where we test ideas, prototypes and future products. Alpha, Beta, Experimental and Coming Soon live together in one space.",
+      "GTC Labs is where we test ideas, prototypes and future products. Alpha, Beta, Experimental and Coming Soon live together in one space.",
     backHome: "Back to home",
     filterAll: "All",
     comingSoonTitle: "Upcoming experiments",
@@ -392,47 +426,47 @@ const en: EcosystemI18n = {
   },
   products: {
     novadocs: {
-      name: "NovaDocs",
+      name: "GTC Docs",
       tagline: "Modern desktop document editor.",
       description:
-        "Fast, powerful document editor with local AI assistant, NovaCloud and tools built for professional productivity.",
+        "Fast, powerful document editor with local AI assistant, GTC Cloud and tools built for professional productivity.",
       statusLabel: "Stable",
-      buttonLabel: "Discover NovaDocs",
+      buttonLabel: "Discover GTC Docs",
       features: [
         "Modern editor with dark theme",
         "Built-in local AI assistant",
-        "NovaCloud and NovaDrop",
+        "GTC Cloud and GTC Drop",
         "AI Resume Builder",
         "Automatic updates",
       ],
       roadmap: [
-        "NovaCloud improvements",
+        "GTC Cloud improvements",
         "New mobile integrations",
         "Advanced templates",
       ],
       faq: [
         {
           q: "Which platforms are supported?",
-          a: "NovaDocs is currently available for Windows desktop.",
+          a: "GTC Docs is currently available for Windows desktop.",
         },
         {
           q: "Are my documents safe?",
           a: "Your files remain yours and you can work offline.",
         },
       ],
-      ctaTitle: "Get started with NovaDocs",
+      ctaTitle: "Get started with GTC Docs",
       ctaDescription:
-        "Install NovaDocs from the Microsoft Store: automatic updates and secure installation.",
+        "Install GTC Docs from the Microsoft Store: automatic updates and secure installation.",
       ctaButton: "Download from Microsoft Store",
-      screenshotAlt: "NovaDocs screenshot",
+      screenshotAlt: "GTC Docs screenshot",
     },
     novapromo: {
-      name: "NovaPromo",
+      name: "GTC Promo",
       tagline: "Promotions and social commerce.",
       description:
         "Platform to manage promotions, social content and digital campaigns for brands and creators.",
       statusLabel: "Beta",
-      buttonLabel: "Discover NovaPromo",
+      buttonLabel: "Discover GTC Promo",
       features: [
         "Promotion management",
         "Social integration",
@@ -446,14 +480,14 @@ const en: EcosystemI18n = {
       ],
       faq: [
         {
-          q: "Is NovaPromo available yet?",
+          q: "Is GTC Promo available yet?",
           a: "The Beta version is being tested with selected users.",
         },
       ],
       ctaTitle: "Join the Beta",
-      ctaDescription: "Contact us to access the NovaPromo beta.",
+      ctaDescription: "Contact us to access the GTC Promo beta.",
       ctaButton: "Contact us",
-      screenshotAlt: "NovaPromo preview",
+      screenshotAlt: "GTC Promo preview",
     },
     "echo-0": {
       name: "Echo-0",
@@ -471,11 +505,11 @@ const en: EcosystemI18n = {
       faq: [
         {
           q: "What is Echo-0?",
-          a: "An Alpha experiment from Nova Labs, not yet a finished product.",
+          a: "An Alpha experiment from GTC Labs, not yet a finished product.",
         },
       ],
       ctaTitle: "Follow development",
-      ctaDescription: "Echo-0 evolves rapidly in Nova Labs.",
+      ctaDescription: "Echo-0 evolves rapidly in GTC Labs.",
       ctaButton: "Visit Labs",
       screenshotAlt: "Echo-0 preview",
     },
@@ -488,10 +522,10 @@ const en: EcosystemI18n = {
       buttonLabel: "Discover Ryuk AI",
       features: [
         "Conversational assistant",
-        "Nova product integration",
+        "GTC product integration",
         "Modular AI pipeline",
       ],
-      roadmap: ["Public API", "Specialized models", "NovaDocs integration"],
+      roadmap: ["Public API", "Specialized models", "GTC Docs integration"],
       faq: [
         {
           q: "Is Ryuk AI production-ready?",
@@ -499,66 +533,100 @@ const en: EcosystemI18n = {
         },
       ],
       ctaTitle: "Stay updated",
-      ctaDescription: "Ryuk AI will be progressively integrated into Nova products.",
+      ctaDescription: "Ryuk AI will be progressively integrated into GTC products.",
       ctaButton: "Visit Labs",
       screenshotAlt: "Ryuk AI preview",
     },
     novacloud: {
-      name: "NovaCloud",
+      name: "GTC Cloud",
       tagline: "Smart synchronization.",
       description:
         "Cloud platform for synchronization, devices and connected services across the studio products.",
       statusLabel: "Development",
-      buttonLabel: "Discover NovaCloud",
+      buttonLabel: "Discover GTC Cloud",
       features: [
         "Multi-device sync",
         "Device management",
         "Privacy and data control",
       ],
-      roadmap: ["Advanced NovaDocs sync", "Automatic backup", "Cloud dashboard"],
+      roadmap: ["Advanced GTC Docs sync", "Automatic backup", "Cloud dashboard"],
       faq: [
         {
-          q: "Is NovaCloud already active?",
-          a: "It is in active development and partially integrated in NovaDocs.",
+          q: "Is GTC Cloud already active?",
+          a: "It is in active development and partially integrated in GTC Docs.",
         },
       ],
-      ctaTitle: "NovaCloud coming soon",
+      ctaTitle: "GTC Cloud coming soon",
       ctaDescription: "The studio products cloud platform is taking shape.",
       ctaButton: "Learn more",
-      screenshotAlt: "NovaCloud screenshot",
+      screenshotAlt: "GTC Cloud screenshot",
     },
     novamobile: {
-      name: "NovaMobile",
+      name: "GTC Mobile",
       tagline: "The studio products in your pocket.",
       description:
         "Mobile companion app to access the studio products anywhere, with evolving cloud integration.",
       statusLabel: "Beta",
-      buttonLabel: "Discover NovaMobile",
+      buttonLabel: "Discover GTC Mobile",
       features: [
         "Modern UI",
         "Android support",
         "Fast experience",
         "Future cloud integration",
       ],
-      roadmap: ["NovaCloud sync", "Notifications", "Widgets"],
+      roadmap: ["GTC Cloud sync", "Notifications", "Widgets"],
       faq: [
         {
           q: "How do I join the beta?",
-          a: "Download the APK from the download page or visit Nova Mobile Alpha.",
+          a: "Download the APK from the download page or visit GTC Mobile Alpha.",
         },
       ],
-      ctaTitle: "Try NovaMobile",
+      ctaTitle: "Try GTC Mobile",
       ctaDescription: "Download the Alpha build for Android.",
       ctaButton: "Download APK",
-      screenshotAlt: "NovaMobile preview",
+      screenshotAlt: "GTC Mobile preview",
+    },
+    novasmile: {
+      name: "GTC Smile",
+      tagline: "Orthodontic routine and digital wellbeing.",
+      description:
+        "An application that supports the orthodontic routine through goals, progress, rewards and family features.",
+      statusLabel: "In development",
+      buttonLabel: "Discover GTC Smile",
+      features: [
+        "Daily goals and routines",
+        "Progress and rewards",
+        "Family features",
+        "Parent panel and mobile experience",
+      ],
+      roadmap: [
+        "Complete family integration",
+        "Kids experience",
+        "Controlled public release",
+      ],
+      faq: [
+        {
+          q: "Is GTC Smile available to download?",
+          a: "No. The product is in active development and there is no public release yet.",
+        },
+        {
+          q: "Which platforms will it support?",
+          a: "It is designed as a web and mobile experience with family activity support.",
+        },
+      ],
+      ctaTitle: "GTC Smile in development",
+      ctaDescription:
+        "Follow product progress or contact the studio for information.",
+      ctaButton: "Contact the studio",
+      screenshotAlt: "GTC Smile preview",
     },
     novatk: {
-      name: "NovaTK",
+      name: "GTC TK",
       tagline: "Fitness tracker for iPhone.",
       description:
         "Personal fitness tracker with SwiftUI and HealthKit for workouts, progress and activity monitoring.",
       statusLabel: "Alpha",
-      buttonLabel: "Discover NovaTK",
+      buttonLabel: "Discover GTC TK",
       features: [
         "Workout cards",
         "Weight tracking",
@@ -572,22 +640,22 @@ const en: EcosystemI18n = {
       ],
       faq: [
         {
-          q: "Is NovaTK on TestFlight?",
+          q: "Is GTC TK on TestFlight?",
           a: "TestFlight is coming soon. Code is available on GitHub.",
         },
       ],
-      ctaTitle: "Follow NovaTK",
+      ctaTitle: "Follow GTC TK",
       ctaDescription: "Native fitness tracking for iPhone, in active development.",
       ctaButton: "GitHub Repository",
-      screenshotAlt: "NovaTK preview",
+      screenshotAlt: "GTC TK preview",
     },
     novabeauty: {
-      name: "NovaBeauty",
+      name: "GTC Beauty",
       tagline: "Management for the beauty industry.",
       description:
         "Professional software for beauty centers, hair salons and wellness businesses.",
       statusLabel: "Alpha",
-      buttonLabel: "Discover NovaBeauty",
+      buttonLabel: "Discover GTC Beauty",
       features: [
         "Client management",
         "Appointments",
@@ -597,14 +665,14 @@ const en: EcosystemI18n = {
       roadmap: ["Advanced calendar", "Cloud backup", "Statistics"],
       faq: [
         {
-          q: "Who is NovaBeauty for?",
+          q: "Who is GTC Beauty for?",
           a: "Beauty professionals and salons who want a modern management app.",
         },
       ],
-      ctaTitle: "NovaBeauty Alpha",
+      ctaTitle: "GTC Beauty Alpha",
       ctaDescription: "Beauty management app in development for iOS.",
       ctaButton: "GitHub Repository",
-      screenshotAlt: "NovaBeauty preview",
+      screenshotAlt: "GTC Beauty preview",
     },
   },
 };

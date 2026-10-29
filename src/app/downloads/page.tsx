@@ -4,7 +4,7 @@ import { DownloadsPageView } from "@/components/downloads/DownloadsPageView";
 export const metadata: Metadata = {
   title: "Download Center",
   description:
-    "Download GLITCH software — NovaDocs, NovaMobile and all available builds in one place.",
+    "Download GLITCH software — GTC Docs, GTC Mobile and all available builds in one place.",
   alternates: { canonical: "/downloads" },
 };
 

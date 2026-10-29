@@ -21,7 +21,7 @@ import { PhoneMockup } from "./ui/PhoneMockup";
 const previews: Record<string, React.ReactNode> = {
   novadocs: (
     <div className="scale-[0.78] sm:scale-90">
-      <LaptopMockup src={images.novadocsEditor} alt="NovaDocs editor" />
+      <LaptopMockup src={images.novadocsEditor} alt="GTC Docs editor" />
     </div>
   ),
   novamobile: (

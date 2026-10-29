@@ -8,6 +8,7 @@ import {
   Smartphone,
   Dumbbell,
   Flower2,
+  Smile,
 } from "lucide-react";
 import type { StatusKey } from "./data";
 
@@ -18,6 +19,7 @@ export type ProductSlug =
   | "ryuk-ai"
   | "novacloud"
   | "novamobile"
+  | "novasmile"
   | "novatk"
   | "novabeauty";
 
@@ -38,13 +40,14 @@ export type ProductMeta = {
 
 export const PRODUCT_SLUGS: ProductSlug[] = [
   "novadocs",
+  "novamobile",
+  "novasmile",
   "novapromo",
+  "novabeauty",
+  "novatk",
+  "novacloud",
   "echo-0",
   "ryuk-ai",
-  "novacloud",
-  "novamobile",
-  "novatk",
-  "novabeauty",
 ];
 
 export const productMeta: Record<ProductSlug, ProductMeta> = {
@@ -119,6 +122,18 @@ export const productMeta: Record<ProductSlug, ProductMeta> = {
     inLabs: true,
     downloadId: "novamobile",
     href: "/products/novamobile",
+  },
+  novasmile: {
+    id: "novasmile",
+    slug: "novasmile",
+    icon: Smile,
+    accent: "from-sky-500 to-cyan-400",
+    glowColor: "bg-sky-500/15",
+    statusKey: "developing",
+    version: "Development",
+    platform: "Web · Mobile",
+    inLabs: true,
+    href: "/products/novasmile",
   },
   novatk: {
     id: "novatk",

@@ -12,8 +12,8 @@ type LaptopMockupProps = {
 
 export function LaptopMockup({
   src,
-  alt = "NovaDocs",
-  label = "NovaDocs — Untitled",
+  alt = "GTC Docs",
+  label = "GTC Docs — Untitled",
   priority,
 }: LaptopMockupProps) {
   return (
