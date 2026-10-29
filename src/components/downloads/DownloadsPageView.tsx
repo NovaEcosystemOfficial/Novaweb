@@ -2,17 +2,19 @@
 
 import { motion } from "framer-motion";
 import { Download, FileText, Github, Clock, BadgeCheck } from "lucide-react";
-import { PRODUCT_SLUGS, productMeta } from "@/lib/ecosystem";
+import { PUBLIC_CATALOG_SLUGS, productMeta, type ProductSlug } from "@/lib/ecosystem";
+import { getProductColors } from "@/lib/product-colors";
 import { getEcosystemCopy, getProductCopy } from "@/lib/ecosystem-i18n";
 import { releases, getProductRepo } from "@/lib/data";
 import { handleProductDownload } from "@/lib/download";
+import { cn } from "@/lib/utils";
 import { useLanguage } from "@/context/LanguageProvider";
 import { PageShell } from "@/components/layout/PageShell";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 
-function getDownloadInfo(slug: (typeof PRODUCT_SLUGS)[number]) {
+function getDownloadInfo(slug: ProductSlug) {
   const meta = productMeta[slug];
   if (meta.downloadId === "novadocs") {
     return {
@@ -137,9 +139,10 @@ function DownloadsContent() {
       </Reveal>
 
       <div className="mt-14 space-y-5">
-        {PRODUCT_SLUGS.map((slug, i) => {
+        {PUBLIC_CATALOG_SLUGS.map((slug, i) => {
           const meta = productMeta[slug];
           const product = getProductCopy(lang, slug);
+          const colors = getProductColors(slug);
           const dl = getDownloadInfo(slug);
           const Icon = meta.icon;
           const isNovaDocs = slug === "novadocs";
@@ -151,16 +154,23 @@ function DownloadsContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.04 }}
-              className={`nova-card p-6 sm:p-8 ${
-                isNovaDocs ? "border-nova-orange/25 shadow-glow-orange" : ""
-              }`}
+              className={cn(
+                "nova-card p-6 sm:p-8",
+                colors.border,
+                isNovaDocs && "border-blue-400/30"
+              )}
             >
               <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
                 <div className="flex items-start gap-4">
                   <span
-                    className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${meta.accent} shadow-glow`}
+                    className={cn(
+                      "flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border",
+                      colors.iconBg,
+                      colors.iconBorder,
+                      colors.iconFg
+                    )}
                   >
-                    <Icon className="h-6 w-6 text-white" />
+                    <Icon className="h-6 w-6" />
                   </span>
                   <div>
                     <div className="flex flex-wrap items-center gap-3">
@@ -172,7 +182,7 @@ function DownloadsContent() {
                         label={product.statusLabel}
                       />
                       {isNovaDocs && (
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-nova-orange/30 bg-nova-orange/10 px-3 py-1 text-xs font-semibold text-nova-amber">
+                        <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-300">
                           <BadgeCheck className="h-3.5 w-3.5" />
                           Microsoft Store
                         </span>

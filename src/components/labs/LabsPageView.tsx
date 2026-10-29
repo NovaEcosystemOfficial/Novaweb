@@ -3,7 +3,9 @@
 import { motion } from "framer-motion";
 import { Clock, FlaskConical } from "lucide-react";
 import { getLabProducts } from "@/lib/ecosystem";
+import { getProductColors } from "@/lib/product-colors";
 import { getEcosystemCopy, getProductCopy } from "@/lib/ecosystem-i18n";
+import { cn } from "@/lib/utils";
 import { useLanguage } from "@/context/LanguageProvider";
 import { PageShell } from "@/components/layout/PageShell";
 import { StatusBadge } from "@/components/ui/StatusBadge";
@@ -35,6 +37,7 @@ function LabsContent() {
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {labProducts.map((meta, i) => {
           const product = getProductCopy(lang, meta.slug);
+          const colors = getProductColors(meta.slug);
           const Icon = meta.icon;
           return (
             <motion.div
@@ -43,14 +46,25 @@ function LabsContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.06 }}
-              whileHover={{ y: -6 }}
-              className="nova-card-hover p-6"
+              className={cn(
+                "group product-card relative overflow-hidden rounded-2xl border bg-nova-surface p-6",
+                "transition-[border-color,box-shadow,transform,filter] duration-200 ease-out",
+                "motion-safe:hover:-translate-y-1",
+                colors.border,
+                colors.borderHover,
+                colors.halo
+              )}
             >
               <div className="flex items-start justify-between gap-3">
                 <span
-                  className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${meta.accent} shadow-glow`}
+                  className={cn(
+                    "flex h-12 w-12 items-center justify-center rounded-xl border",
+                    colors.iconBg,
+                    colors.iconBorder,
+                    colors.iconFg
+                  )}
                 >
-                  <Icon className="h-5 w-5 text-white" />
+                  <Icon className="h-5 w-5" />
                 </span>
                 <StatusBadge
                   status={meta.statusKey}

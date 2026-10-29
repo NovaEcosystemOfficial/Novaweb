@@ -67,17 +67,17 @@ export const iconById: Record<string, LucideIcon> = {
   resume: ClipboardList,
 };
 
-/** Product accent gradients, language-agnostic. */
+/** Product accent gradients, language-agnostic (aligned with product-colors). */
 export const productAccent: Record<string, string> = {
-  novadocs: "from-violet-600 to-purple-500",
-  novapromo: "from-orange-500 to-amber-400",
-  "echo-0": "from-indigo-500 to-violet-500",
-  "ryuk-ai": "from-purple-600 to-pink-500",
-  novamobile: "from-violet-500 to-purple-600",
-  novasmile: "from-sky-500 to-cyan-400",
-  novatk: "from-rose-500 to-orange-500",
-  novabeauty: "from-pink-500 to-fuchsia-500",
-  novacloud: "from-blue-500 to-indigo-500",
+  novadocs: "from-blue-600 to-blue-500",
+  novapromo: "from-orange-600 to-orange-500",
+  "echo-0": "from-cyan-500 to-violet-500",
+  "ryuk-ai": "from-violet-600 to-fuchsia-500",
+  novamobile: "from-teal-600 to-teal-500",
+  novasmile: "from-green-600 to-green-500",
+  novatk: "from-rose-600 to-orange-500",
+  novabeauty: "from-violet-600 to-violet-500",
+  novacloud: "from-sky-500 to-sky-400",
 };
 
 /** Non-translatable external release URLs. */

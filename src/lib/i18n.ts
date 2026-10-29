@@ -280,27 +280,6 @@ const it: Dictionary = {
         statusLabel: "Beta",
       },
       {
-        id: "novatk",
-        name: "GTC TK",
-        tagline: "Fitness tracker personale per iPhone.",
-        description:
-          "Fitness tracker personale per iPhone sviluppato con SwiftUI e HealthKit. Pensato per allenamenti, progressi fisici e monitoraggio attività.",
-        features: [
-          "Schede allenamento",
-          "Monitoraggio peso",
-          "HealthKit",
-          "Widget iOS",
-          "Cronologia allenamenti",
-        ],
-        badges: [
-          { id: "ios", label: "iOS" },
-          { id: "alpha", label: "Alpha" },
-          { id: "swiftui", label: "SwiftUI" },
-        ],
-        statusKey: "alpha",
-        statusLabel: "Alpha",
-      },
-      {
         id: "novabeauty",
         name: "GTC Beauty",
         tagline: "Gestionale per centri estetici e beauty.",
@@ -465,11 +444,6 @@ const it: Dictionary = {
             description: "App companion Android con build Alpha pubblica.",
           },
           {
-            id: "novatk",
-            title: "GTC TK Alpha",
-            description: "Fitness tracker iOS con HealthKit e widget.",
-          },
-          {
             id: "novabeauty",
             title: "GTC Beauty Alpha",
             description: "Gestionale beauty per centri estetici e saloni.",
@@ -547,19 +521,6 @@ const it: Dictionary = {
         statusKey: "beta",
         statusLabel: "Beta",
         buttonLabel: "Partecipa alla beta",
-      },
-      {
-        id: "novatk",
-        name: "GTC TK",
-        description:
-          "Fitness tracker personale per iPhone con SwiftUI e HealthKit.",
-        platform: "iOS",
-        availability: "Sviluppo attivo",
-        statusKey: "alpha",
-        statusLabel: "Alpha",
-        buttonLabel: "Repository GitHub",
-        secondaryButtonLabel: "Prossimamente TestFlight",
-        secondaryDisabled: true,
       },
       {
         id: "novabeauty",
@@ -682,7 +643,7 @@ const it: Dictionary = {
     eyebrow: "Community",
     title: "Unisciti alla community Nova",
     description:
-      "Segui lo sviluppo di GTC Docs, GTC Promo, GTC Mobile, GTC TK, GTC Beauty e GTC Cloud. Condividi idee, segnala bug e aiutaci a plasmare il futuro dell'ecosistema.",
+      "Segui lo sviluppo di GTC Docs, GTC Promo, GTC Mobile, GTC Beauty e GTC Cloud. Condividi idee, segnala bug e aiutaci a plasmare il futuro dell'ecosistema.",
     comingSoonLabel: "In arrivo",
     socials: [
       {
@@ -721,7 +682,7 @@ const it: Dictionary = {
     eyebrow: "Supporto",
     title: "Sostieni GLITCH",
     description:
-      "GLITCH è un progetto indipendente costruito da zero. Se ti piacciono GTC Docs, GTC Mobile, GTC Beauty, GTC TK e GTC Cloud e vuoi sostenere lo sviluppo futuro, offrici un caffè.",
+      "GLITCH è un progetto indipendente costruito da zero. Se ti piacciono GTC Docs, GTC Mobile, GTC Beauty e GTC Cloud e vuoi sostenere lo sviluppo futuro, offrici un caffè.",
     button: "Sostieni GLITCH",
   },
   ecosystem: {
@@ -782,8 +743,8 @@ const it: Dictionary = {
           { label: "GTC Smile", href: "/products/novasmile" },
           { label: "GTC Promo", href: "/products/novapromo" },
           { label: "GTC Cloud", href: "/products/novacloud" },
-          { label: "GTC TK", href: "/products/novatk" },
           { label: "GTC Beauty", href: "/products/novabeauty" },
+          { label: "Echo-0", href: "/products/echo-0" },
         ],
       },
       {
@@ -886,27 +847,6 @@ const en: Dictionary = {
         ],
         statusKey: "beta",
         statusLabel: "Beta",
-      },
-      {
-        id: "novatk",
-        name: "GTC TK",
-        tagline: "Personal fitness tracker for iPhone.",
-        description:
-          "Personal fitness tracker for iPhone built with SwiftUI and HealthKit. Designed for workouts, physical progress and activity monitoring.",
-        features: [
-          "Workout cards",
-          "Weight tracking",
-          "HealthKit",
-          "iOS widgets",
-          "Workout history",
-        ],
-        badges: [
-          { id: "ios", label: "iOS" },
-          { id: "alpha", label: "Alpha" },
-          { id: "swiftui", label: "SwiftUI" },
-        ],
-        statusKey: "alpha",
-        statusLabel: "Alpha",
       },
       {
         id: "novabeauty",
@@ -1073,11 +1013,6 @@ const en: Dictionary = {
             description: "Android companion app with public Alpha build.",
           },
           {
-            id: "novatk",
-            title: "GTC TK Alpha",
-            description: "iOS fitness tracker with HealthKit and widgets.",
-          },
-          {
             id: "novabeauty",
             title: "GTC Beauty Alpha",
             description: "Beauty management app for salons and wellness centers.",
@@ -1155,19 +1090,6 @@ const en: Dictionary = {
         statusKey: "beta",
         statusLabel: "Beta",
         buttonLabel: "Join Beta",
-      },
-      {
-        id: "novatk",
-        name: "GTC TK",
-        description:
-          "Personal fitness tracker for iPhone with SwiftUI and HealthKit.",
-        platform: "iOS",
-        availability: "Active development",
-        statusKey: "alpha",
-        statusLabel: "Alpha",
-        buttonLabel: "GitHub Repository",
-        secondaryButtonLabel: "TestFlight Coming Soon",
-        secondaryDisabled: true,
       },
       {
         id: "novabeauty",
@@ -1286,7 +1208,7 @@ const en: Dictionary = {
     eyebrow: "Community",
     title: "Join the Nova community",
     description:
-      "Follow the development of GTC Docs, GTC Promo, GTC Mobile, GTC TK, GTC Beauty and GTC Cloud. Share ideas, report bugs and help shape the future of the ecosystem.",
+      "Follow the development of GTC Docs, GTC Promo, GTC Mobile, GTC Beauty and GTC Cloud. Share ideas, report bugs and help shape the future of the ecosystem.",
     comingSoonLabel: "Coming soon",
     socials: [
       {
@@ -1325,7 +1247,7 @@ const en: Dictionary = {
     eyebrow: "Support",
     title: "Support GLITCH",
     description:
-      "GLITCH is an independent project built from scratch. If you enjoy GTC Docs, GTC Mobile, GTC Beauty, GTC TK and GTC Cloud and want to support future development, consider offering a coffee.",
+      "GLITCH is an independent project built from scratch. If you enjoy GTC Docs, GTC Mobile, GTC Beauty and GTC Cloud and want to support future development, consider offering a coffee.",
     button: "Support GLITCH",
   },
   ecosystem: {
@@ -1385,8 +1307,8 @@ const en: Dictionary = {
           { label: "GTC Smile", href: "/products/novasmile" },
           { label: "GTC Promo", href: "/products/novapromo" },
           { label: "GTC Cloud", href: "/products/novacloud" },
-          { label: "GTC TK", href: "/products/novatk" },
           { label: "GTC Beauty", href: "/products/novabeauty" },
+          { label: "Echo-0", href: "/products/echo-0" },
         ],
       },
       {

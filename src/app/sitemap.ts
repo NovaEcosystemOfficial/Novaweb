@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { PRODUCT_SLUGS } from "@/lib/ecosystem";
+import { PUBLIC_CATALOG_SLUGS } from "@/lib/ecosystem";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    ...PRODUCT_SLUGS.map((slug) => ({
+    ...PUBLIC_CATALOG_SLUGS.map((slug) => ({
       url: `${baseUrl}/products/${slug}`,
       lastModified,
       changeFrequency: "weekly" as const,

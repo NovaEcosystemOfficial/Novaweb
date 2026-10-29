@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
-import { PRODUCT_SLUGS } from "@/lib/ecosystem";
+import { PUBLIC_CATALOG_SLUGS } from "@/lib/ecosystem";
 import { useLanguage } from "@/context/LanguageProvider";
 import { getStudioCopy } from "@/lib/studio-i18n";
 import { SectionHeading } from "./ui/SectionHeading";
@@ -23,7 +23,7 @@ export function NovaEcosystem() {
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-          {PRODUCT_SLUGS.map((slug, i) => (
+          {PUBLIC_CATALOG_SLUGS.map((slug, i) => (
             <ProductCard key={slug} slug={slug} index={i} />
           ))}
         </div>

@@ -11,6 +11,7 @@ import {
   Smile,
 } from "lucide-react";
 import type { StatusKey } from "./data";
+import { productColors } from "./product-colors";
 
 export type ProductSlug =
   | "novadocs"
@@ -38,6 +39,7 @@ export type ProductMeta = {
   external?: boolean;
 };
 
+/** All known product slugs (includes non-public entries for routes/meta). */
 export const PRODUCT_SLUGS: ProductSlug[] = [
   "novadocs",
   "novamobile",
@@ -50,13 +52,30 @@ export const PRODUCT_SLUGS: ProductSlug[] = [
   "ryuk-ai",
 ];
 
+/**
+ * Products shown in the public catalog and user-facing product lists.
+ * GTC TK remains in productMeta / routes but is not listed publicly.
+ */
+export const PUBLIC_CATALOG_SLUGS: ProductSlug[] = [
+  "novadocs",
+  "novamobile",
+  "novasmile",
+  "novapromo",
+  "novabeauty",
+  "novacloud",
+  "echo-0",
+  "ryuk-ai",
+];
+
+const HIDDEN_FROM_PUBLIC = new Set<ProductSlug>(["novatk"]);
+
 export const productMeta: Record<ProductSlug, ProductMeta> = {
   novadocs: {
     id: "novadocs",
     slug: "novadocs",
     icon: FileText,
-    accent: "from-violet-600 to-purple-500",
-    glowColor: "bg-nova-purple/25",
+    accent: productColors.novadocs.accentGradient,
+    glowColor: productColors.novadocs.soft,
     statusKey: "available",
     version: "v1.0.8",
     platform: "Windows",
@@ -67,8 +86,8 @@ export const productMeta: Record<ProductSlug, ProductMeta> = {
     id: "novapromo",
     slug: "novapromo",
     icon: Megaphone,
-    accent: "from-orange-500 to-amber-400",
-    glowColor: "bg-nova-orange/20",
+    accent: productColors.novapromo.accentGradient,
+    glowColor: productColors.novapromo.soft,
     statusKey: "beta",
     version: "Beta",
     platform: "iOS · Android",
@@ -79,8 +98,8 @@ export const productMeta: Record<ProductSlug, ProductMeta> = {
     id: "echo-0",
     slug: "echo-0",
     icon: Radio,
-    accent: "from-indigo-500 to-violet-500",
-    glowColor: "bg-indigo-500/20",
+    accent: productColors["echo-0"].accentGradient,
+    glowColor: productColors["echo-0"].soft,
     statusKey: "alpha",
     version: "Alpha",
     platform: "Cross-platform",
@@ -91,8 +110,8 @@ export const productMeta: Record<ProductSlug, ProductMeta> = {
     id: "ryuk-ai",
     slug: "ryuk-ai",
     icon: Bot,
-    accent: "from-purple-600 to-pink-500",
-    glowColor: "bg-nova-pink/20",
+    accent: productColors["ryuk-ai"].accentGradient,
+    glowColor: productColors["ryuk-ai"].soft,
     statusKey: "experimental",
     version: "Experimental",
     platform: "Cloud · API",
@@ -103,8 +122,8 @@ export const productMeta: Record<ProductSlug, ProductMeta> = {
     id: "novacloud",
     slug: "novacloud",
     icon: Cloud,
-    accent: "from-blue-500 to-indigo-500",
-    glowColor: "bg-indigo-500/20",
+    accent: productColors.novacloud.accentGradient,
+    glowColor: productColors.novacloud.soft,
     statusKey: "developing",
     version: "Development",
     platform: "Cloud",
@@ -114,8 +133,8 @@ export const productMeta: Record<ProductSlug, ProductMeta> = {
     id: "novamobile",
     slug: "novamobile",
     icon: Smartphone,
-    accent: "from-violet-500 to-purple-600",
-    glowColor: "bg-nova-violet/20",
+    accent: productColors.novamobile.accentGradient,
+    glowColor: productColors.novamobile.soft,
     statusKey: "beta",
     version: "v0.1 Alpha",
     platform: "Android",
@@ -127,8 +146,8 @@ export const productMeta: Record<ProductSlug, ProductMeta> = {
     id: "novasmile",
     slug: "novasmile",
     icon: Smile,
-    accent: "from-sky-500 to-cyan-400",
-    glowColor: "bg-sky-500/15",
+    accent: productColors.novasmile.accentGradient,
+    glowColor: productColors.novasmile.soft,
     statusKey: "developing",
     version: "Development",
     platform: "Web · Mobile",
@@ -139,8 +158,8 @@ export const productMeta: Record<ProductSlug, ProductMeta> = {
     id: "novatk",
     slug: "novatk",
     icon: Dumbbell,
-    accent: "from-rose-500 to-orange-500",
-    glowColor: "bg-nova-orange/15",
+    accent: productColors.novatk.accentGradient,
+    glowColor: productColors.novatk.soft,
     statusKey: "alpha",
     version: "Alpha",
     platform: "iOS",
@@ -151,8 +170,8 @@ export const productMeta: Record<ProductSlug, ProductMeta> = {
     id: "novabeauty",
     slug: "novabeauty",
     icon: Flower2,
-    accent: "from-pink-500 to-fuchsia-500",
-    glowColor: "bg-nova-pink/20",
+    accent: productColors.novabeauty.accentGradient,
+    glowColor: productColors.novabeauty.soft,
     statusKey: "alpha",
     version: "Alpha",
     platform: "iOS",
@@ -165,6 +184,14 @@ export function isProductSlug(slug: string): slug is ProductSlug {
   return PRODUCT_SLUGS.includes(slug as ProductSlug);
 }
 
+export function isPublicCatalogSlug(slug: ProductSlug): boolean {
+  return !HIDDEN_FROM_PUBLIC.has(slug);
+}
+
+export function getPublicCatalogProducts(): ProductMeta[] {
+  return PUBLIC_CATALOG_SLUGS.map((s) => productMeta[s]);
+}
+
 export function getLabProducts(): ProductMeta[] {
-  return PRODUCT_SLUGS.map((s) => productMeta[s]).filter((p) => p.inLabs);
+  return PUBLIC_CATALOG_SLUGS.map((s) => productMeta[s]).filter((p) => p.inLabs);
 }

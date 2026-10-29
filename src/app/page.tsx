@@ -32,9 +32,8 @@ const jsonLd = {
     { "@type": "Offer", name: "GTC Smile" },
     { "@type": "Offer", name: "GTC Promo" },
     { "@type": "Offer", name: "GTC Beauty" },
-    { "@type": "Offer", name: "GTC TK" },
     { "@type": "Offer", name: "GTC Cloud" },
-    { "@type": "Offer", name: "GTC Drop" },
+    { "@type": "Offer", name: "Echo-0" },
   ],
 };
 

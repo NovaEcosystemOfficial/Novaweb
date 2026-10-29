@@ -90,7 +90,7 @@ const it: StudioCopy = {
         id: "mobile",
         title: "Applicazioni mobile",
         description:
-          "Client Android, iOS e web in sviluppo attivo, inclusi GTC Mobile, GTC Smile, GTC TK e GTC Beauty.",
+          "Client Android, iOS e web in sviluppo attivo, inclusi GTC Mobile, GTC Smile e GTC Beauty.",
       },
       {
         id: "cloud",
@@ -188,8 +188,8 @@ const it: StudioCopy = {
           { label: "GTC Smile", href: "/products/novasmile" },
           { label: "GTC Promo", href: "/products/novapromo" },
           { label: "GTC Beauty", href: "/products/novabeauty" },
-          { label: "GTC TK", href: "/products/novatk" },
           { label: "GTC Cloud", href: "/products/novacloud" },
+          { label: "Echo-0", href: "/products/echo-0" },
         ],
       },
       {
@@ -248,7 +248,7 @@ const en: StudioCopy = {
         id: "mobile",
         title: "Mobile applications",
         description:
-          "Active Android, iOS and web clients, including GTC Mobile, GTC Smile, GTC TK and GTC Beauty.",
+          "Active Android, iOS and web clients, including GTC Mobile, GTC Smile and GTC Beauty.",
       },
       {
         id: "cloud",
@@ -346,8 +346,8 @@ const en: StudioCopy = {
           { label: "GTC Smile", href: "/products/novasmile" },
           { label: "GTC Promo", href: "/products/novapromo" },
           { label: "GTC Beauty", href: "/products/novabeauty" },
-          { label: "GTC TK", href: "/products/novatk" },
           { label: "GTC Cloud", href: "/products/novacloud" },
+          { label: "Echo-0", href: "/products/echo-0" },
         ],
       },
       {

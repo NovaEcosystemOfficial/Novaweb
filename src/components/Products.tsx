@@ -29,11 +29,6 @@ const previews: Record<string, React.ReactNode> = {
       <PhoneMockup />
     </div>
   ),
-  novatk: (
-    <div className="flex justify-center">
-      <PhoneMockup />
-    </div>
-  ),
   novabeauty: (
     <div className="flex justify-center">
       <PhoneMockup />
